@@ -1,0 +1,3426 @@
+/*************************************************************************************************************************/
+/*************************************************************************************************************************/
+/**Special Fonts**/
+/**font-family: 'Special Elite', cursive;
+/**font-family: 'Montserrat', sans-serif;
+/*************************************************************************************************************************/
+/**Globals**/
+h1, h2, h3, h4, h5, h6, p{
+	font-family: 'Montserrat', sans-serif;
+	color:white;
+}
+body{
+	background:url(images/background.gif) repeat;
+	margin:0px;
+}
+.container{
+	min-width:900px;
+	overflow:hidden;
+	margin-left: auto;
+    margin-right: auto;
+}
+label{
+	color:white;
+}
+h3, h2{
+	color:white;
+}
+.clear{
+	clear:both;
+}
+.clearLeft{
+	clear:left;
+}
+.noUnderline{
+	text-decoration:none;
+}
+.centeringContainer{
+	width:1020px;
+	margin-left:auto;
+	margin-right:auto;
+	position:relative;
+}
+.centeringContainerFooter{
+	width:1020px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.centeringContainerHeaderBottomThird{
+	position:relative;
+	width:1020px;
+	margin-left:auto;
+	margin-right:auto;
+}
+.centeringContainerH4{
+	position: relative;
+    z-index: 3;
+}
+.centeringContainerH4 h4{
+	display:inline;
+	margin-right:119px;
+	margin-left:30px;
+	line-height: 140px;
+	color:black;
+	z-index:3;
+}
+
+span.ui-state-highlight{
+	background-color:#ff3d7f !important;
+	background-image:none !important;
+	color:black !important;
+}
+
+#globalMessaging div p{
+	color:white;
+}
+
+
+/*STRAYS - PLEASE FIND A HOME FOR BEFORE DEPLOYMENT*/
+
+
+/*************************************************************************************************************************/
+/*************************************************************************************************************************/
+/**AppLoad**/
+#appPreView{
+	background:none;
+	float:left;
+	margin-left:325px;
+}
+#loader h5{
+	color:#ffffff;
+	font-size:18px;
+}
+
+
+/*************************************************************************************************************************/
+/*************************************************************************************************************************/
+/**header**/
+.header{
+	height:325px;
+}
+/**Top Third**/
+
+.buyerLoggedIn .hideIfLoggedIn {
+	display:none;
+}
+.hideIfLoggedOut {
+	display:none;
+}
+.buyerLoggedIn .hideIfLoggedOut {
+	display: block;
+} /* may be 'block' */
+.buyerLoggedIn span.hideIfLoggedOut {
+	display: inline;
+} /* ensures inline on span elements */
+
+.headerTopThird{
+	width:100%;
+	height:46px;
+	background-image:url(images/header_background.png);
+	overflow:visible;
+	padding-top:6px;
+}
+.headerTopThird h5{
+	display:inline;
+	color:#ffffff;
+	font-size:16px;
+}
+.headerTopThird h6{
+	display:inline;
+	color:#ffffff;
+	font-size:12px;
+}
+.headerTopThird a{
+	color:#ffffff;
+}
+.headerLoginLink{
+	margin-left:10px;
+}
+.headerCartLink{
+	margin-right:200px;
+}
+.headerHelpLink{
+	margin-right:20px;
+}
+/**Mid Third**/
+.headerMidThird{
+	padding-top:40px;
+}
+.homepageLink{
+	margin-left:100px;
+}
+.productSearchForm{
+	width:320px;
+	height:100px;
+	float:right;
+	margin-right:100px;
+}
+/**.searchBorder{
+	z-index:2;
+	width:320px;
+	color:rgba(.1, .1, .1, .5);
+}**/
+.searchArea{
+	padding-bottom: 12px;
+    padding-left: 12px;
+    padding-top: 12px;
+	background-color:rgb(40, 40, 40);
+	background-color:rgba(200, 200, 200, .2);
+	border: medium none;
+}
+#searchBarInput{
+	border: 0 none;
+    float: left;
+    height: 32px;
+    padding: 0;
+    width: 200px;
+}
+#searchBarButton{
+	color:#000000;
+	background-color:#3fb8af;
+	border:none;
+	float:left;
+	height:32px;
+	width:92px;
+}
+/*************************************************************************************************************************/
+/**Bottom third**/
+.headerBottomThird{
+}
+.navTopCat{
+	height: 100%;
+    position: absolute;
+    top:0px !important;
+    width: 100%;
+}
+.navTopCat2{
+	height: 100%;
+    position: absolute;
+    top:0px !important;
+    width: 100%;
+	left:0 !important;
+}
+.navBarBrands{
+    color: #FFFFFF;
+    float: left;
+    font-family: 'Special Elite',cursive;
+    font-size: 18px;
+    font-weight: 200;
+    height: 40px;
+    line-height: 43px;
+    margin-left: 40px;
+    position: relative;
+    text-align: center;
+    width: 80px;
+	vertical-align:
+}
+.navBarBrands a{
+	width:80px;
+	margin-left:5px;
+}
+.navBarBrands:active{
+	color:#000000;
+}
+.navBarBrands:hover{
+	background-image:url(images/header_nav_bar/brands.png);
+	color:#000000;
+}
+.navBarBrands ul{
+	left:0px;
+	top:250px;
+	list-style:none;
+}
+.dropdownContainerBrand{
+	 background-color: black;
+    border: 5px solid #3FB8AF;
+    box-shadow: 0 0 20px 15px #000000;
+    height: 435px;
+    margin-left: 43px;
+    margin-top: 52px;
+    position: absolute;
+    width: 685px;
+	overflow:hidden;
+}
+.dropdownContainerBrand img{
+	bottom: 0;
+    position: absolute;
+    right: 0;
+    z-index: 4;
+}
+.dropdownWindow{
+	height: 100%;
+    position: relative;
+    width: 100%;
+}
+.headerDropdownBrand{
+	float: left;
+    height: 0px;
+    left: -45px;
+    top: 25px;
+    width: 779px;
+    z-index: 3;
+}
+.dropdownLeftBorderBrandImg{
+	left: 18px;
+    position: absolute;
+    top: 180px;
+	z-index:1;
+}
+.dropdownLeftBorderBrandImg2{
+	left: 0;
+    position: absolute;
+    top: 165px;
+	z-index:1;
+}
+.dropdownRightBorderBrandImg{
+	position: absolute;
+    right: 17px;
+    top: 180px;
+	z-index:1;
+}
+.dropdownRightBorderBrandImg2{
+	position: absolute;
+    right: 0;
+    top: 165px;
+	z-index:1;
+}
+.dropdownTopBorderBrandImg{
+	left: 215px;
+    position: absolute;
+    top: 18px;
+	z-index:1;
+}
+.dropdownTopBorderBrandImg2{
+	left: 215px;
+    position: absolute;
+    top: 0;
+	z-index:1;
+}
+.dropdownBottomBorderBrandImg{
+	bottom: 17px;;
+    left: 230px;
+    position: absolute;
+	z-index:1;
+}
+.dropdownBottomBorderBrandImg2{
+	bottom: 0;
+    left: 230px;
+    position: absolute;
+	z-index:1;
+}
+.navBarEyes{
+	width:80px;
+	height:40px;
+	color:#ffffff;
+	text-align:center;
+	line-height: 43px;
+	float:left;
+	font-family: 'Special Elite', cursive;
+	font-size: 18px;
+	font-weight: 200;
+	position:relative;
+	margin-left:0px;
+}
+.headerDropdownEyes{
+	float: left;
+    height: 0px;
+    left: -130px;
+    top: 30px;
+    width: 439px;
+}
+.dropdownContainerEyes{
+	background-color: black;
+    border: 5px solid #3FB8AF;
+    box-shadow: 0 0 20px 15px #000000;
+    height: 200px;
+    margin-left: 43px;
+    margin-top: 52px;
+    position: absolute;
+    width: 345px;
+	overflow:hidden;
+}
+.dropdownContainerEyes img{
+	 bottom: 0;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+.dropdownLeftBorderImg3{
+	left: 18px;
+    position: absolute;
+    top: 56px;
+	z-index:1;
+}
+.dropdownLeftBorderImg4{
+	 left: 0;
+    position: absolute;
+    top: 57px;
+    z-index: 1;
+}
+.dropdownRightBorderImg3{
+	position: absolute;
+    right: 17px;
+    top: 57px;
+	z-index:1;
+}
+.dropdownRightBorderImg4{
+	position: absolute;
+    right: 0;
+    top: 58px;
+    z-index: 1;
+}
+.dropdownTopBorderImg3{
+	left: 62px;
+    position: absolute;
+    top: 18px;
+	z-index:1;
+}
+.dropdownTopBorderImg4{
+	left: 52px;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+.dropdownBottomBorderImg3{
+	bottom: 17px;
+    left: 68px;
+    position: absolute;
+	z-index:1;
+}
+.dropdownBottomBorderImg4{
+	bottom: 0;
+    left: 70px;
+    position: absolute;
+    z-index: 1;
+}
+.navBarEyes:active{
+	color:#000000;
+}
+.navBarEyes:hover{
+	background-image:url(images/header_nav_bar/brands.png);
+	color:#000000;
+}
+.navBarEyes a{
+	margin-left:5px;
+}
+.navBarEyes ul{
+	list-style: none outside none;
+    position: relative;
+    z-index: 3;
+	padding-left:35px;
+}
+.navBarEyes div{
+}
+.navBarLips{
+	width:80px;
+	height:40px;
+	color:#ffffff;
+	text-align:center;
+	line-height: 43px;
+	float:left;
+	font-family: 'Special Elite', cursive;
+	font-size: 18px;
+	font-weight: 200;
+	position:relative;
+	margin-left: -5px;
+}
+.headerDropdownLips{
+	float: left;
+    height: 0px;
+    left: -180px;
+    top: 30px;
+    width: 439px;
+}
+.dropdownContainerLips{
+	background-color: black;
+    border: 5px solid #3FB8AF;
+    box-shadow: 0 0 20px 15px #000000;
+    height: 200px;
+    margin-left: 43px;
+    margin-top: 52px;
+    position: absolute;
+    width: 345px;
+	overflow:hidden;
+}
+.dropdownContainerLips img{
+	 bottom: 0;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+.navBarLips ul{
+	list-style: none outside none;
+    position: relative;
+    z-index: 3;
+}
+.navBarLips:active{
+	color:#000000;
+}
+.navBarLips:hover{
+	background-image:url(images/header_nav_bar/brands.png);
+	color:#000000;
+}
+.navBarFace{
+	width:80px;
+	height:40px;
+	color:#ffffff;
+	text-align:center;
+	line-height: 43px;
+	float:left;
+	font-family: 'Special Elite', cursive;
+	font-size: 18px;
+	font-weight: 200;
+	position:relative;
+	margin-left: -10px;
+}
+.navBarFace:active{
+	color:#000000;
+}
+.navBarFace:hover{
+	background-image:url(images/header_nav_bar/brands.png);
+	color:#000000;
+}
+.headerDropdownFace{
+	 float: left;
+    height: 0px;
+    left: -180px;
+    top: 30px;
+    width: 439px;
+}
+.dropdownContainerFace{
+	background-color: black;
+    border: 5px solid #3FB8AF;
+    box-shadow: 0 0 20px 15px #000000;
+    height: 200px;
+    margin-left: 43px;
+    margin-top: 52px;
+    position: absolute;
+    width: 345px;
+	overflow:hidden;
+}
+.dropdownContainerFace img{
+	 bottom: 0;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+.navBarFace ul{
+	list-style: none outside none;
+    position: relative;
+    z-index: 3;
+}
+.navBarAccess{
+	width:123px;
+	height:40px;
+	color:#ffffff;
+	text-align:center;
+	line-height: 43px;
+	float:left;
+	font-family: 'Special Elite', cursive;
+	font-size: 18px;
+	font-weight: 200;
+	position:relative;
+	margin-left:0px;
+}
+.navBarAccess a{
+}
+.navBarAccess:active{
+	color:#000000;
+}
+.navBarAccess:hover{
+	background-image:url(images/header_nav_bar/accessories.png);
+	color:#000000;
+	font-size: 16px;
+}
+.headerDropdownAccess{
+	 float: left;
+    height: 0px;
+    left: -158px;
+    top: 30px;
+    width: 439px;
+}
+.dropdownContainerAccess{
+	background-color: black;
+    border: 5px solid #3FB8AF;
+    box-shadow: 0 0 20px 15px #000000;
+    height: 200px;
+    margin-left: 43px;
+    margin-top: 52px;
+    position: absolute;
+    width: 345px;
+	overflow:hidden;
+}
+.dropdownContainerAccess img{
+	 bottom: 0;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+.navBarAccess ul{
+	list-style: none outside none;
+    position: relative;
+    z-index: 3;
+}
+
+.navBarSkin{
+	width:95px;
+	height:40px;
+	color:#ffffff;
+	text-align:center;
+	line-height: 43px;
+	float:left;
+	font-family: 'Special Elite', cursive;
+	font-size: 18px;
+	font-weight: 200;
+	margin-left:10px;
+	position:relative;
+}
+.navBarSkin:active{
+	color:#000000;
+}
+.navBarSkin:hover{
+	background-image:url(images/header_nav_bar/skincare.png);
+	color:#000000;
+}
+.headerDropdownSkin{
+	 float: left;
+    height: 0px;
+    left: -173px;
+    top: 30px;
+    width: 439px;
+}
+.dropdownContainerSkin{
+	background-color: black;
+    border: 5px solid #3FB8AF;
+    box-shadow: 0 0 20px 15px #000000;
+    height: 200px;
+    margin-left: 43px;
+    margin-top: 52px;
+    position: absolute;
+    width: 345px;
+	overflow:hidden;
+}
+.dropdownContainerSkin img{
+	 bottom: 0;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+.navBarSkin ul{
+	list-style: none outside none;
+    position: relative;
+    z-index: 3;
+}
+
+.navBarNails{
+	width:80px;
+	height:40px;
+	color:#ffffff;
+	text-align:center;
+	line-height: 43px;
+	float:left;
+	font-family: 'Special Elite', cursive;
+	font-size: 18px;
+	font-weight: 200;
+	position:relative;
+	margin-left:5px;
+}
+.navBarNails a{
+	margin-left:5px;
+}
+.navBarNails:active{
+	color:#000000;
+}
+.navBarNails:hover{
+	background-image:url(images/header_nav_bar/brands.png);
+	color:#000000;
+}
+.headerDropdownNails{
+	 float: left;
+    height: 0px;
+    left: -180px;
+    top: 30px;
+    width: 439px;
+}
+.dropdownContainerNails{
+	background-color: black;
+    border: 5px solid #3FB8AF;
+    box-shadow: 0 0 20px 15px #000000;
+    height: 200px;
+    margin-left: 43px;
+    margin-top: 52px;
+    position: absolute;
+    width: 345px;
+	overflow:hidden;
+}
+.dropdownContainerNails img{
+	 bottom: 0;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+.navBarNails ul{
+	list-style: none outside none;
+    position: relative;
+    z-index: 3;
+}
+.navBarFragrance{
+	width:106px;
+	height:40px;
+	color:#ffffff;
+	text-align:center;
+	line-height: 43px;
+	float:left;
+	font-family: 'Special Elite', cursive;
+	font-size: 18px;
+	font-weight: 200;
+	position:relative;
+	margin-left:5px;
+}
+.navBarFragrance:active{
+	color:#000000;
+}
+.navBarFragrance:hover{
+	background-image:url(images/header_nav_bar/fragrance.png);
+	color:#000000;
+}
+.navBarFragrance ul{
+	list-style: none outside none;
+    position: relative;
+    z-index: 3;
+}
+.navBarHair{
+	width:80px;
+	height:40px;
+	color:#ffffff;
+	text-align:center;
+	line-height: 43px;
+	float:left;
+	font-family: 'Special Elite', cursive;
+	font-size: 18px;
+	font-weight: 200;
+	position:relative;
+	margin-left:0px;
+}
+.navBarHair:active{
+	color:#000000;
+}
+.navBarHair:hover{
+	background-image:url(images/header_nav_bar/brands.png);
+	color:#000000;
+	
+}
+.headerDropdownHair{
+	 float: left;
+    height: 0px;
+    left: -195px;
+    top: 30px;
+    width: 439px;
+}
+.dropdownContainerHair{
+	background-color: black;
+    border: 5px solid #3FB8AF;
+    box-shadow: 0 0 20px 15px #000000;
+    height: 200px;
+    margin-left: 43px;
+    margin-top: 52px;
+    position: absolute;
+    width: 345px;
+	overflow:hidden;
+}
+.dropdownContainerHair img{
+	 bottom: 0;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+.navBarHair ul{
+	list-style: none outside none;
+    position: relative;
+    z-index: 3;
+}
+.navBarJewel{
+	width:80px;
+	height:40px;
+	color:#ffffff;
+	text-align:center;
+	line-height: 43px;
+	float:left;
+	font-family: 'Special Elite', cursive;
+	font-size: 18px;
+	font-weight: 200;
+	position:relative;
+}
+.navBarJewel:active{
+	color:#000000;
+}
+.navBarJewel:hover{
+	background-image:url(images/header_nav_bar/brands.png);
+	color:#000000;
+}
+.navBarJewel ul{
+	list-style: none outside none;
+    position: relative;
+    z-index: 3;
+}
+.headerDropdownJewel{
+	 float: left;
+    height: 0px;
+    left: -260px;
+    top: 30px;
+    width: 439px;
+}
+.dropdownContainerJewel{
+	background-color: black;
+    border: 5px solid #3FB8AF;
+    box-shadow: 0 0 20px 15px #000000;
+    height: 200px;
+    margin-left: 43px;
+    margin-top: 52px;
+    position: absolute;
+    width: 345px;
+	overflow:hidden;
+}
+.dropdownContainerJewel img{
+	 bottom: 0;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+.navBarSale{
+	width:80px;
+	height:40px;
+	color:#ffffff;
+	text-align:center;
+	line-height: 43px;
+	float:left;
+	font-family: 'Special Elite', cursive;
+	font-size: 18px;
+	font-weight: 200;
+	position:relative;
+	margin-left:-5px;
+}
+.navBarSale a{
+	margin-left:5px;
+}
+.navBarSale:active{
+	color:#000000;
+}
+.navBarSale:hover{
+	background-image:url(images/header_nav_bar/brands.png);
+	color:#000000;
+}
+.headerDropdownSale{
+	 float: left;
+    height: 0px;
+    left: -325px;
+    top: 30px;
+    width: 439px;
+}
+.dropdownContainerSale{
+	background-color: black;
+    border: 5px solid #3FB8AF;
+    box-shadow: 0 0 20px 15px #000000;
+    height: 200px;
+    margin-left: 43px;
+    margin-top: 52px;
+    position: absolute;
+    width: 345px;
+	overflow:hidden;
+}
+.dropdownContainerSale img{
+	 bottom: 0;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+.navBarSale ul{
+	list-style: none outside none;
+    position: relative;
+    z-index: 3;
+}
+
+.dropdown {
+	overflow: hidden;
+	z-index:3;
+	position:absolute;
+}
+.headerDropdown{
+	height: 0px;
+	width: 400px;
+	float:left;
+	background-image:url(images/header_nav_bar/dropdownbackground.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.headerDropdownLink{
+	line-height:25px;
+}
+.headerDropdownLink2{
+	line-height:13px;
+	margin-top: 11px;
+}
+.headerDropdownLink2 a{
+	text-decoration:none;
+	color:white;
+	font-family: 'Montserrat', sans-serif;
+	font-size:12px;
+	line-height:10px;
+	margin-left:0px;
+}
+.headerDropdownLink a{
+	text-decoration:none;
+	color:white;
+	font-family: 'Montserrat', sans-serif;
+	font-size:16px;
+}
+.headerDropdownLink2 a{
+	text-decoration:none;
+	color:white;
+	font-family: 'Montserrat', sans-serif;
+}
+.headerDropdownLink a:hover{
+	color:#3fb8af;
+}
+.headerDropdownLink2 a:hover{
+	color:#3fb8af;
+}
+.dropdownSpacer{
+	width:100%;
+	height:50px;
+}
+.dropdownSpacerBrand{
+	width:100%;
+	height:50px;
+}
+.dropdownSpacerEyes{
+	width:100%;
+	height:30px;
+}
+.headerDropdownBrand ul{
+	float: left;
+    height: 100%;
+    list-style: none outside none;
+    margin-left: 0;
+    margin-top: -245px;
+    position: relative;
+    width: 90px;
+    z-index: 5;
+}
+.headerDropdown ul{
+	list-style:none;
+}
+.headerDropdown li{
+	list-style:none;
+	 margin-left: 10px;
+}
+
+.headerAdBar{
+    border: medium none;
+    float: left;
+    height: 80px;
+    margin-left: 43px;
+    width: 940px;
+}
+
+/*************************************************************************************************************************/
+/**Global Banner/Informational Page**/
+.categoryText{
+}
+.categoryText h1{
+	font-family: 'Special Elite', cursive;
+	color:#ff3d7f;
+	margin-top:10px;
+}
+.categoryText p{
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+/*************************************************************************************************************************/
+/*************************************************************************************************************************/
+/**main content area**/
+#mainContentArea{
+	float:left;
+	width:1020px;
+}
+
+
+/*************************************************************************************************************************/
+/*************************************************************************************************************************/
+/**Footer**/
+.footer{
+    float: left;
+    margin-top: 10px;
+    width: 100%;
+}
+.footer div.centeringContainerFooter{
+	padding-top: 15px;
+	border-top: medium double #3FB8AF;
+}
+.footerImg{
+	background-repeat:no-repeat;
+	position:absolute;
+	float:left;
+	z-index:1;
+	left:0;
+}
+
+/*************************************************************************************************************************/
+/**Top Third**/
+
+.footerTopThird{
+	width:100%;
+	height:65px;
+	background-color:#3fb8af;
+	border-bottom:solid 5px #7fc7af;
+	float:left;
+}
+.footerTopThird H5{
+	float:right;
+	font-family: 'Montserrat', sans-serif;
+	color:black;
+	
+}
+.footerTopThird H6{
+	float:right;
+	font-family: 'Montserrat', sans-serif;
+	color:black;
+}
+.footerNewsLabel{
+	margin-left:40px;
+	margin-top:16px;
+}
+.footerTwit{
+	margin-top:16px;
+	float:right;
+	margin-right:25px;
+}
+.footerFb{
+	margin-top:16px;
+	float:right;
+	margin-right:20px;
+}
+.footerInsta{
+	margin-top:16px;
+	float:right;
+	margin-right:20px;
+}
+#subscribeFrm{
+	height:52px;
+	width: 635px;
+	float:right;
+}
+.userInfo{
+	height:80px;
+	width: 555px;
+	border:none;
+}
+.subName{
+	float:left;
+	height:30px;
+	width:200px;
+	margin-top:8px;
+	margin-right:15px;
+}
+.subEmail{
+	float:left;
+	height:30px;
+	width:200px;
+	margin-top:8px;
+}
+.subButton{
+	float:left;
+	height:37px;
+	width:125px;
+	margin-top:8px;
+	background-color:#000000;
+	font-family: 'Special Elite', cursive;
+	border-radius:0px;
+	color:#ffffff;
+	border:none;
+	font-size:18px;
+}
+.subscriberLists{
+	padding:0px;
+}
+
+/*************************************************************************************************************************/
+/**Mid Third**/
+
+.footerMidThird{
+	border-bottom:solid 5px #7fc7af;
+	background-color:#000000;
+	height:290px;
+	width:100%;
+	float:left;
+}
+.footerMidThird h3{
+	color:#3fb8af;
+	font-family: 'Special Elite', cursive;
+	font-size:18px;
+	font-weight:200;
+	margin-left: 40px;
+	margin-top: 20px;
+}
+.footerMidThird li{
+	margin-top:10px;
+}
+.footerMidThird a{
+	color:#ffffff;
+	font-size:14px;
+	font-family: 'Montserrat', sans-serif;
+	text-decoration:none;
+}
+.footerMidThird a:hover{
+	color:#ff3d7f;
+}
+.footerNewsLabel div{
+	clear:right;
+}
+
+/*************************************************************************************************************************/
+/**Bottom Third**/
+.footerBottomThird{
+	width:100%;
+	height:350px;
+	float:left;
+}
+.footerBottomThird h1{
+	color:#ee3a77;
+	font-family: 'Special Elite', cursive;
+	margin-top:20px;
+	margin-left:20px;
+	font-weight:100;
+}
+.footerBottomThird p{
+color:#ffffff;
+margin-left:20px;
+}
+.footerBottomThird h4{
+	display:inline;
+	margin-right:120px;
+	margin-left:120px;
+	line-height: 140px;
+}
+.footerRibbon{
+	background:url(images/footer/ribbonbar.png) left center repeat-x;
+	width:100%;
+	height:140px;
+	text-align:center;
+	position:relative;
+	z-index:2;
+}
+
+/*************************************************************************************************************************/
+/*************************************************************************************************************************/
+/**Homepage**/
+/**homepageTopSec**/
+.homepageTopSec{
+	position:relative;
+}
+.prevHPSearchCaro{
+	top: 22px; 
+	left: 265px;
+}
+.nextHPSearchCaro{
+	right: 270px;
+    top: 22px;
+}
+.prevHPSearchCaro2{
+	top: 22px; 
+	left: 270px;
+}
+.nextHPSearchCaro2{
+	right: 260px;
+    top: 22px;
+}
+.carouselHPBannerCont{
+	position:relative;
+	height:390px;
+	width:710px;
+	margin-left:43px;
+	float:left;
+	top:15px;
+	overflow:hidden;
+}
+.carouselHPBannerCont div.caroufredsel_wrapper{
+	clear: both;
+    float: left;
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+    overflow: hidden !important;
+}
+.carouselHPBannerList{
+	overflow:hidden;
+	padding-left:0px;
+}
+.carouselHPBannerList li{
+    width:710px;
+    height: 390px;
+    padding: 0;
+    display: block;
+    float: left;
+}
+.carouselHPButton{
+	position:absolute;
+	height:390px;
+	z-index: 1;
+}
+
+.carouselHPBannerList img{
+	 height: 390px;
+    width: 710px;
+}
+#paginCaro{
+	bottom: 20px;
+    height: 20px;
+    left: 315px;
+    overflow: visible;
+    position: absolute;
+    width: 100px;
+    z-index: 2;
+}
+#paginCaro a{
+	background-image:url(images/homepage/pagination_non_vis.png);
+	width:17px;
+	height:17px;
+	display:block;
+	float:left;
+	margin:3px;
+}
+#paginCaro a span{
+	display:none;
+	}
+#paginCaro a.selected{
+	background-image:url(images/homepage/pagination_vis.png);
+}
+
+.homepageSignUp{
+	height:390px;
+	width:230px;
+	background-image:url(images/homepage/newsletterbg.png);
+	float:left;
+	margin-top: 16px;
+}
+
+.homepageSignUp div{
+	padding-top:0;
+	width:100%;
+}
+
+.homepageSignUp div h2, h1{
+	color:white;
+	text-align:center;
+	font-family: 'Montserrat', sans-serif;
+}
+.homepageSignUp div h2{
+	font-size: 16px;
+	margin-top:10px;
+}
+.homepageSignUp div h1{
+	font-size:22px;
+}
+
+.homepageSignUp div #subscribeFrm{
+	float: right;
+    height: 154px;
+    margin-right: 0;
+    margin-top: 15px;
+    width: 230px;
+}
+
+.homepageSignUp div hr{
+	width:40px;
+	display:inline-block;
+	color:#313131;
+	margin-left:10px;
+	margin-top:15px;
+}
+.homepageSignUp div h3{
+	display:inline-block;
+	color:#313131;
+	vertical-align:3px;
+	margin-left:10px;
+	margin-top:15px;
+	font-size: 18px;
+}
+
+.userInfo2{
+	border: medium none;
+    float: right;
+    height: 156px;
+    padding-top: 0;
+    width: 90%;
+}
+
+.userInfo2 input{
+    margin-right: 12px;
+}
+.userInfo2 label{
+	float:left;
+	margin-left:14px;
+}
+.homepageSubInput{
+	width:85%;
+	height:30px;
+}
+
+.homepageSubButton{
+	background-color: #000000;
+    border: medium none;
+    border-radius: 0 0 0 0;
+    color: black;
+    float: right;
+    font-family: 'Special Elite',cursive;
+    font-size: 16px;
+    height: 30px;
+    margin-top: 10px;
+	padding-top: 10px !important;
+    width: 100px;
+}
+
+.homepageSignUp div.socMed{
+	width:100%;
+	height:35px;
+	float:left;	
+}
+
+.socMed img{
+	margin-left:34px;
+}
+
+.homepageSignUp div.homepageSignUpBottom{
+	background-image: url("images/homepage/newsletterSwatch.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+    height: 75px;
+    margin-top: 12px;
+    width: 100%;
+}
+
+/*************************************************************************************************************************/
+/**homepageBottomSec**/
+#homeProdSearchSale{
+	width:950px;
+	height:1025px;
+}
+#homeProdSearchBestSellers{
+	width:950px;
+	height:1025px;
+}
+#homeProdSearchDiscontinued{
+	width:950px;
+	height:1025px;
+}
+.carouselHPSearchCont{
+	margin-left:30px;
+}
+.carouselHPSearchList{
+	width:950px;
+	height:900px;
+}
+.carouselHPSearchPagination{
+	float:left;
+	position:relative;
+	width:950px;
+}
+.carouselHPSearchPagination a{
+	position:absolute;
+	z-index:2;
+}
+.carouselSearchPaginTitle{
+	float:left;
+	padding-left:0 !important;
+}
+.carouselSearchPaginTitleBottom{
+	float:left;
+	padding-left:0 !important;
+}
+.carouselSearchPaginTitle li{
+	float:left;
+	width:315px;
+	text-align:center;
+}
+.carouselSearchPaginTitleBottom li{
+	float:left;
+	width:320px;
+	text-align:center;
+}
+.carouselSearchPaginTitle h2{
+	color:#3fb8af;
+}
+.carouselSearchPaginTitleBottom h2{
+	color:#3fb8af;
+}
+
+/*************************************************************************************************************************/
+/*************************************************************************************************************************/
+/**Category Page**/
+
+.categoryTemplate{
+	width:1020px;
+}
+.breadcrumb{
+	text-align:center;
+	width: 500px;
+	margin-left: 350px;
+	margin-right: auto;
+}
+.breadcrumb a{
+	color:#349890;
+	text-decoration:none;
+}
+.breadcrumb li a:hover{
+	color:#ff3d7f;
+}
+.breadcrumb li:last-child a{
+	color:white;
+}
+.catName{
+	color:black;
+}
+.catListingCont{
+	width:100%;
+}
+div .catListingCat{
+	width:22% !important;
+	height:120px !important;
+	background:url(images/category_page/category_listing_norm.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+	float:left;
+	margin-left:15px;
+}
+div .catListingCat:hover{
+	background:url(images/category_page/category_listing_hover.png);
+	background-repeat:no-repeat;
+	background-size:contain;
+}
+.catListingCat h1{
+	line-height: 155px;
+	font-family: 'Special Elite', cursive;
+	font-weight: 400;
+	color:black;
+}
+.categoryTemplate h2{
+	color:#3fb8af;
+	float: left;
+	font-family: 'Special Elite', cursive;
+	font-weight: 200;
+    margin-left:60px;
+	margin-bottom:20px;
+    padding-top: 15px;
+	clear:both;
+	text-align: center;
+    width: 90%;
+}
+.categoryTemplate h3{
+	color:#ff3d7f;
+	font-size:24px;
+	float: left;
+	font-family: 'Special Elite', cursive;
+	font-weight: 200;
+    margin-left:60px;
+	margin-bottom:20px;
+    padding-top: 15px;
+	clear:both;
+	text-align: center;
+    width: 90%;
+}
+/*************************************************************************************************************************/
+/**Search Categories**/
+
+#catCatSearchSale{
+	width:1300px;
+	height:1000px;
+}
+#catCatSearchBestSellers{
+	width:1300px;
+	height:1000px;
+}
+#catCatSearchDiscontinued{
+	width:1300px;
+	height:1000px;
+}
+.carouselCatSearchCont{
+	margin-left:30px;
+}
+.carouselCatSearchList{
+	width:1300px;
+	height:1000px;
+}
+.carouselCatSearchList div{
+	float:left;
+}
+.carouselCatSearchList ul{
+	float:left;
+	width:1300px;
+	height:1075px;
+}
+#recentlyViewedItemsContainer{
+	float: left;
+    height: 350px;
+    overflow: hidden;
+    width: 985px;
+}
+#recentlyViewedItemsContainer h2{
+	font-family: 'Special Elite', cursive;
+	font-weight:200;
+	color:#3fb8af;
+	text-align:center;
+}
+#recentlyViewedItemsContainer h4{
+	font-family: 'Special Elite', cursive;
+	font-weight:200;
+	color:#3fb8af;
+	text-align:center;
+	margin-top:125px;
+}
+.carouselCatSearchPagination{
+	float:left;
+	position:relative;
+	width:1300px;
+}
+.carouselCatSearchPagination a{
+	position:absolute;
+	z-index:2;
+}
+.carouselCatSearchPaginTitle{
+	float:left;
+	padding-left:0 !important;
+	margin-left:40px !important;
+}
+.carouselCatSearchPaginTitleBottom{
+	float:left;
+	padding-left:0 !important;
+	margin-left:40px !important;
+}
+.carouselCatSearchPaginTitle li{
+	float:left;
+	width:433px;
+	text-align:center;
+}
+.carouselCatSearchPaginTitleBottom li{
+	float:left;
+	width:433px;
+	text-align:center;
+}
+.carouselCatSearchPaginTitle h2{
+	color:#3fb8af;
+}
+.carouselCatSearchPaginTitleBottom h2{
+	color:#3fb8af;
+}
+
+
+/*************************************************************************************************************************/
+/**Bottom Links**/
+.brandList{
+	width:100%;
+	height:570px;
+	float:left;
+	padding-left: 20px;
+}
+.brandList ul{
+	width:20%;
+	float:left;
+}
+.brandList li{
+	font-family: 'Montserrat', sans-serif;
+	list-style:none;
+	margin-bottom:5px;
+}
+.brandList a{
+	color:white;
+}
+.brandList a:hover{
+	color:#3fb8af;
+}
+.suite7List{
+	width:100%;
+	height:270px;
+	float:left;
+	padding-left: 20px;
+}
+.suite7List ul{
+	width:20%;
+	float:left;
+}
+.suite7List li{
+	font-family: 'Montserrat', sans-serif;
+	list-style:none;
+	margin-bottom:5px;
+}
+.suite7List a{
+	color:white;
+}
+.suite7List a:hover{
+	color:#ff3d7f;
+}
+.suite7List span{
+	color:#3fb8af;
+}
+
+
+/*************************************************************************************************************************/
+/**productListTemplate**/
+.productList{
+	padding-left:5px;
+	padding-right: 20px;
+}
+.productList2{
+	padding-left:55px;
+	padding-right: 20px;
+}
+.productList2 li{
+	width: 210px;
+	height:330px;
+	margin-bottom:10px;
+	margin-left: 6px;
+	position:relative;
+}
+.productList li{
+	width: 210px;
+	height:330px;
+	margin-bottom:10px;
+}
+.prodThumbContainer{
+	border:solid 6px rgb(40, 40, 40);
+	border:solid 6px rgba(200, 200, 200, .2);
+	width:210px;
+	height: 170px;
+	margin-bottom:10px;
+}
+
+.prodListDetails h5{
+	color:#b4b5b4;
+	font-family: 'Montserrat', sans-serif;
+	font-size:14px;
+	height: 60px;
+}
+.prodListPriceBuyCont{
+	width:220px;
+	height:81px;
+}
+.prodListPriceBuyCont div{
+	width:50%;
+	height:40px;
+	float:left;
+	background-color:rgb(40, 40, 40);
+	background-color:rgba(200, 200, 200, .2);
+}
+.prodListPriceBuyCont h1{
+	color:white;
+	font-family: 'Special Elite', cursive;
+	line-height:45px;
+	font-size: 20px;
+}
+.prodListPriceBuyCont form{
+	float:right;
+	width:50%;
+	height:50px;
+}
+.moreDetailsButton{
+	float:right;
+	width:50%;
+	height:50px;
+}
+.moreDetailsButton div{
+	width:100%;
+	float:left;
+	height:40px;
+	font-family: 'Special Elite', cursive;
+	font-size: 20px;
+	border-radius: 0 0 0 0;
+	border: medium none;
+	background-color:#3FB8AF;
+}
+.moreDetailsButton div:hover{
+	background-color:#EE3A77;
+}
+div .moreDetailsButton span{
+	font-size: 16px;
+    margin-top: 13px;
+	display: block;
+	text-align:center;
+}
+.prodListPriceBuyCont button{
+	width:100%;
+	float:left;
+	height:40px;
+	font-family: 'Special Elite', cursive;
+	font-size: 20px;
+	border-radius: 0 0 0 0;
+	border: medium none;
+}
+
+.prodListPriceBuyCont h4{
+	color:#a7a8a7;
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 200;
+}
+.prodListPriceBuyCont span{
+	font-size:8px;
+}
+.prodViewerAddToCartForm button span{
+	font-size: 20px;
+}
+.price span{
+	font-size: 14px;
+}
+
+.mpControlContainer{
+	height:45px;
+	clear:both;
+	width:960px;
+	margin-left:5px;
+}
+.mpControls{
+	background-color:black;
+	background-image:none;
+	color:white;
+	border:none;
+	height:45px;
+	line-height:43px;
+	width:100%;
+}
+div .mpControlsPagination{
+	line-height: 43px;
+	width:141px;
+	float:right;
+}
+.mpControlsPagination ul li a span{
+	float:left;
+	margin-right:0px;
+}
+.mpControlsPagination ul{
+	height:40px;
+}
+.mpControlContainer span{
+	color:white;
+	float:right;
+	margin-right:30px;
+}
+.mpPaginationColor span{
+	color:#3fb8af;
+}
+.mpControlContainer span:hover{
+	color:#ff3d7f;
+}
+
+ul .mpControlJumpToPage{
+	line-height:20px;
+	margin-left: 3px !important;
+	margin-bottom: 7px !important;
+	float:left;
+}
+
+.ddUlMenu li ul{
+	height:auto;
+}
+.prodViewerAddToCartForm button span{
+	padding-top:10px !important;
+}
+form.ProductListForm button.addToCartButtonProdItem{
+	height: 40px;
+    padding-top: 3px;
+    width: 100%;
+}
+.addToCartButtonProdItem{
+	background-color:#3FB8AF;
+}
+.addToCartButtonProdItem:hover{
+	background-color:#ff3d7f;
+}
+form.ProductListForm fieldset{
+margin-bottom:0;
+}
+
+
+/*************************************************************************************************************************/
+/**categoryListTemplate**/
+.categoryList{
+	margin-bottom:40px;
+	margin-left:10px;
+}
+.categoryList > li{
+	height: 30px;
+	margin-bottom:0px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	width: 23%;
+	text-align: center;
+	line-height: 115px;
+}
+
+
+/*************************************************************************************************************************/
+/*************************************************************************************************************************/
+/**categoryProductListTemplate**/
+.productListTemplate{
+	width:1020px;
+}
+
+.productListTemplate h2{
+	color:#3fb8af;
+	float: left;
+	font-family: 'Special Elite', cursive;
+	font-weight: 200;
+    margin-left:60px;
+	margin-bottom:20px;
+    padding-top: 15px;
+	clear:both;
+	text-align: center;
+    width: 90%;
+}
+.productListTemplate h3{
+	color:#ff3d7f;
+	font-size:24px;
+	float: left;
+	font-family: 'Special Elite', cursive;
+	font-weight: 200;
+    margin-left:60px;
+	margin-bottom:20px;
+    padding-top: 15px;
+	clear:both;
+	text-align: center;
+    width: 90%;
+}
+
+/*************************************************************************************************************************/
+/*************************************************************************************************************************/
+/**Quickview**/
+.quickviewImageContainer{
+	 border: medium none !important;
+}
+.quickviewImageContainer div{
+	 width: 240px !important;
+}
+.priceContainer{
+	float:right;
+}
+.priceContainer h6{
+	color:white;
+	text-align: center;
+	margin-bottom: 20px;
+	margin-left: 0px;
+}
+.priceContainer h5{
+	color: #ff9e9d;
+    font-size: 29px;
+    text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	margin-left: 0px;
+}
+.priceContainer h5 span.cents{
+	font-size: 14px;
+    vertical-align: super;
+}
+.priceContainer h4{
+	color: #FF3D7F;
+    font-size: 40px;
+    text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	margin-left: 0px;
+	clear:right;
+}
+.priceContainer h4 span.cents{
+	font-size: 16px;
+    vertical-align: 15px;
+}
+.priceContainer span.savings{
+	color: #3FB8AF;
+    text-align: center;
+	font-family: 'Montserrat', sans-serif;
+    margin-left: 10px;
+}
+.prodPriceSummaryContainer{
+	float:left;
+	width: 200px;
+}
+.prodPriceSummaryContainer2{
+	float:left;
+	width: 240px;
+}
+.prodPriceSummaryContainer2 form.prodViewerAddToCartForm{
+	padding-left:20px;
+}
+.prodPriceSummaryContainer2 form.prodViewerAddToCartForm input{
+	border:none;
+}
+.prodSummaryContainer h6{
+	color:#ff9e9d;
+	margin-top: 10px;
+	margin-left: 0px;
+	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;
+}
+.prodSummaryContainer2 h6{
+	color:#ff9e9d;
+	margin-top: 10px;
+	margin-left: 0px;
+	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;
+}
+.prodSummaryContainer h6.qvSKU{
+	margin-left:0px;
+}
+.prodViewerAddToCartForm{
+	
+}
+.prodViewerAddToCartForm button.qvAddToCart{
+	border: medium none;
+    border-radius: 0 0 0 0;
+    width: 140px;
+	margin-left: 30px;
+	font-family: 'Special Elite', cursive;
+}
+.prodViewerAddToCartForm button.qvAddToCart2{
+	border: medium none;
+    border-radius: 0 0 0 0;
+    width: 170px;
+	margin-left:40px;
+	font-family: 'Special Elite', cursive;
+}
+
+/*************************************************************************************************************************/
+/*************************************************************************************************************************/
+/**Product Page**/
+.productTemplate{
+	width:1020px;
+}
+/*************************************************************************************************************************/
+/**Product Image section**/
+.imageContainer{
+	 float: left;
+    height: auto;
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 0;
+    width: 252px;
+}
+.imageContainer2{
+	padding-right:0px;
+	margin-right:24px;
+	float:left;
+	width:305px;
+	height:735px;
+	margin-left:45px;
+}
+.imageContainer3{
+	 float: left;
+    height: auto;
+    margin-left: 45px;
+    margin-right: 0;
+    padding-right: 0;
+    width: 302px;
+}
+.imageContainer2 div{
+	border:solid 6px rgba(200, 200, 200, .2);
+	width: 290px;
+	float:left;
+}
+.imageContainer3 div{
+	border:solid 6px rgba(200, 200, 200, .2);
+	width: 290px;
+	float:left;
+}
+div .tagsContainer{
+	border:none;
+}
+.imageContainer div{
+	border:solid 6px rgba(200, 200, 200, .2);
+	width: 290px;
+	float:left;
+}
+.prodViewerContainer .prodThumbs div{
+	width: 100px;
+}
+div .prodThumbs{
+	margin-top:10px;
+	border:none;
+}
+div .socialLinks{
+	border:none;
+	height: 50px;
+    width: 100%;
+}
+#socialLinks{
+	border:none;
+}
+#socialLinks a{
+	
+}
+.atclear{
+	border:none !important;
+}
+
+.intShippingModal .ui-dialog-titlebar {display:none;}
+
+/*************************************************************************************************************************/
+/**Product Summary Section**/
+
+.prodSummaryContainer{
+	float:left;
+	width: 200px;
+	height:auto;
+	margin-right:0px;
+}
+.prodSummaryContainer2{
+	float:left;
+	width: 345px;
+	height:auto;
+	margin-right:0px;
+	margin-left: 30px;
+}
+.prodSummaryContainer3{
+	float:left;
+	width: 375px;
+	height:auto;
+	margin-left: 30px;
+    margin-right: 30px;
+}
+.prodSummaryContainer h1{
+	font-size:22px;
+	font-family: 'Montserrat', sans-serif;
+	text-align:left;
+	line-height: 20px;
+}
+.prodSummaryContainer h5{
+	color:white;
+	font-family: 'Montserrat', sans-serif;
+}
+.prodSummaryContainer div {
+	color:white;
+	font-family: 'Montserrat', sans-serif;
+	font-size:14px;
+}
+.prodSummaryContainer2 h1{
+	font-size:22px;
+	font-family: 'Montserrat', sans-serif;
+	text-align:left;
+	line-height: 20px;
+}
+.prodSummaryContainer2 h5{
+	color:white;
+	font-family: 'Montserrat', sans-serif;
+}
+.prodSummaryContainer2 div {
+	color:white;
+	font-family: 'Montserrat', sans-serif;
+	font-size:14px;
+}
+.prodSummaryContainer3 h1{
+	font-size:22px;
+	font-family: 'Montserrat', sans-serif;
+	text-align:left;
+	line-height: 20px;
+}
+.prodSummaryContainer3 h5{
+	color:white;
+	font-family: 'Montserrat', sans-serif;
+}
+.prodSummaryContainer3 div {
+	color:white;
+	font-family: 'Montserrat', sans-serif;
+	font-size:14px;
+}
+.prodMSRP{
+	 text-decoration: line-through;
+}
+.prodMSRP span.cents{
+	 text-decoration: line-through;
+}
+
+/*************************************************************************************************************************/
+/**Product Price/Cart/Review Section**/
+.priceReviewContainer{
+	width:205px;
+	float:left;
+	height:auto;
+	margin-left: 0px;
+}
+.priceReviewContainer h4{
+	color:white;
+	font-size:14px;
+	font-family: 'Montserrat', sans-serif;
+	text-align:center;
+}
+
+.priceContainer{
+	width:100%;
+}
+.priceContainer h4{
+	font-family: 'Montserrat', sans-serif;
+}
+.priceContainer h1{
+	color:#ff3d7f;
+	font-family: 'Montserrat', sans-serif;
+}
+.priceContainer h2{
+	font-family: 'Montserrat', sans-serif;
+	color:#ff9e9d;
+	text-decoration:line-through;
+	text-align:center;
+}
+.priceContainer h3{
+	font-family: 'Montserrat', sans-serif;
+	display:inline-block;
+	color:#3fb8af;
+}
+.savingsPercentage{
+	font-size: 10px;
+    vertical-align: text-top;
+}
+.savingsDifference{
+	margin-left:65px;
+}
+.prodPriceSummaryContainer2 div span.savings span.savingsDifference{
+	75px;
+}
+
+.prodViewerAddToCartForm{
+	width:100%;
+}
+.prodViewerAddToCartForm fieldset{
+	width:100%;
+}
+.prodViewerAddToCartForm input{
+	width:60%;
+}
+form .prodQuantity{
+	width:180px;
+	height:32px;
+	background-color:rgb(40, 40, 40);
+	background-color:rgba(200, 200, 200, .2);
+	border: medium none;
+	padding: 10px;
+	margin-left: 0px;
+	margin-bottom: 10px;
+}
+.prodQuantity fieldset{
+	width:120px;
+	float:left;
+}
+.prodQuantity input{
+	width:100%;
+	height:28px;
+	border-radius:0px;
+	border:none;
+	font-size: 20px;
+	text-align: center;
+}
+div .quantityButton{
+	width:60px;
+	height:30px;
+	float:left;
+	border-radius:0px;
+	border:medium none;
+	background-color:#3fb8af;
+	font-family: 'Special Elite', cursive;
+	font-size: 12px;
+}
+.quantityButton span{
+}
+
+form .addToCartButton{
+	margin-left:0px;
+	width: 200px;
+	border: medium none;
+    border-radius: 0 0 0 0;
+	height: 50px;
+	font-family: 'Special Elite', cursive;
+	font-size: 22px;
+}
+
+.reviewButton{
+	margin-left:0px;
+	width: 200px;
+	border: medium none;
+    border-radius: 0 0 0 0;
+	height: 50px;
+	font-family: 'Special Elite', cursive;
+	font-size: 18px;
+	margin-bottom:20px;
+	background-color:#ff3d7f;
+}
+.writeReviewButton{
+	margin-left:0px;
+	width: 200px;
+	border: medium none;
+    border-radius: 0 0 0 0;
+	height: 50px;
+	font-family: 'Special Elite', cursive;
+	font-size: 18px;
+	color:white;
+	background-color:black;
+	margin-bottom:20px;
+}
+.wishlistButton{
+	margin-left:0px;
+	width: 200px;
+	border: medium none;
+    border-radius: 0 0 0 0;
+	height: 50px;
+	font-family: 'Special Elite', cursive;
+	font-size: 18px;
+	color:white;
+	background-color:black;
+}
+h1 .cents{
+	font-size: 18px;
+	vertical-align:top;
+	 line-height: 29px;
+}
+li div h1 .cents{
+	font-size: 14px;
+    line-height:40px;
+    vertical-align: top;
+}
+h2 .cents{
+	font-size: 18px;
+	vertical-align:top;
+	line-height: 26px;
+}
+.priceReviewContainer span.reviewSprite{
+	margin-left:73px;
+}
+.prodAddToCart{
+	color:#FF3D7F;
+	font-family: 'Special Elite', cursive;
+	font-weight:200;
+	margin-left: 15px;
+    text-align: center;
+}
+.prodViewerAddToCartForm span.notAvailableForPurchase{
+	color:white;
+}
+div.priceContainer h4.displayInvAmount{
+	margin-top:10px;
+	font-family: 'Special Elite', cursive;
+	color:#FF3D7F;
+	font-size: 19px;
+}
+
+/*************************************************************************************************************************/
+/**Search Categories**/
+
+.prodProdSearchSale{
+	width:1300px;
+	height:1000px;
+}
+.prodSearchBestSellers{
+	width:1300px;
+	height:1000px;
+}
+.prodProdSearchSale{
+	width:1300px;
+	height:1000px;
+}
+.carouselProdSearchCont{
+	margin-left:30px;
+}
+.carouselProdTitleCont{
+	color:#3fb8af;
+	text-align:center;
+	clear:both;
+	overflow: hidden;
+	 height: 24px;
+}
+.carouselProdTitleCont h2{
+	font-family: 'Special Elite', cursive;
+	color:#3fb8af;
+	font-weight:200;
+}
+
+.carouselProdListCont{
+	clear:both;
+	overflow:hidden;
+	height:1020px;
+	width:1020px;
+}
+
+
+.carouselYouMightLikeCont{
+	display:none;
+	height:1000px;
+	width:100%;
+}
+.prodSearchBestSellers{
+}
+
+.carouselProdSearchList{
+	width:1300px;
+	height:1000px;
+}
+.carouselProdSearchList div{
+	float:left;
+}
+.carouselProdSearchList ul{
+	float:left;
+	width:1300px;
+	height:1000px;
+}
+.carouselProdSearchPagination{
+	float:left;
+	position:relative;
+	width:1300px;
+}
+.carouselProdSearchPagination a{
+	position:absolute;
+	z-index:2;
+}
+.carouselProdSearchPaginTitle{
+	float:left;
+	padding-left:0 !important;
+}
+.carouselProdSearchPaginTitleBottom{
+	float:left;
+	padding-left:0 !important;
+}
+.carouselProdSearchPaginTitle li{
+	float:left;
+	width:433px;
+	text-align:center;
+	height:27px;
+	overflow:hidden;
+}
+.carouselProdSearchPaginTitleBottom li{
+	float:left;
+	width:433px;
+	text-align:center;
+}
+.carouselProdSearchPaginTitle h2{
+	color:#3fb8af;
+}
+.carouselProdSearchPaginTitleBottom h2{
+	color:#3fb8af;
+}
+.buttonBar{
+	margin-right: 35px;
+}
+
+/*************************************************************************************************************************/
+/**Reviews Modal**/
+.reviewLineItem li{
+	color:white;
+}
+.reviewLineItem p{
+	color:white;
+}
+
+
+/*************************************************************************************************************************/
+/*************************************************************************************************************************/
+/**Shopping Cart**/
+.cartZipCodeContainer, .cartAltButtonsContainer, .cartSummaryContainer{
+	border-bottom:none;
+}
+.ui-widget-content{
+	background:url(images/background.gif) repeat;
+}
+.ui-widget-header{
+	background-color:rgba(0, 0, 0, 0);
+	background-image:none;
+	border:none;
+}
+.ui-dialog .ui-dialog-title{
+	background-color:rgba(0, 0, 0, 0);
+	color:#FF3D7F;
+}
+
+/*************************************************************************************************************************/
+/**Cart Stuff Section**/
+
+.addToWishlistForm{
+	border: 6px solid rgba(200, 200, 200, 0.2);
+	width: 715px;
+	height:160px;
+}
+.addToWishlistForm div{
+	width: 700px;
+	height:150px;
+	background-color:#ffcc00;
+	padding-left:15px;
+	padding-bottom:10px;
+}
+.addToWishlistForm h1{
+	font-family: 'Special Elite', cursive;
+	font-weight:200;
+	color:black;
+	padding-top: 10px;
+}
+.addToWishlistForm p{
+	font-family: 'Montserrat', sans-serif;
+	padding-top:10px;
+}
+.wlAddCloseButton{
+	float:right;
+	font-family: 'Special Elite', cursive !important;
+	height: 35px;
+	padding: 5px;
+	margin-right: 10px;
+	border:none;
+	border-radius:0px;
+	background-color:#000000;
+	color:white;
+	font-size:14px !important; 
+}
+.wlAddConfirmButton{
+	float:right;
+	margin-right: 20px;
+	font-family: 'Special Elite', cursive !important;
+	height: 35px;
+	padding: 5px;
+	border:none;
+	border-radius:0px;
+	background-color:#3fb8af;
+	font-size:14px !important;
+}
+
+.prodThumbContainerCart{
+	border:solid 6px rgba(200, 200, 200, .2);
+	width:248px;
+	height: 200px;
+	margin-bottom:10px;
+	clear:left;
+}
+#cartStuffList{
+	width:604px;
+}
+#cartStuffList li{
+	width:255px !important;
+	float:left;
+	margin-left:35px;
+}
+.productListTemplateCart h4{
+	float:left;
+	color: #FFFFFF;
+	height:70px;
+}
+.prodThumbContainer{
+	float:left;
+}
+.cartQuantity{
+	border: 6px solid rgba(200, 200, 200, 0.2);
+    clear: left;
+    height: 30px;
+    margin-bottom: 10px;
+    width: 248px;
+}
+.cartQuantity input{
+	height: 30px;
+    width: 124px;
+	 float: left;
+	 border:none;
+	 padding:0px;
+}
+.cartQuantity button{
+    width: 124px;
+	height: 30px;
+	 float: left;
+	 border:none;
+	 font-family: 'Special Elite', cursive;
+	 background-color:#349890;
+	 font-size:16px;
+	 padding-top:5px;
+}
+
+.cartPrice{
+	
+    clear: left;
+    height: 40px;
+    margin-bottom: 10px;
+    width: 260px;
+}
+.cartPrice div{
+	height: 40px;
+    width: 50%;
+	 float: left;
+	 border:none;
+	 background-color:rgb(40, 40, 40);
+	 background-color:rgba(200, 200, 200, 0.2);
+	 font-family: 'Special Elite', cursive;
+}
+.cartPrice div span{
+	padding-left:43px;
+	color:white;
+	font-size:24px;
+	padding-top:6px;
+	display:inline-block;
+}
+div span .cents{
+	padding-left:0px;
+	font-size:14px;
+	vertical-align:super;
+}
+.cartPrice button{
+	height: 40px;
+    width: 50%;
+	 float: left;
+	 border:none;
+	 background-color: black;
+	 color:white;
+	 font-family: 'Special Elite', cursive;
+}
+.cartPrice button:hover{
+	background-color:#FF3D7F;
+	color:black;
+}
+.cartRemove{
+}
+.cartRemove h5{
+	color:#999999;
+}
+.cartRemove button{
+	float:right;
+}
+#paypalECButton{
+	margin-left:20px;
+}
+
+/*************************************************************************************************************************/
+/**Checkout and Pricing Section**/
+.cartSummaryTotalsContainer{
+	width:20%;
+}
+.cartSummaryContainer h5{
+	color:white;
+	float:left;
+	font-family: 'Montserrat', sans-serif;
+	margin-left:15px;
+	margin-right:50px;
+	margin-bottom:15px;
+	text-align:center;
+}
+.cartSummaryTotalsContainer h2{
+	color:white;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	padding-right:60px;
+	background-color:transparent;
+}
+.checkoutButton{
+	font-family: 'Special Elite', cursive !important;
+	width:220px;
+	height:45px;
+	border-radius:0px;
+	border:none !important;
+	font-weight: 200 !important;
+	font-size: 22px !important;
+	padding-top: 5px;
+}
+
+.cartSummaryContainer #couponContainer{
+	border: 10px solid rgba(200, 200, 200, 0.2);
+	float:right;
+	margin-right: 59px;
+	margin-bottom:10px;
+}
+.cartSummaryContainer #couponCode{
+	width:124px;
+	float:right;
+	border:none;
+	border-radius:0px;
+	height:28px;
+}
+.cartSummaryContainer #addCouponBtn{
+	float:right;
+	border:none;
+	border-radius:0px;
+	height:30px;
+	width:70px;
+}
+.orderTotal{
+	color: #FF3D7F;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+	margin-right: 60px;
+}
+.checkoutSuccess div{
+	color:white;
+}
+.formValidationError, .zwarn {
+	color: #C00;
+}
+.orderConfText{
+	color:white;
+}
+.billingAddressSection div address div{
+	color:white;
+}
+.chkoutPreflightTemplate div label span{
+	float:left;
+}
+.chkoutPreflightTemplate div div label span{
+	float:left;
+}
+
+.checkoutLoginPassCont{
+	float:left;
+}
+.checkoutLoginPassCont button{
+	margin-top:2px !important;
+	float:right !important;
+}
+.checkoutLoginEmailCont{
+	float:left;
+	clear:left;
+}
+.checkoutLoginPassWCont{
+	float:left;
+	clear:left;
+}
+/*************************************************************************************************************************/
+/**Helpful Links Section**/
+.cartLinks{
+	margin-top:20px;
+	width: 240px;
+	float:left;
+}
+.cartLinks div{
+	width:100px;
+	height:30px;
+	background-color:#ff3d7f;
+	width: 240px;
+}
+.cartLinks h4{
+	text-align:center;
+	line-height: 30px;
+	font-family: 'Montserrat', sans-serif;
+	color:black;
+}
+.cartLinks a{
+	color:white;
+	float:left;
+	clear:left;
+	font-family: 'Montserrat', sans-serif;
+	margin-top:15px;
+	margin-left: 10px;
+	font-weight: 600;
+	text-decoration:none;
+}
+.cartLinks a:hover{
+	color:#3fb8af;
+}
+
+/*************************************************************************************************************************/
+/**Bottom Section**/
+.cartStaticText{
+	float:left;
+	width:700px;
+}
+.cartStaticText h3{
+	color:#3fb8af;
+	font-family: 'Special Elite', cursive;
+	font-size: 20px;
+	font-weight: 200;
+}
+.cartStaticText p{
+	color:white;
+	font-size:12px;
+}
+
+
+/*************************************************************************************************************************/
+/*************************************************************************************************************************/
+/**Company page Templates**/
+.sideline{
+}
+.companyTitleBox{
+	width:250px;
+	height:40px;
+	background-color:#ff3d7f;
+	margin-top:30px;
+	margin-bottom:15px;
+}
+.companyTitleBox h3{
+	text-align:center;
+	line-height:40px;
+	font-family: 'Montserrat', sans-serif;
+	font-size:16px;
+	font-weight:600;
+	color:black;
+}
+
+#companyNav a{
+	color:white;
+	font-family: 'Montserrat', sans-serif;
+	font-weight:600;
+}
+#companyNav a:hover{
+	color:#3fb8af;
+}
+#companyNav a:active{
+	color:#ff9e9d;
+}
+
+/*************************************************************************************************************************/
+/**About Template**/
+#aboutArticle{
+	padding-left:60px;
+}
+#aboutArticle h1{
+	font-family: 'Special Elite', cursive;
+	font-weight:200;
+	color:#ff3d7f;
+	text-align:left;
+}
+#aboutArticle h4{
+	color:white;
+	font-family: 'Montserrat', sans-serif;
+}
+#aboutArticle h5{
+	color:#ff3d7f;
+	font-family: 'Montserrat', sans-serif;
+	font-size:16px;
+}
+
+/*************************************************************************************************************************/
+/**Contact Us Template**/
+#contactForm fieldset legend{
+	color:white;
+}
+#contactArticle{
+	margin-top:20px;
+}
+#contactArticle h1{
+	font-family: 'Special Elite', cursive;
+	font-weight:200;
+	color:#ff3d7f;
+}
+#contactContent p{
+	color:white;
+}
+
+/*************************************************************************************************************************/
+/**Shipping Template**/
+#shippingArticle{
+	margin-top:20px;
+}
+#shippingArticle h1{
+	font-family: 'Special Elite', cursive;
+	font-weight:200;
+	color:#ff3d7f;
+	margin-bottom:10px;
+}
+
+/*************************************************************************************************************************/
+/**Return Policy Template**/
+#returnArticle{
+	margin-top:20px;
+}
+#returnArticle h1{
+	font-family: 'Special Elite', cursive;
+	font-weight:200;
+	color:#ff3d7f;
+}
+
+/*************************************************************************************************************************/
+/**Payment Policy Template**/
+#paymentArticle{
+	margin-top:20px;
+}
+
+#paymentArticle h1{
+	font-family: 'Special Elite', cursive;
+	font-weight:200;
+	color:#ff3d7f;
+}
+
+/*************************************************************************************************************************/
+/**Privacy Policy Template**/
+#privacyArticle{
+	color:white;
+	margin-top:20px;
+}
+#privacyArticle h1{
+	font-family: 'Special Elite', cursive;
+	font-weight:200;
+	color:#ff3d7f;
+}
+div div.mainColumn div#privacyArticle h4, h3{
+	color:white;
+	font-family: 'Montserrat', sans-serif;
+	font-weight:400;
+	margin-bottom:0px;
+}
+
+/*************************************************************************************************************************/
+/**About Us Template**/
+#aboutArticle{
+	margin-top:20px;
+}
+
+/*************************************************************************************************************************/
+/**FAQ Template**/
+#faqArticle{
+	margin-top:20px;
+}
+#faqArticle h1{
+	font-family: 'Special Elite', cursive;
+	font-weight:200;
+	color:#ff3d7f;
+}
+#faqArticle div{
+	color:white; text-align:center;
+}
+
+/*************************************************************************************************************************/
+/*************************************************************************************************************************/
+/**CHECKOUT TEMPLATE**/
+..checkoutFormContainer{
+	width:1020px;
+}
+.checkoutFormContainer fieldset legend{
+	color:#ff3d7f;
+	font-size:28px;
+	font-family: 'Special Elite', cursive;
+	font-weight:100;
+	background-color:transparent;
+}
+.checkoutFormContainer h4{
+	color:white;
+}
+.checkoutContainer{
+	float: left;
+    width: 630px;
+}
+.panelContent button{
+	border: medium none;
+    border-radius: 0 0 0 0;
+    height: 25px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+	 margin-top: 0px;
+	 float:left;
+}
+.panelContent input{
+	height:23px;
+	border:none;
+	border-radius:0px;
+	margin-right: 0;
+}
+.panelContent button span{
+	font-size: 16px;
+    height: 20px;
+    padding-top: 5px !important;
+	font-family: 'Special Elite', cursive;
+	margin-bottom:2px;
+}
+
+/*************************************************************************************************************************/
+/**Login Section**/
+.accountCreateContainer{
+	clear: left;
+    float: left;
+}
+.accountCreateContainer span{
+	color:white;
+}
+.accountCreateContainer span:first-child{
+	border:thin solid;
+}
+.checkoutPWInput{
+	float:left;
+	clear:left;
+}
+.checkoutPWInput div{
+	color:white;
+}
+.checkoutPWInput input{
+	float: left;
+    height: 25px;
+    margin: 0;
+    padding: 0;
+    width: 203px !important;
+}
+.checkoutPWInput button{
+	float: left;
+}
+.loginEmailCheckout{
+	float:left;
+}
+/*************************************************************************************************************************/
+/**Account Creation Section**/
+.hint{
+	color:white;
+}
+.panelContent{
+	color:white;
+}
+.checkoutBillToShip label{
+	clear: left;
+    float: left;
+}
+.checkoutBillToShip span{
+	color:white;
+}
+
+/*************************************************************************************************************************/
+/**Cart Contents Section**/
+ .checkoutBillToShip label span:first-child{
+	 border: thin solid;
+ }
+ 
+/*************************************************************************************************************************/
+/**Cart Contents Section**/
+.CheckoutContents tr td span span.cents{
+	display: inline-block;
+    font-size: 12px;
+	vertical-align: top;
+	 line-height: 19px;
+}
+.CheckoutContents tr td span{
+	font-size:22px;
+	display: inline-block;
+}
+/*************************************************************************************************************************/
+/**Summary Section**/
+.orderTotal2{
+	color: #FF3D7F;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+}
+.orderTotal2 span.cents{
+	font-size: 20px;
+    line-height: 36px;
+    vertical-align: top;
+}
+.orderShipAmount{
+	color: #3FB8AF;
+    font-size: 26px;
+	font-family: 'Montserrat',sans-serif;
+	font-weight: 600;
+}
+.orderShipMethod{
+	font-size: 14px;
+	font-weight: 400;
+}
+.orderShipping{
+	font-weight: 600;
+	font-size: 18px;
+}
+.orderSubtotal{
+	color: #3FB8AF;
+    font-size: 26px;
+	font-family: 'Montserrat',sans-serif;
+	font-weight: 600;
+}
+.orderSubtotal  span.cents{
+    font-size: 14px;
+    line-height: 26px;
+    vertical-align: top;
+}
+.checkoutSummarySidebar{
+	float: right;
+    width: 350px;
+}
+.couponEntryContainer input{
+	height: 25px;
+    margin: 0;
+    padding: 0;
+    width: 140px;
+	float:left;
+}
+.placeOrderButton{
+	background-color: #3FB8AF;
+    background-image: none;
+    color: black;
+    height: 50px !important;
+    width: 200px;
+	padding-top:10px;
+	margin-left:75px !important;
+	margin-top:15px !important;
+}
+.placeOrderButton span{
+	font-size:24px !important;
+	font-family: 'Special Elite', cursive;
+}
+.chkoutCartSummaryTemplate div{
+	margin-left: 75px;
+    margin-right: 72px;
+    text-align: center;
+}
+.chkoutCartSummaryTemplate h3{
+	color:white;
+	margin-top: 5px;
+}
+.chkoutCartSummaryTemplate h4{
+	margin-left: 75px;
+    margin-right: 75px;
+	margin-top: 15px;
+    text-align: center;
+}
+
+.checkoutLinks{
+	margin-top:75px;
+	width: 305px;
+}
+.checkoutLinks div{
+	width:100px;
+	height:30px;
+	background-color:#ff3d7f;
+	width: 240px;
+}
+.checkoutLinks h4{
+	text-align:center;
+	line-height: 30px;
+	font-family: 'Montserrat', sans-serif;
+	margin-left:0px;
+	margin-right:0px;
+	margin-top:0px;
+	color:black;
+}
+.checkoutLinks a{
+	color:white;
+	float:left;
+	clear:left;
+	font-family: 'Montserrat', sans-serif;
+	margin-top:15px;
+	margin-left: 10px;
+	font-weight: 600;
+	text-decoration:none;
+}
+.checkoutLinks a:hover{
+	color:#3fb8af;
+}
+#shippingWarning{
+	float: right;
+    margin-right: 25px;
+    margin-top: 20px;
+    width: 295px;
+	color:#3FB8AF;
+}
+
+/*************************************************************************************************************************/
+/**Shipping Section**/
+.checkoutShipSidebar{
+	float: right;
+    width: 350px;
+}
+.checkoutShipSidebar div div h4{
+	margin-left: 40px;
+    margin-right: 40px;
+}
+
+/*************************************************************************************************************************/
+/**Payment Section**/
+.wireTransferWarning{
+	color:#3FB8AF;
+}
+
+/*************************************************************************************************************************/
+/**Shipping Modal**/
+#interShippingModal{
+	clear:both;
+	float:left;
+	width:857px !important;
+	height:500px !important;
+	border: 5px solid rgba(200, 200, 200, 0.2);
+	padding:0px !important
+}
+.interShippingModalCont{
+	width:800px !important;
+	 height: 1045px;
+	padding-left: 20px;
+    padding-right: 20px;
+	background-color:#ffcc00;
+	color:black;
+}
+.interShippingModalCont h4{
+	color:red;
+}
+.interShippingModalCont h2{
+	color:black;
+	font-family: 'Special Elite', cursive;
+	font-weight: 200;
+    margin-bottom: 5px;
+}
+.interShippingModalCont h3{
+	color:black;
+}
+.interShippingModalCont p{
+	color:black;
+}
+div div.mainColumn div#privacyArticle h4, h3{
+	color:white;
+	font-family: 'Montserrat', sans-serif;
+	font-weight:400;
+	margin-bottom:0px;
+}
+#interShipAgreeCheck{
+}
+#interShipAgreeButton{
+    background-color: #3FB8AF;
+    background-image: none;
+    border: medium none;
+	font-family: 'Special Elite', cursive;
+    height: 30px;
+    width: 150px;
+}
+#interShippingForm p{
+}
+
+
+/*************************************************************************************************************************/
+/*************************************************************************************************************************/
+/**CUSTOMER TEMPLATE**/
+#subscriberListsArticle{
+	margin-top:20px;
+}
+
+#subscriberListsArticle h1{
+	font-family: 'Special Elite', cursive;
+	color:#ff3d7f;
+	font-weight:200;
+}
+.address div{
+	color:white;
+}
+.address span{
+	color:white;
+}
+#myaccountArticle{
+	margin-top:20px;
+}
+#myaccountArticle h1{
+	font-family: 'Special Elite', cursive;
+	color:#ff3d7f;
+	font-weight:200;
+}
+#changepasswordArticle{
+	margin-top:20px;
+}
+#changepasswordArticle h1{
+	font-family: 'Special Elite', cursive;
+	color:#ff3d7f;
+	font-weight:200;
+}
+#myaccountArticle h1{
+	font-family: 'Special Elite', cursive;
+	color:#ff3d7f;
+	font-weight:200;
+}
+#ordersArticle{
+	margin-top:20px;
+}
+#ordersArticle h1{
+	font-family: 'Special Elite', cursive;
+	color:#ff3d7f;
+	font-weight:200;
+}
+#listsArticle{
+	margin-top:20px;
+}
+#listsArticle h1{
+	font-family: 'Special Elite', cursive;
+	color:#ff3d7f;
+	font-weight:200;
+}
+#newsletterArticle{
+    padding-top: 30px;
+}
+.sidelineTitle{
+	background-color: #FF3D7F;
+    height: 40px;
+    margin-bottom: 15px;
+    margin-top: 30px;
+    width: 100%;
+}
+.sidelineTitle h3{
+	 font-family: 'Montserrat',sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 40px;
+    text-align: center;
+	color:black;
+}
+#customerNav a{
+	color: white;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 600;
+}
+#customerNav a:hover{
+	color:#3FB8AF;
+}
+
+/*************************************************************************************************************************/
+/**Create Account Section**/
+.existingUserLogin{
+	float:left;
+	width:275px;
+	height:180px;
+	border: 5px solid rgba(200, 200, 200, 0.2);
+    margin-left: 10px;
+}
+.existingUserLogin div{
+	width:275px;
+	height:165px;
+	background-color:black;
+	padding-top: 15px;
+}
+.existingUserLogin h1{
+	color:#FF3D7F;
+	font-family: 'Special Elite', cursive;
+	font-weight:200;
+}
+.existingUserLogin h5{
+	color:white;
+    margin-left: 55px;
+    margin-top: 15px;
+	font-size:18px;
+}
+.existingUserLogin button{
+    background-color: #FF3D7F;
+    border: medium none;
+    height: 35px;
+    margin-left: 55px;
+    margin-top: 25px;
+    width: 160px;
+	font-family: 'Special Elite', cursive;
+	font-weight:200;
+	font-size: 22px;
+	padding-top: 5px;
+}
+.createAccountForm div div form fieldset.userInfo{
+	width: 250px;
+	text-align: left;
+	padding-left: 0;
+	margin-left: 0;
+	margin-bottom: 10px;
+}
+.createAccountForm{
+	float:left;
+	width:375px;
+	height:195px;
+    margin-left: 70px;
+}
+.createAccountForm h1{
+	color:#FF3D7F;
+	font-family: 'Special Elite', cursive;
+	font-weight:200;
+}
+.createAccountForm form{
+	margin-left: 65px;
+}
+.createAccountButton{
+	border: medium none;
+    border-radius: 0 0 0 0;
+    font-family: 'Special Elite',cursive;
+    font-size: 20px;
+    font-weight: 200;
+    height: 40px;
+    padding-top: 11px !important;
+    width: 230px;
+}
+
+/*************************************************************************************************************************/
+/**My Account Section**/
+#myaccountArticle h4{
+	color:#3fb8af;
+	text-align:center;
+	margin-top: 10px;
+}
+
+/*************************************************************************************************************************/
+/**Subscribe Section**/
+.subscribeListItem label span:first-child{
+	border:thin solid white;
+}
+.subscribeListItem label span.label{
+	color:white;
+}
+
+/*************************************************************************************************************************/
+/**Login Modal**/
+.loginOption p{
+	color:white;
+}
+
+/*************************************************************************************************************************/
+/**Wishlist Section**/
+#listsContainer{
+	color:white;
+	width:785px;
+}
+#listsContainer div div div ul{
+	width:725px;
+	clear: none;
+}
+#listsContainer ul.ui-tabs-nav{
+	height: 43px;
+}
+.productListTemplateBuyerList div h5{
+	color:#c0c0c0;
+	height:60px;
+	text-align:center;
+}
+div div ul li.productListTemplateBuyerList{
+	height: 370px !important;
+    width: 225px !important;
+	float:left;
+	display:block;
+	margin-left: 15px;
+}
+#prodlistBuyerList_wishlist li div div.prodThumbContainer div{
+	border:none;
+}
+#prodlistBuyerList_wishlist li div div.prodThumbContainer div div.buttonList{
+	border:none;
+	float:left;
+}
+.buttonList{
+	background-color:transparent;
+}
+.buttonList div h6{
+	color:white;
+	font-family: 'Special Elite',cursive;
+	font-size: 26px;
+    line-height: 55px;
+}
+.buttonList div h6 span.cents{
+	line-height: 45px;
+    vertical-align: top;
+}
+.buttonList div{
+	width:50%;
+	height:45px;
+	background-color:rgb(40, 40, 40);
+	background-color:rgba(200, 200, 200, 0.2);
+	float:left;
+}
+div.buttonList .bagItButtonWishlist{
+	border: medium none;
+    border-radius: 0 0 0 0;
+    height: 45px;
+    margin-right: 0px;
+    width: 49%;
+	background-image:none;
+	background-color:#3fb8af;
+	color:white;
+	font-family: 'Special Elite',cursive;
+	padding-top: 5px;
+	float:left;
+}
+div.buttonList .bagItButtonWishlist:hover{
+	background-color:#ff3d7f;
+	color:black;
+}
+div.buttonList .infoButtonWishlist{
+	font-family: 'Special Elite',cursive;
+	padding-top: 5px;
+	margin-top:10px;
+	margin-bottom:10px;
+	border: medium none;
+    border-radius: 0 0 0 0;
+	color:white;
+	background-image:none;
+	background-color:#3fb8af;
+}
+div.buttonList .infoButtonWishlist:hover{
+	background-color:#ff3d7f;
+	color:black;
+}
+div.buttonList .reviewButtonWishlist{
+	font-family: 'Special Elite',cursive;
+	padding-top: 5px;
+	padding-left:5px;
+	padding-right:5px;
+	border: medium none;
+    border-radius: 0 0 0 0;
+	color:white;
+	background-image:none;
+	background-color:#3fb8af;
+	margin-left: -5px;
+	margin-top:10px;
+}
+div.buttonList .reviewButtonWishlist:hover{
+	background-color:#ff3d7f;
+	color:black;
+}
+div.buttonList .removeButtonWishlist{
+	font-family: 'Special Elite',cursive;
+	padding-top: 5px;
+	padding-left:5px;
+	padding-right:5px;
+	border: medium none;
+    border-radius: 0 0 0 0;
+	color:white;
+	background-image:none;
+	background-color:#3fb8af;
+	margin-top:10px;
+	margin-left:-5px;
+}
+div.buttonList .removeButtonWishlist:hover{
+	background-color:#ff3d7f;
+	color:black;
+}
+/*************************************************************************************************************************/
+/**Order History Section**/
+#ordersArticle h2{
+	margin-bottom: 250px;
+    margin-top: 20px;
+    text-align: center;
+}
+#ordersArticle h3{
+	color: #7FC7AF;
+	font-size: 22px;
+}
+#ordersArticle h5{
+	color: white;
+	font-size: 14px;
+}
+#ordersArticle span{
+	color: #349790;
+}
+#ordersArticle a{
+	color: #349790;
+}
+#ordersArticle a:hover{
+	color:#ff3d7f;
+}
+
+
+/*************************************************************************************************************************/
+/*************************************************************************************************************************/
+/**SEARCH TEMPLATE**/
+.searchResultsPage a {
+	color:white;
+}
+.resultsHeader{
+	color:white;
+	padding-left:50px;
+}
+.resultsMenuContainer div{
+}
+.searchResultsProduct{
+	float: left;
+    height: 340px;
+    margin-right: 15px;
+    width: 222px;
+	position:relative;
+}
+#resultsProductListContainer{
+	 padding-left:40px;
+}
+.minimalMode .searchResultsProduct{
+	height: 183px;
+	width: 223px;
+}
+.ui-dialog-titlebar{
+	background-image:none;
+	background-color:transparent;
+}
+.shipInsurCB{
+	margin-bottom: 20px !important;
+    margin-left: 15px !important;
+}
