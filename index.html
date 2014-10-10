@@ -56,6 +56,8 @@ all css includes need to be after the js that changes the base url.
 css files should be included before any .js file to ensure they are downloaded in parallel
 -->
 <link data-apptimize="embed" rel="stylesheet" type="text/css" href="app-quickstart.css" />
+<link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Special+Elite'>
+<link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Montserrat:400,700'>
 <link rel="stylesheet" type="text/css" href="Theme/jquery-ui-1.10.1.custom/css/ac_theme/jquery-ui-1.10.1.custom.css" />
 <link data-apptimize="embed" rel="stylesheet" type="text/css" href="_pandbfashion_styles.css"/>
 
@@ -69,7 +71,7 @@ css files should be included before any .js file to ensure they are downloaded i
 <script data-apptimize="embed" type="text/javascript" src="model.js"></script>
 
 <!-- EXTENSIONS -->
-<!--<script data-apptimize="embed" type="text/javascript" src="extensions/_store_pandbfashion.js"></script>-->
+<script data-apptimize="embed" type="text/javascript" src="extensions/_store_pandbfashion.js"></script>
 <script data-apptimize="embed" type="text/javascript" src="extensions/seo_robots.js"></script>
 <script data-apptimize="embed" type="text/javascript" src="extensions/checkout/extension.js"></script> <!-- order_create -->
 <script data-apptimize="embed" type="text/javascript" src="extensions/cart_checkout_order.js"></script>
@@ -161,6 +163,7 @@ var _robots = {
 </head>
 
 <body>
+<div class="container">
 
 	<!-- what is displayed onLoad until the view is loaded 
 	<div id='appPreView'>
@@ -204,29 +207,29 @@ var _robots = {
 <div class="header">
 	<div class="headerTopThird">
     	<div class="centeringContainer">
-            <div class="floatLeft headerLoginLink"><h5>Welcome, <span class='username'>Guest!</span> <h6>Not You? <a href='#top' onClick="return showContent('customer',{'show':'myaccount'});">Login</a> or <a href='#top' onClick="return showContent('customer',{'show':'newsletter'});">Sign-up!</a></h6></h5></div>
-            <div class="floatRight headerHelpLink"><a class="pointer" onclick="return showContent('company',{'show':'contact'});" class='bindByAnchor'>Help</a></div>
-            <div class="floatRight headerCartLink bindByAnchor"><a class="pointer bindByAnchor" href="#cart?."><span class="cartItemCount">0</span> Items </a> <h6>in your cart | </h6><a class="pointer bindByAnchor" href="#cart?.">View Shopping Bag</a></div>
+            <div class="floatLeft headerLoginLink"><h5>Welcome, <span class='username'>Guest!</span> <h6>Not You? <a href="#!customer/myaccount">Login</a> or <a href="#!customer/myaccount">Sign-up!</a></h6></h5></div>
+            <div class="floatRight headerHelpLink"><a class="pointer" href="#!company/contact">Help</a></div>
+            <div class="floatRight headerCartLink"><a class="pointer" href="#!cart"><span class="cartItemCount">0</span> Items </a> <h6>in your cart | </h6><a class="pointer" href="#!cart">View Shopping Bag</a></div>
     	</div>
     </div>
     <div class="headerMidThird">
         <div class="centeringContainer">
-            <a href="#homepage?." class='bindByAnchor' title='Home'><img class="floatLeft homepageLink" src="images/homepage_link_image.png" /></a>
-            <form name='headerSearchFrm' action='#' class='productSearchForm marginTop' method="get">
-                <fieldset class="searchArea">
-                    <!-- <legend>Search</legend> -->
-                    <input type='search' name='KEYWORDS' value='Find it here...' class="productSearchKeyword handleDefault secondary" id="searchBarInput" />
-                    <input class="search" type="submit" value="SEARCH" id="searchBarButton" />
+            <a href="#!home" class='pointer' title='Home'><p>Your logo goes here</p><img class="floatLeft homepageLink" src="" /></a>
+            
+            <form id="headerSearchFrm" name="headerSearchFrm" action="#" class="productSearchForm marginTop" method="get" data-app-submit='quickstart|searchFormSubmit'>
+            	<fieldset class="searchArea">
+                    <input type='search' name='KEYWORDS' class="productSearchKeyword handleDefault secondary" placeholder="Find it here..." id="searchBar"/>
+                    <input class="search pointer" type="submit" value="Search" id="searchButton" />
                 </fieldset>
-            </form>
+            </form>            
         </div>
     </div>
     <div class="clear"></div>
     <div class="headerBottomThird">
         <div class="centeringContainerHeaderBottomThird">
             <div class="headerBottomThird">
-              <div class="navBarBrands" onMouseOver="showDropdownBrand($(this))" onMouseOut="hideDropdown($(this))"> <!--onMouseOver="showDropdownBrand($(this))" onMouseOut="hideDropdown($(this))"-->
-                  <div class="navTopCat" href='#top' onClick="return showContent('category',{'navcat':'.acw.brands'});"><a>Brands</a>
+              <div class="navBarBrands" onMouseOver="myApp.ext._store_pandbfashion.a.showDropdownBrand($(this))" onMouseOut="myApp.ext._store_pandbfashion.a.hideDropdown($(this))">
+                  <div class="navTopCat" href="#!category/./"><a>Cat 1</a>
               </div>
                   <div class="dropdown headerDropdownBrand alignLeft dropdownOnClick">
                        <div class="dropdownWindow">
@@ -248,84 +251,12 @@ var _robots = {
                           <img class="dropdownBottomBorderBrandImg2" src="images/header_nav_bar/dropdowns/bottom_border2.png" />
                             <div class="dropdownContainerBrand">
                               <ul class="alignLeft">
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.100__pure'});" class="pointer">100% Pure</a></li>
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.adoro'});" class="pointer">Adoro</a></li>
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.almay'});" class="pointer">Almay</a></li>
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.becca'});" class="pointer">Becca</a></li>
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.benefit'});" class="pointer">Benefit</a></li>
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.bobbi-brown'});" class="pointer">Bobbi Brown</a></li>
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.bourjois_paris'});" class="pointer">Bourjois Paris</a></li>
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.china-glaze'});" class="pointer">China Glaze</a></li>
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.clinique'});" class="pointer">Clinique</a></li>
-                                  <!--<li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.conair'});" class="pointer">Conair</a></li>-->
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.cover_fx'});" class="pointer">Cover FX</a></li>
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.covergirl'});" class="pointer">Covergirl</a></li>
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.dermablend'});" class="pointer">Dermablend</a></li>
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.dior'});" class="pointer">Dior</a></li>
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.edward_bess'});" class="pointer">Edward Bess</a></li>
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.estee-lauder'});" class="pointer">Estee Lauder</a></li>
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.eyes-by-design'});" class="pointer">Eyes By Design</a></li>
-								  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.face-front'});" class="pointer">Face Front</a></li>
+                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/./" class="pointer">Subcat Link 1</a></li>
+                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/./" class="pointer">Subcat Link 2</a></li>
+                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/./" class="pointer">Subcat Link 3</a></li>
+                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/./" class="pointer">Subcat Link 4</a></li>
+                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/./" class="pointer">Subcat Link 5</a></li>
 							  </ul>
-                              <ul class="alignLeft">
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.factory-blems'});" class="pointer">Factory Blems</a></li>
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.flirt'});" class="pointer">Flirt</a></li>
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.fusion-beauty'});" class="pointer">Fusion Beauty</a></li>
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.goody'});" class="pointer">Goody</a></li>
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.guerlain'});" class="pointer">Guerlain</a></li>
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.hard_candy'});" class="pointer">Hard Candy</a></li>
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.jane'});" class="pointer">Jane</a></li>
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.japonesque'});" class="pointer">Japonesque</a></li>
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.jewelry'});" class="pointer">Jewelry</a></li>
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.kiehls'});" class="pointer">Kiehl's</a></li>
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.korres'});" class="pointer">Korres</a></li>
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.kryolan'});" class="pointer">Kryolan</a></li>
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.lancome'});" class="pointer">Lancome</a></li>                              
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.laura-mercier'});" class="pointer">Laura Mercier</a></li>
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.loreal'});" class="pointer">L'oreal</a></li>
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.lotta_luv'});" class="pointer">Lotta Luv</a></li>
-								  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.mac'});" class="pointer">Mac</a></li>
-
-							  </ul>
-                              <ul class="alignLeft">
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.make-up-forever'});" class="pointer">Make Up Forever</a></li>
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.mary-kate___ashley'});" class="pointer">Mary-Kate Ashley</a></li>
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.maybelline'});" class="pointer">Maybelline</a></li>
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.me-me-me'});" class="pointer">Me Me Me</a></li>
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.model_co'});" class="pointer">Model Co</a></li>
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.nars'});" class="pointer">Nars</a></li>
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.obsessive_compulsive_cosmetics'});" class="pointer">Obsessive Compulsive Cosmetics</a></li>
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.ojon-hair'});" class="pointer">Ojon Hair</a></li>
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.other-brands'});" class="pointer">Other Brands</a></li>
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.playboy_cosmetics'});" class="pointer">Playboy Cosmetics</a></li>
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.pop-pixi'});" class="pointer">Pop Pixi</a></li>
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.prescriptives'});" class="pointer">Prescriptives</a></li>
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.pupa_milano'});" class="pointer">Pupa Milano</a></li>
-								  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.red_cherry'});" class="pointer">Red Cherry</a></li>
-
-							  </ul>
-                              <ul class="alignLeft">
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.revlon'});" class="pointer">Revlon</a></li>
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.rimmel_london'});" class="pointer">Rimmel London</a></li>
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.sally_hansen'});" class="pointer">Sally Hansen</a></li>
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.sigma'});" class="pointer">Sigma</a></li>
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.smashbox'});" class="pointer">Smashbox</a></li>
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.smh'});" class="pointer">SMH</a></li>
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.stila'});" class="pointer">Stila</a></li>
-								  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.sue_devitt'});" class="pointer">Sue Devitt</a></li>
-								  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.suite_7_beauty'});" class="pointer">Suite 7 Beauty</a></li>
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.tarte'});" class="pointer">Tarte</a></li>
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.too-faced'});" class="pointer">Too Faced</a></li>
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.twilight'});" class="pointer">Twilight</a></li>
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.ultraflesh'});" class="pointer">Ultraflesh</a></li>
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.urban-decay'});" class="pointer">Urban Decay</a></li>
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.victorias-secret'});" class="pointer">Victoria's Secret</a></li>
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.wet_n_wild'});" class="pointer">Wet n Wild</a></li>
-                              </ul>
-                              <ul class="alignLeft">
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.yr_nails'});" class="pointer">YR Nails</a></li>
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.ysl'});" class="pointer">YSL</a></li>
-                              </ul>
                               <img src="images/header_nav_bar/dropdowns/background_swash.png" />
                           </div> 
 					</div>
@@ -2281,6 +2212,6 @@ The 'data-action' attribute is used to assign an onclick.
 </table>
 
 </div>
-
+</div>
 </body>
 </html>

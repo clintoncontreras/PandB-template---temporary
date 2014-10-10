@@ -16,7 +16,7 @@
 
 ************************************************************** */
 
-var _store_pandbfashion = function() {
+var _store_pandbfashion = function(_app) {
 	var r= {
 		vars : {
 			catTemplates : {
@@ -29,41 +29,24 @@ var _store_pandbfashion = function() {
 		callbacks : {
 			init : {
 				onSuccess : function(){
-					app.u.dump('BEGIN app.ext.ext._store_pandbfashion.callbacks.init.onSuccess');
-					app.rq.push(['templateFunction','productTemplate','onCompletes',function(P) {
-						//make a call to get a search
-						var $context = $(app.u.jqSelector('#',P.parentID));
-						var _tag = {"callback" : "productElasticSearchList", "extension":"_store_pandbfashion", "$context" : $context, "datapointer":"ProdPageElastic"};
-						
-						
-						/*if(app.model.fetchData(_tag.datapointer)){
-							app.u.handleCallback(_tag);
-							}
-						else {*/
-							var obj = {'filter':{'term':{'whats_hot':'1'}}};
-							obj = app.ext.store_search.u.buildElasticRaw(obj);
-							obj.size = 12;
-							app.ext.store_search.calls.appPublicSearch.init(obj, _tag);
-							//}
-						//callback will call anycontent and append to product
-						}]);
+					
 				},
 				onError : function() {
-					app.u.dump('BEGIN app.ext.ext_store_pandbfashion.callbacks.init.onError');
+					_app.u.dump('BEGIN _app.ext.ext_store_pandbfashion.callbacks.init.onError');
 				}
 			},
 			startExtension : {
 				onSuccess : function (){
-					app.u.dump('BEGIN app.ext.ext_store_pandbfashion.callbacks.startExtension.onSuccess')
+					_app.u.dump('BEGIN _app.ext.ext_store_pandbfashion.callbacks.startExtension.onSuccess')
 				},
 				onError : function (){
-					app.u.dump('BEGIN app.ext_store_pandbfashion.callbacks.startExtension.onError');
+					_app.u.dump('BEGIN _app.ext_store_pandbfashion.callbacks.startExtension.onError');
 				}
 			},
 			productElasticSearchList : {
 				onSuccess : function(responseData){
 					//alert("hello");
-					//app.u.dump(responseData, "debug");
+					//_app.u.dump(responseData, "debug");
 					
 					$('.elasticlist', responseData.$context).anycontent({"templateID":"prodPageElasticTemplate","datapointer":"ProdPageElastic"});
 					//alert($('.elasticlist', responseData.$context).html());
@@ -79,6 +62,17 @@ var _store_pandbfashion = function() {
 //actions are functions triggered by a user interaction, such as a click/tap.
 //these are going the way of the do do, in favor of app events. new extensions should have few (if any) actions.
 		a : {
+			
+			showDropdownBrand : function ($tag) {
+				var $dropdown = $(".dropdown", $tag);
+				var height = 548;
+				$dropdown.stop().animate({"height":height+"px"}, 0);
+			},
+				
+			hideDropdown : function ($tag) {
+				$(".dropdown", $tag).stop().animate({"height":"0px"}, 0);
+			},
+			
 			showReviewsModal : function(){
 				$('#reviewModalContent').dialog({'modal':'true', 'title':'Product Reviews','width':950, height:500});
 			},
@@ -91,7 +85,7 @@ var _store_pandbfashion = function() {
 				
 				//var $options = $("#countrySelectorBilling > option").clone();
 				//$('#countrySelectorShipping').append($options);
-				//app.u.dump('Here is what is stored in countrySelectorBilling ' + abcd);
+				//_app.u.dump('Here is what is stored in countrySelectorBilling ' + abcd);
 				
 				if ($('#countrySelectorBilling').val() === "US"){
 					$('#shippingWarning').hide();
@@ -128,18 +122,18 @@ var _store_pandbfashion = function() {
 			},
 			scrollToTopPage : function(){
 				$('html, body').animate({scrollTop : 0},1000);
-				app.u.dump("running function properly");
+				_app.u.dump("running function properly");
 			},
 			scrollToTopPage : function(scrollHeight){
 				$('html, body').animate({scrollTop : scrollHeight},1000);
-				app.u.dump("running function properly");
+				_app.u.dump("running function properly");
 			},
 			
 			//function for showing/hiding the bag it button after a quantity is entered.
 			addToCartInventoryCheck : function(prodPid, input){
-				//app.u.dump(prodPid);
-				var inventory = app.ext.store_product.u.getProductInventory(prodPid);
-				//app.u.dump(inventory);
+				//_app.u.dump(prodPid);
+				var inventory = _app.ext.store_product.u.getProductInventory(prodPid);
+				//_app.u.dump(inventory);
 				if(input <= inventory){
 					//display bag it button and allow them to proceed with checkout
 				}
@@ -153,17 +147,17 @@ var _store_pandbfashion = function() {
 				var input = $(".chkoutOrderNotes ");
 				
 				if($('.shipInsurCB').is(':checked')){
-					app.u.dump("Box is checked, checking to see if note has been added already");
+					_app.u.dump("Box is checked, checking to see if note has been added already");
 					if(input.val == "Please add shipping insurance to this order."){
-						app.u.dump("Note already added, do nothing.");
+						_app.u.dump("Note already added, do nothing.");
 					}
 					else{
-						app.u.dump("Note not added, adding not now.");
+						_app.u.dump("Note not added, adding not now.");
 						input.val( input.val() + "Please add shipping insurance to this order." );
 					}
 				}
 				else{
-					app.u.dump("Box unchecked, clearing out order notes.");
+					_app.u.dump("Box unchecked, clearing out order notes.");
 					$(".chkoutOrderNotes").val("");
 				}
 			}
@@ -179,23 +173,23 @@ var _store_pandbfashion = function() {
 			},
 			
 			hideIfSetAlt : function($tag,data){
-				app.u.dump('Hide if set function running');
+				_app.u.dump('Hide if set function running');
 				if(data.value){
-					app.u.dump('Hiding .ordersNoOrdersMess');
+					_app.u.dump('Hiding .ordersNoOrdersMess');
 					//$('.ordersNoOrdersMess').hide();
 				}
 				else{
-					//app.u.dump('Not hiding .ordersNoOrdersMess. Length is =< 0');
+					//_app.u.dump('Not hiding .ordersNoOrdersMess. Length is =< 0');
 				}
 			},
 			
 			//render format for displaying inventory value on the produt page.
 			inventoryCount : function($tag,data){
-				$tag.text(app.ext.store_product.u.getProductInventory(data.value));
+				$tag.text(_app.ext.store_product.u.getProductInventory(data.value));
 			},
 			
 			processListAlt : function($tag,data){
-//			app.u.dump("BEGIN renderFormats.processList");
+//			_app.u.dump("BEGIN renderFormats.processList");
 			$tag.removeClass('loadingBG');
 			if(data.bindData.loadsTemplate)	{
 				var $o, //recycled. what gets added to $tag for each iteration.
@@ -203,7 +197,7 @@ var _store_pandbfashion = function() {
 				for(var i in data.value)	{
 					if(data.bindData.limit && int >= Number(data.bindData.limit)) {break;}
 					else	{
-						$o = app.renderFunctions.transmogrify(data.value[i],data.bindData.loadsTemplate,data.value[i]);
+						$o = _app.renderFunctions.transmogrify(data.value[i],data.bindData.loadsTemplate,data.value[i]);
 						if(typeof $o == 'object')	{
 							if(data.value[i].id){} //if an id was set, do nothing.
 							else	{$o.attr('data-obj_index',i)} //set index for easy lookup later.
@@ -221,13 +215,13 @@ var _store_pandbfashion = function() {
 				$tag.anymessage({'message':'Unable to render list item - no loadsTemplate specified.','persistant':true});
 				}
 				//hides or shows the order message based on whether orders are present or not.
-				app.u.dump('Hide if set function running');
+				_app.u.dump('Hide if set function running');
 				if($('.orderHistoryList').children().length > 0){
-					//app.u.dump('Hiding .ordersNoOrdersMess');
+					//_app.u.dump('Hiding .ordersNoOrdersMess');
 					$('.ordersNoOrdersMess').hide();
 				}
 				else{
-					//app.u.dump('Showing .ordersNoOrdersMess. Length is =< 0');
+					//_app.u.dump('Showing .ordersNoOrdersMess. Length is =< 0');
 					$('.ordersNoOrdersMess').show().css('display','block');
 				}
 			}

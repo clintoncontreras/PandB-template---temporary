@@ -9,7 +9,7 @@ myApp.rq.push(['script',0,(document.location.protocol == 'file:') ? myApp.vars.t
 	myApp.vars.jqurl = (document.location.protocol === 'file:') ? myApp.vars.testURL+'jsonapi/' : '/jsonapi/';
 	}]); //The config.js is dynamically generated.
 	
-//myApp.rq.push(['extension',0,'_store_pandbfashion','','startExtension']);
+myApp.rq.push(['extension',0,'_store_pandbfashion','','startExtension']);
 
 myApp.rq.push(['extension',0,'order_create','']);
 myApp.rq.push(['extension',0,'cco','']);
