@@ -218,8 +218,8 @@ var _robots = {
             
             <form id="headerSearchFrm" name="headerSearchFrm" action="#" class="productSearchForm marginTop" method="get" data-app-submit='quickstart|searchFormSubmit'>
             	<fieldset class="searchArea">
-                    <input type='search' name='KEYWORDS' class="productSearchKeyword handleDefault secondary" placeholder="Find it here..." id="searchBar"/>
-                    <input class="search pointer" type="submit" value="Search" id="searchButton" />
+                    <input type='search' name='KEYWORDS' class="productSearchKeyword handleDefault secondary searchBarInput" placeholder="Find it here..." id="searchBar"/>
+                    <input class="search pointer searchBarButton" type="submit" value="Search" id="searchButton" />
                 </fieldset>
             </form>            
         </div>
@@ -228,44 +228,44 @@ var _robots = {
     <div class="headerBottomThird">
         <div class="centeringContainerHeaderBottomThird">
             <div class="headerBottomThird">
-              <div class="navBarBrands" onMouseOver="myApp.ext._store_pandbfashion.a.showDropdownBrand($(this))" onMouseOut="myApp.ext._store_pandbfashion.a.hideDropdown($(this))">
-                  <div class="navTopCat" href="#!category/./"><a>Cat 1</a>
+              <div class="navBarCat1 dropdownOnClick" onMouseOver="myApp.ext._store_pandbfashion.a.showDropdown($(this))" onMouseOut="myApp.ext._store_pandbfashion.a.hideDropdown($(this))">
+                  <div class="navTopCat"><a class="navTopCatLink" href="#!category/.">Cat 1</a>
               </div>
-                  <div class="dropdown headerDropdownBrand alignLeft dropdownOnClick">
+                  <div class="dropdown headerDropdownCat1 alignLeft dropdownOnClick">
                        <div class="dropdownWindow">
                        	  <!--[if IE 8 ]>
-                          	<img class="dropdownLeftBorderBrandImg" src="images/header_nav_bar/dropdowns/left_border.png" />
+                          	<img class="dropdownLeftBorderCat1Img" src="images/header_nav_bar/dropdowns/left_border.png" />
                           <![endif]-->                
-                          <img class="dropdownLeftBorderBrandImg2" src="images/header_nav_bar/dropdowns/left_border2.png" />
+                          <img class="dropdownLeftBorderCat1Img2" src="images/header_nav_bar/dropdowns/left_border2.png" />
                            <!--[if IE 8 ]>
-                          	<img class="dropdownRightBorderBrandImg" src="images/header_nav_bar/dropdowns/right_border.png" />
+                          	<img class="dropdownRightBorderCat1Img" src="images/header_nav_bar/dropdowns/right_border.png" />
                           <![endif]--> 
-                          <img class="dropdownRightBorderBrandImg2" src="images/header_nav_bar/dropdowns/right_border2.png" />
+                          <img class="dropdownRightBorderCat1Img2" src="images/header_nav_bar/dropdowns/right_border2.png" />
                           <!--[if IE 8 ]>
-                          	<img class="dropdownTopBorderBrandImg" src="images/header_nav_bar/dropdowns/top_border.png" />
+                          	<img class="dropdownTopBorderCat1Img" src="images/header_nav_bar/dropdowns/top_border.png" />
                           <![endif]--> 
-                          <img class="dropdownTopBorderBrandImg2" src="images/header_nav_bar/dropdowns/top_border2.png" />
+                          <img class="dropdownTopBorderCat1Img2" src="images/header_nav_bar/dropdowns/top_border2.png" />
                           <!--[if IE 8 ]>
-                          	<img class="dropdownBottomBorderBrandImg" src="images/header_nav_bar/dropdowns/bottom_border.png" />
+                          	<img class="dropdownBottomBorderCat1Img" src="images/header_nav_bar/dropdowns/bottom_border.png" />
                           <![endif]--> 
-                          <img class="dropdownBottomBorderBrandImg2" src="images/header_nav_bar/dropdowns/bottom_border2.png" />
-                            <div class="dropdownContainerBrand">
+                          <img class="dropdownBottomBorderCat1Img2" src="images/header_nav_bar/dropdowns/bottom_border2.png" />
+                            <div class="dropdownContainerCat1">
                               <ul class="alignLeft">
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/./" class="pointer">Subcat Link 1</a></li>
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/./" class="pointer">Subcat Link 2</a></li>
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/./" class="pointer">Subcat Link 3</a></li>
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/./" class="pointer">Subcat Link 4</a></li>
-                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/./" class="pointer">Subcat Link 5</a></li>
+                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext._store_pandbfashion.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/." class="pointer">Subcat Link 1</a></li>
+                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext._store_pandbfashion.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/." class="pointer">Subcat Link 2</a></li>
+                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext._store_pandbfashion.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/." class="pointer">Subcat Link 3</a></li>
+                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext._store_pandbfashion.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/." class="pointer">Subcat Link 4</a></li>
+                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext._store_pandbfashion.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/." class="pointer">Subcat Link 5</a></li>
 							  </ul>
                               <img src="images/header_nav_bar/dropdowns/background_swash.png" />
                           </div> 
 					</div>
                 </div>
               </div>
-              <div class="navBarEyes dropdownOnClick" onMouseOver="showDropdown($(this))" onMouseOut="hideDropdown($(this))">  <!--onMouseOver="showDropdown($(this))" onMouseOut="hideDropdown($(this))"-->
-              	  <div class="navTopCat2" href='#top' onClick="return showContent('category',{'navcat':'.acw.200eyes'});"><a>Eyes</a>
+              <div class="navBarCat2 dropdownOnClick" onMouseOver="myApp.ext._store_pandbfashion.a.showDropdown($(this))" onMouseOut="myApp.ext._store_pandbfashion.a.hideDropdown($(this))">
+              	  <div class="navTopCat2"><a class="navTopCatLink" href="#!category/.">Cat 2</a>
                   </div>
-                  <div class="dropdown headerDropdownEyes alignLeft dropdownOnClick">
+                  <div class="dropdown headerDropdownCat2 alignLeft dropdownOnClick">
                        <div class="dropdownWindow">
                        	  <!--[if IE 8 ]>
                           	<img class="dropdownLeftBorderImg3" src="images/header_nav_bar/dropdowns/left_border.png" />
@@ -283,28 +283,23 @@ var _robots = {
                           	<img class="dropdownBottomBorderImg3" src="images/header_nav_bar/dropdowns/bottom_border.png" />
                           <![endif]--> 
                           <img class="dropdownBottomBorderImg4" src="images/header_nav_bar/dropdowns/bottom_border2.png" />
-                          <div class="dropdownContainerEyes">
-                              <ul class="floatLeft">
-                                  <li class="headerDropdownLink alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.200eyes.brows'});" class="pointer">Brows</a></li>
-                                  <li class="headerDropdownLink alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.200eyes.eye-shadow'});" class="pointer">Eye Shadow</a></li>
-                                  <li class="headerDropdownLink alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.200eyes.eye-shadow-refills'});" class="pointer">Eye Shadow Refills</a></li>
-                                  <li class="headerDropdownLink alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.200eyes.eyelashes'});" class="pointer">Eyelashes</a></li>
-                                  <li class="headerDropdownLink alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.200eyes.eyeliner'});" class="pointer">Eyeliner</a></li>
-                                  <li class="headerDropdownLink alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.200eyes.mascara'});" class="pointer">Mascara</a></li>
-                              </ul>
-                              <ul class="floatLeft">
-                                   <li class="headerDropdownLink alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.200eyes.pigments'});" class="pointer">Pigments</a></li>
-                                   <li class="headerDropdownLink alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.200eyes.primer'});" class="pointer">Primer</a></li>
-                              </ul>
+                          <div class="dropdownContainerCat2">
+                               <ul class="alignLeft">
+                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext._store_pandbfashion.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/." class="pointer">Subcat Link 1</a></li>
+                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext._store_pandbfashion.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/." class="pointer">Subcat Link 2</a></li>
+                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext._store_pandbfashion.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/." class="pointer">Subcat Link 3</a></li>
+                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext._store_pandbfashion.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/." class="pointer">Subcat Link 4</a></li>
+                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext._store_pandbfashion.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/." class="pointer">Subcat Link 5</a></li>
+							  </ul>
                               <img src="images/header_nav_bar/dropdowns/background_swash.png" />
                           </div>
                       </div>
                   </div>
               </div>
-              <div class="navBarLips dropdownOnClick" onMouseOver="showDropdown($(this))" onMouseOut="hideDropdown($(this))"> <!--onMouseOver="showDropdown($(this))" onMouseOut="hideDropdown($(this))"-->
-              	  <div class="navTopCat" href='#top' onClick="return showContent('category',{'navcat':'.acw.300lips'});"><a>Lips</a>
+              <div class="navBarCat3 dropdownOnClick" onMouseOver="myApp.ext._store_pandbfashion.a.showDropdown($(this))" onMouseOut="myApp.ext._store_pandbfashion.a.hideDropdown($(this))">
+              	  <div class="navTopCat"><a class="navTopCatLink" href="#!category/.">Cat 3</a>
                   </div>
-                  <div class="dropdown headerDropdownLips alignLeft dropdownOnClick">
+                  <div class="dropdown headerDropdownCat3 alignLeft dropdownOnClick">
                        <div class="dropdownWindow">
                        	  <!--[if IE 8 ]>
                           	<img class="dropdownLeftBorderImg3" src="images/header_nav_bar/dropdowns/left_border.png" />
@@ -322,22 +317,23 @@ var _robots = {
                           	<img class="dropdownBottomBorderImg3" src="images/header_nav_bar/dropdowns/bottom_border.png" />
                           <![endif]--> 
                           <img class="dropdownBottomBorderImg4" src="images/header_nav_bar/dropdowns/bottom_border2.png" />
-                          <div class="dropdownContainerLips">
-                              <ul class="floatLeft">
-                                  <li class="headerDropdownLink alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.300lips.balms'});" class="pointer">Balms</a></li>
-                                  <li class="headerDropdownLink alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.300lips.lip_liner'});" class="pointer">Lip Liner</a></li>
-                                  <li class="headerDropdownLink alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.300lips.lipgloss'});" class="pointer">Lip Gloss</a></li>
-                                  <li class="headerDropdownLink alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.300lips.lipstick'});" class="pointer">Lipstick</a></li>
-                              </ul>
+                          <div class="dropdownContainerCat3">
+                               <ul class="alignLeft">
+                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext._store_pandbfashion.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/." class="pointer">Subcat Link 1</a></li>
+                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext._store_pandbfashion.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/." class="pointer">Subcat Link 2</a></li>
+                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext._store_pandbfashion.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/." class="pointer">Subcat Link 3</a></li>
+                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext._store_pandbfashion.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/." class="pointer">Subcat Link 4</a></li>
+                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext._store_pandbfashion.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/." class="pointer">Subcat Link 5</a></li>
+							  </ul>
                               <img src="images/header_nav_bar/dropdowns/background_swash.png" />
                           </div>
                       </div>
                   </div>
               </div>
-              <div class="navBarFace dropdownOnClick" onMouseOver="showDropdown($(this))" onMouseOut="hideDropdown($(this))">
-              	   <div class="navTopCat" href='#top' onClick="return showContent('category',{'navcat':'.acw.400face'});"><a>Face</a>
+              <div class="navBarCat4 dropdownOnClick" onMouseOver="myApp.ext._store_pandbfashion.a.showDropdown($(this))" onMouseOut="myApp.ext._store_pandbfashion.a.hideDropdown($(this))">
+              	   <div class="navTopCat"><a class="navTopCatLink" href="#!category/.">Cat 4</a>
                    </div>
-                   <div class="dropdown headerDropdownFace alignLeft dropdownOnClick">
+                   <div class="dropdown headerDropdownCat4 alignLeft dropdownOnClick">
                        <div class="dropdownWindow">
                        	  <!--[if IE 8 ]>
                           	<img class="dropdownLeftBorderImg3" src="images/header_nav_bar/dropdowns/left_border.png" />
@@ -355,23 +351,23 @@ var _robots = {
                           	<img class="dropdownBottomBorderImg3" src="images/header_nav_bar/dropdowns/bottom_border.png" />
                           <![endif]--> 
                           <img class="dropdownBottomBorderImg4" src="images/header_nav_bar/dropdowns/bottom_border2.png" />
-                          <div class="dropdownContainerFace">
-                              <ul class="floatLeft">
-                                  <li class="headerDropdownLink alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.400face.blush'});" class="pointer">Blush</a></li>
-                                  <li class="headerDropdownLink alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.400face.concealer'});" class="pointer">Concealer</a></li>
-                                  <li class="headerDropdownLink alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.400face.foundation'});" class="pointer">Foundation</a></li>
-                                  <li class="headerDropdownLink alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.400face.powder'});" class="pointer">Powder</a></li>
-                                  <li class="headerDropdownLink alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.400face.primer'});" class="pointer">Primer</a></li>
-                              </ul>
+                          <div class="dropdownContainerCat4">
+                               <ul class="alignLeft">
+                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext._store_pandbfashion.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/." class="pointer">Subcat Link 1</a></li>
+                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext._store_pandbfashion.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/." class="pointer">Subcat Link 2</a></li>
+                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext._store_pandbfashion.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/." class="pointer">Subcat Link 3</a></li>
+                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext._store_pandbfashion.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/." class="pointer">Subcat Link 4</a></li>
+                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext._store_pandbfashion.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/." class="pointer">Subcat Link 5</a></li>
+							  </ul>
                               <img src="images/header_nav_bar/dropdowns/background_swash.png" />
                           </div>
                       </div>
                   </div>
               </div>
-              <div class="navBarAccess dropdownOnClick" onMouseOver="showDropdown($(this))" onMouseOut="hideDropdown($(this))">
-                  <div class="navTopCat" href='#top' onClick="return showContent('category',{'navcat':'.acw.500accessories'});"><a>Accessories</a>
+              <div class="navBarCat5 dropdownOnClick" onMouseOver="myApp.ext._store_pandbfashion.a.showDropdown($(this))" onMouseOut="myApp.ext._store_pandbfashion.a.hideDropdown($(this))">
+                  <div class="navTopCat"><a class="navTopCatLink" href="#!category/.">Cat 5</a>
                   </div>
-                  <div class="dropdown headerDropdownAccess alignLeft dropdownOnClick">
+                  <div class="dropdown headerDropdownCat5 alignLeft dropdownOnClick">
                        <div class="dropdownWindow">
                        	  <!--[if IE 8 ]>
                           	<img class="dropdownLeftBorderImg3" src="images/header_nav_bar/dropdowns/left_border.png" />
@@ -389,22 +385,23 @@ var _robots = {
                           	<img class="dropdownBottomBorderImg3" src="images/header_nav_bar/dropdowns/bottom_border.png" />
                           <![endif]--> 
                           <img class="dropdownBottomBorderImg4" src="images/header_nav_bar/dropdowns/bottom_border2.png" />
-                          <div class="dropdownContainerAccess">
-                              <ul class="floatLeft">
-                                  <li class="headerDropdownLink alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.500accessories.bags'});" class="pointer">Bags</a></li>
-                                  <li class="headerDropdownLink alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.500accessories.brushes'});" class="pointer">Brushes</a></li>
-                                  <li class="headerDropdownLink alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.500accessories.jewelry'});" class="pointer">Jewelry</a></li>
-                                  <li class="headerDropdownLink alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.500accessories.tools'});" class="pointer">Tools</a></li>
-                              </ul>
+                          <div class="dropdownContainerCat5">
+                               <ul class="alignLeft">
+                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext._store_pandbfashion.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/." class="pointer">Subcat Link 1</a></li>
+                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext._store_pandbfashion.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/." class="pointer">Subcat Link 2</a></li>
+                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext._store_pandbfashion.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/." class="pointer">Subcat Link 3</a></li>
+                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext._store_pandbfashion.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/." class="pointer">Subcat Link 4</a></li>
+                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext._store_pandbfashion.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/." class="pointer">Subcat Link 5</a></li>
+							  </ul>
                               <img src="images/header_nav_bar/dropdowns/background_swash.png" />
                           </div>
                       </div>
                   </div>
               </div>
-              <div class="navBarSkin dropdownOnClick" onMouseOver="showDropdown($(this))" onMouseOut="hideDropdown($(this))">
-                  <div class="navTopCat" href='#top' onClick="return showContent('category',{'navcat':'.acw.600skincare'});"><a>Skincare</a>
+              <div class="navBarCat6 dropdownOnClick" onMouseOver="myApp.ext._store_pandbfashion.a.showDropdown($(this))" onMouseOut="myApp.ext._store_pandbfashion.a.hideDropdown($(this))">
+                  <div class="navTopCat"><a class="navTopCatLink" href="#!category/.">Cat 6</a>
                   </div>
-                  <div class="dropdown headerDropdownSkin alignLeft dropdownOnClick">
+                  <div class="dropdown headerDropdownCat6 alignLeft dropdownOnClick">
                        <div class="dropdownWindow">
                        	  <!--[if IE 8 ]>
                           	<img class="dropdownLeftBorderImg3" src="images/header_nav_bar/dropdowns/left_border.png" />
@@ -422,22 +419,23 @@ var _robots = {
                           	<img class="dropdownBottomBorderImg3" src="images/header_nav_bar/dropdowns/bottom_border.png" />
                           <![endif]--> 
                           <img class="dropdownBottomBorderImg4" src="images/header_nav_bar/dropdowns/bottom_border2.png" />
-                          <div class="dropdownContainerSkin">
-                              <ul class="floatLeft">
-                                  <li class="headerDropdownLink alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.600skincare.body'});" class="pointer">Body</a></li>
-                                  <li class="headerDropdownLink alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.600skincare.eyes'});" class="pointer">Eyes</a></li>
-                                  <li class="headerDropdownLink alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.600skincare.face'});" class="pointer">Face</a></li>
-                                  <li class="headerDropdownLink alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.600skincare.lips'});" class="pointer">Lips</a></li>
-                              </ul>
+                          <div class="dropdownContainerCat6">
+                               <ul class="alignLeft">
+                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext._store_pandbfashion.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/." class="pointer">Subcat Link 1</a></li>
+                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext._store_pandbfashion.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/." class="pointer">Subcat Link 2</a></li>
+                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext._store_pandbfashion.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/." class="pointer">Subcat Link 3</a></li>
+                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext._store_pandbfashion.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/." class="pointer">Subcat Link 4</a></li>
+                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext._store_pandbfashion.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/." class="pointer">Subcat Link 5</a></li>
+							  </ul>
                               <img src="images/header_nav_bar/dropdowns/background_swash.png" />
                           </div>
                       </div>
                   </div>
               </div>
-              <div class="navBarNails dropdownOnClick" onMouseOver="showDropdown($(this))" onMouseOut="hideDropdown($(this))">
-                  <div class="navTopCat" href='#top' onClick="return showContent('category',{'navcat':'.acw.700nails'});"><a>Nails</a>
+              <div class="navBarCat7 dropdownOnClick" onMouseOver="myApp.ext._store_pandbfashion.a.showDropdown($(this))" onMouseOut="myApp.ext._store_pandbfashion.a.hideDropdown($(this))">
+                  <div class="navTopCat"><a class="navTopCatLink" href="#!category/.">Cat 7</a>
                   </div>
-                  <div class="dropdown headerDropdownNails alignLeft dropdownOnClick">
+                  <div class="dropdown headerDropdownCat7 alignLeft dropdownOnClick">
                        <div class="dropdownWindow">
                        	  <!--[if IE 8 ]>
                           	<img class="dropdownLeftBorderImg3" src="images/header_nav_bar/dropdowns/left_border.png" />
@@ -455,30 +453,23 @@ var _robots = {
                           	<img class="dropdownBottomBorderImg3" src="images/header_nav_bar/dropdowns/bottom_border.png" />
                           <![endif]--> 
                           <img class="dropdownBottomBorderImg4" src="images/header_nav_bar/dropdowns/bottom_border2.png" />
-                          <div class="dropdownContainerNails">
-                              <ul class="floatLeft">
-                                  <li class="headerDropdownLink alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.700nails.appliques'});" class="pointer">Appliques</a></li>
-                                  <li class="headerDropdownLink alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.700nails.polish'});" class="pointer">Polish</a></li>
-                                  <li class="headerDropdownLink alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.700nails.sets'});" class="pointer">Sets</a></li>
-                                  <li class="headerDropdownLink alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.700nails.tools'});" class="pointer">Tools</a></li>
-                              </ul>
+                          <div class="dropdownContainerCat7">
+                               <ul class="alignLeft">
+                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext._store_pandbfashion.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/." class="pointer">Subcat Link 1</a></li>
+                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext._store_pandbfashion.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/." class="pointer">Subcat Link 2</a></li>
+                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext._store_pandbfashion.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/." class="pointer">Subcat Link 3</a></li>
+                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext._store_pandbfashion.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/." class="pointer">Subcat Link 4</a></li>
+                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext._store_pandbfashion.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/." class="pointer">Subcat Link 5</a></li>
+							  </ul>
                               <img src="images/header_nav_bar/dropdowns/background_swash.png" />
                           </div>
                       </div>
                   </div>
               </div>
-              <div class="navBarFragrance dropdownOnClick" href='#top' onClick="return showContent('category',{'navcat':'.acw.800fragrance'});"><a>Fragrance</a> <!--**ADD BACK WHEN DROPDOWN CATS AVAILABLE**--><!--onClick="return showContent('category',{'navcat':'.acw.800fragrance'});" onMouseOver="showDropdown($(this))" onMouseOut="hideDropdown($(this))"-->
-                  <!--**ADD BACK WHEN DROPDOWN CATS AVAILABLE**-->
-                  <!--<div class="navTopCat" href='#top' onClick="return showContent('category',{'navcat':'.acw.800fragrance'});"></div>
-                  <ul class="dropdown headerDropdown alignLeft">
-                      <div class="dropdownSpacer"></div>
-                      <li class="headerDropdownLink alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':''});" class="pointer"></a></li>
-                  </ul>-->
-              </div>
-              <div class="navBarHair dropdownOnClick" onMouseOver="showDropdown($(this))" onMouseOut="hideDropdown($(this))">
-                  <div class="navTopCat" href='#top' onClick="return showContent('category',{'navcat':'.acw.450hair'});"><a>Hair</a>
+              <div class="navBarCat8 dropdownOnClick" onMouseOver="myApp.ext._store_pandbfashion.a.showDropdown($(this))" onMouseOut="myApp.ext._store_pandbfashion.a.hideDropdown($(this))">
+                  <div class="navTopCat"><a class="navTopCatLink" href="#!category/.">Cat 8</a>
                   </div>
-                  <div class="dropdown headerDropdownHair alignLeft dropdownOnClick">
+                  <div class="dropdown headerDropdownCat8 alignLeft dropdownOnClick">
                        <div class="dropdownWindow">
                        	  <!--[if IE 8 ]>
                           	<img class="dropdownLeftBorderImg3" src="images/header_nav_bar/dropdowns/left_border.png" />
@@ -496,23 +487,23 @@ var _robots = {
                           	<img class="dropdownBottomBorderImg3" src="images/header_nav_bar/dropdowns/bottom_border.png" />
                           <![endif]--> 
                           <img class="dropdownBottomBorderImg4" src="images/header_nav_bar/dropdowns/bottom_border2.png" />
-                          <div class="dropdownContainerHair">
-                              <ul class="floatLeft">
-                                  <li class="headerDropdownLink alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.450hair.conditioner'});" class="pointer">Conditioner</a></li>
-                                  <li class="headerDropdownLink alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.450hair.hairaccessories'});" class="pointer">Hair Accessories</a></li>
-                                  <li class="headerDropdownLink alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.450hair.shampoo'});" class="pointer">Shampoo</a></li>
-                                  <li class="headerDropdownLink alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.450hair.stylingproducts'});" class="pointer">Styling Products</a></li>
-                                  <li class="headerDropdownLink alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.450hair.curling_iron'});" class="pointer">Tools</a></li>
-                              </ul>
+                          <div class="dropdownContainerCat8">
+                               <ul class="alignLeft">
+                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext._store_pandbfashion.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/." class="pointer">Subcat Link 1</a></li>
+                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext._store_pandbfashion.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/." class="pointer">Subcat Link 2</a></li>
+                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext._store_pandbfashion.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/." class="pointer">Subcat Link 3</a></li>
+                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext._store_pandbfashion.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/." class="pointer">Subcat Link 4</a></li>
+                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext._store_pandbfashion.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/." class="pointer">Subcat Link 5</a></li>
+							  </ul>
                               <img src="images/header_nav_bar/dropdowns/background_swash.png" />
                           </div>
                       </div>
                   </div>
               </div>
-              <div class="navBarJewel dropdownOnClick" onMouseOver="showDropdown($(this))" onMouseOut="hideDropdown($(this))">
-                  <div class="navTopCat" href='#top' onClick="return showContent('category',{'navcat':'.acw.brands.jewelry'});"><a>Jewelry</a>
+              <div class="navBarCat9 dropdownOnClick" onMouseOver="myApp.ext._store_pandbfashion.a.showDropdown($(this))" onMouseOut="myApp.ext._store_pandbfashion.a.hideDropdown($(this))">
+                  <div class="navTopCat"><a class="navTopCatLink" href="#!category/.">Cat 9</a>
                   </div>
-                  <div class="dropdown headerDropdownJewel alignLeft dropdownOnClick">
+                  <div class="dropdown headerDropdownCat9 alignLeft dropdownOnClick">
                        <div class="dropdownWindow">
                        	  <!--[if IE 8 ]>
                           	<img class="dropdownLeftBorderImg3" src="images/header_nav_bar/dropdowns/left_border.png" />
@@ -530,22 +521,23 @@ var _robots = {
                           	<img class="dropdownBottomBorderImg3" src="images/header_nav_bar/dropdowns/bottom_border.png" />
                           <![endif]--> 
                           <img class="dropdownBottomBorderImg4" src="images/header_nav_bar/dropdowns/bottom_border2.png" />
-                          <div class="dropdownContainerJewel">
-                              <ul class="floatLeft">
-                                  <li class="headerDropdownLink alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.jewelry.bracelet'});" class="pointer">Bracelets</a></li>
-                                  <li class="headerDropdownLink alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.jewelry.earrings'});" class="pointer">Earrings</a></li>
-                                  <li class="headerDropdownLink alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.jewelry.necklace'});" class="pointer">Necklaces</a></li>
-                                  <li class="headerDropdownLink alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.brands.jewelry.rings'});" class="pointer">Rings</a></li>
-                              </ul>
+                          <div class="dropdownContainerCat9">
+                               <ul class="alignLeft">
+                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext._store_pandbfashion.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/." class="pointer">Subcat Link 1</a></li>
+                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext._store_pandbfashion.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/." class="pointer">Subcat Link 2</a></li>
+                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext._store_pandbfashion.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/." class="pointer">Subcat Link 3</a></li>
+                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext._store_pandbfashion.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/." class="pointer">Subcat Link 4</a></li>
+                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext._store_pandbfashion.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/." class="pointer">Subcat Link 5</a></li>
+							  </ul>
                               <img src="images/header_nav_bar/dropdowns/background_swash.png" />
                           </div>
                       </div>
                   </div>
               </div>
-              <div class="navBarSale dropdownOnClick" onMouseOver="showDropdown($(this))" onMouseOut="hideDropdown($(this))">
-                  <div class="navTopCat" href='#top' onClick="return showContent('category',{'navcat':'.acw.sale'});"><a>Sale</a>
+              <div class="navBarCat10 dropdownOnClick" onMouseOver="myApp.ext._store_pandbfashion.a.showDropdown($(this))" onMouseOut="myApp.ext._store_pandbfashion.a.hideDropdown($(this))">
+                  <div class="navTopCat"><a class="navTopCatLink" href="#!category/.">Cat 10</a>
                   </div>
-                  <div class="dropdown headerDropdownSale alignLeft dropdownOnClick">
+                  <div class="dropdown headerDropdownCat10 alignLeft dropdownOnClick">
                        <div class="dropdownWindow">
                        	  <!--[if IE 8 ]>
                           	<img class="dropdownLeftBorderImg3" src="images/header_nav_bar/dropdowns/left_border.png" />
@@ -563,15 +555,48 @@ var _robots = {
                           	<img class="dropdownBottomBorderImg3" src="images/header_nav_bar/dropdowns/bottom_border.png" />
                           <![endif]--> 
                           <img class="dropdownBottomBorderImg4" src="images/header_nav_bar/dropdowns/bottom_border2.png" />
-                          <div class="dropdownContainerSale">
-                              <ul class="floatLeft">
-                                  <li class="headerDropdownLink alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.sale.accessories'});" class="pointer">Accessories</a></li>
-                                  <li class="headerDropdownLink alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.sale.eyes'});" class="pointer">Eyes</a></li>
-                                  <li class="headerDropdownLink alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.sale.face'});" class="pointer">Face</a></li>
-                                  <li class="headerDropdownLink alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.sale.lips'});" class="pointer">Lips</a></li>
-                                  <li class="headerDropdownLink alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.sale.nails'});" class="pointer">Nails</a></li>
-                                  <li class="headerDropdownLink alignLeft" onClick="app.ext.store_acw.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#" onClick="return showContent('category',{'navcat':'.acw.sale.skincare'});" class="pointer">Skincare</a></li>
-                              </ul>
+                          <div class="dropdownContainerCat10">
+                               <ul class="alignLeft">
+                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext._store_pandbfashion.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/." class="pointer">Subcat Link 1</a></li>
+                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext._store_pandbfashion.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/." class="pointer">Subcat Link 2</a></li>
+                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext._store_pandbfashion.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/." class="pointer">Subcat Link 3</a></li>
+                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext._store_pandbfashion.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/." class="pointer">Subcat Link 4</a></li>
+                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext._store_pandbfashion.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/." class="pointer">Subcat Link 5</a></li>
+							  </ul>
+                              <img src="images/header_nav_bar/dropdowns/background_swash.png" />
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="navBarCat11 dropdownOnClick" onMouseOver="myApp.ext._store_pandbfashion.a.showDropdown($(this))" onMouseOut="myApp.ext._store_pandbfashion.a.hideDropdown($(this))">
+                  <div class="navTopCat"><a class="navTopCatLink" href="#!category/.">Cat 11</a>
+                  </div>
+                  <div class="dropdown headerDropdownCat11 alignLeft dropdownOnClick">
+                       <div class="dropdownWindow">
+                       	  <!--[if IE 8 ]>
+                          	<img class="dropdownLeftBorderImg3" src="images/header_nav_bar/dropdowns/left_border.png" />
+                          <![endif]-->                
+                          <img class="dropdownLeftBorderImg4" src="images/header_nav_bar/dropdowns/left_border2.png" />
+                           <!--[if IE 8 ]>
+                          	<img class="dropdownRightBorderImg3" src="images/header_nav_bar/dropdowns/right_border.png" />
+                          <![endif]--> 
+                          <img class="dropdownRightBorderImg4" src="images/header_nav_bar/dropdowns/right_border2.png" />
+                          <!--[if IE 8 ]>
+                          	<img class="dropdownTopBorderImg3" src="images/header_nav_bar/dropdowns/top_border.png" />
+                          <![endif]--> 
+                          <img class="dropdownTopBorderImg4" src="images/header_nav_bar/dropdowns/top_border2.png" />
+                          <!--[if IE 8 ]>
+                          	<img class="dropdownBottomBorderImg3" src="images/header_nav_bar/dropdowns/bottom_border.png" />
+                          <![endif]--> 
+                          <img class="dropdownBottomBorderImg4" src="images/header_nav_bar/dropdowns/bottom_border2.png" />
+                          <div class="dropdownContainerCat11">
+                               <ul class="alignLeft">
+                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext._store_pandbfashion.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/." class="pointer">Subcat Link 1</a></li>
+                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext._store_pandbfashion.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/." class="pointer">Subcat Link 2</a></li>
+                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext._store_pandbfashion.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/." class="pointer">Subcat Link 3</a></li>
+                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext._store_pandbfashion.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/." class="pointer">Subcat Link 4</a></li>
+                                  <li class="headerDropdownLink2 alignLeft" onClick="app.ext._store_pandbfashion.a.closeDropdownOnClick($(this).parent().parent().parent().parent().parent()); return false;"><a href="#!category/." class="pointer">Subcat Link 5</a></li>
+							  </ul>
                               <img src="images/header_nav_bar/dropdowns/background_swash.png" />
                           </div>
                       </div>
@@ -583,7 +608,7 @@ var _robots = {
     ****SHERI, HERE IS THE CODE FOR THE GLOBAL BANNER IN THE HEADER. CHANGE THIS CODE TO CHANGE THE BANNER!*************-->                       
            	  
               <div class="headerAdBar">
-              	<img class="pointer" src="images/header_ad_bar/appStoreBanner_940x80_3freehardcandynailcolortrio.jpg" onClick="return showContent('company',{'show':'about'});" />
+              	<a href="#!category/."><img class="pointer" src="images/header_ad_bar/940x80banner-placeholder.png" /></a>
        		  </div>
  
  <!--***********************************************************************************************************************
@@ -603,7 +628,7 @@ var _robots = {
 <div class="footer">
 	<div class="centeringContainerFooter">
         <div id='recentlyViewedItemsContainer'>
-        	<h2>Previously Viewed Items</h3>
+        	<h2>Previously Viewed Items</h2>
             <div class="displayNone" data-bind='var: session(recentlyViewedItems); format:showIfSet;'>
             	<ul data-bind="var: session(recentlyViewedItems); format: productList; extension: store_prodlist; loadsTemplate: productListTemplate; hide_summary:1; hide_pagination:1; withReviews:1;" class='listStyleNone fluidList clearfix noPadOrMargin productList'></ul>
 			</div>
@@ -636,48 +661,48 @@ var _robots = {
                 <h3 class="floatLeft">CATEGORIES</h3>
                 <div class="clearLeft"></div>
                 <ul style="width:41%; margin-top:0px;" class="floatLeft">
-                    <li onClick="app.ext.store_acw.a.scrollToTopPage(); return false;">
+                    <li onClick="app.ext._store_pandbfashion.a.scrollToTopPage(); return false;">
                         <a href='#top' onClick="return showContent('category',{'navcat':'.acw'});">Browse All Categories</a>
                     </li>
-                    <li onClick="app.ext.store_acw.a.scrollToTopPage(750); return false;">
+                    <li onClick="app.ext._store_pandbfashion.a.scrollToTopPage(750); return false;">
                         <a class="pointer" onClick="return showContent('homepage',{});">What's Hot!</a>
                     </li>
-                    <li onClick="app.ext.store_acw.a.scrollToTopPage(750); return false;">
+                    <li onClick="app.ext._store_pandbfashion.a.scrollToTopPage(750); return false;">
                         <a class="pointer" onClick="return showContent('homepage',{});">What's The Deal</a>
                     </li>
-                    <li onClick="app.ext.store_acw.a.scrollToTopPage(); return false;">
+                    <li onClick="app.ext._store_pandbfashion.a.scrollToTopPage(); return false;">
                         <a href='#top' onClick="return showContent('category',{'navcat':'.acw.brands'});">Brands</a>
                     </li>
-                    <li onClick="app.ext.store_acw.a.scrollToTopPage(); return false;">
+                    <li onClick="app.ext._store_pandbfashion.a.scrollToTopPage(); return false;">
                         <a href='#top' onClick="return showContent('category',{'navcat':'.acw.200eyes'});">Eyes</a>
                     </li>
-                    <li onClick="app.ext.store_acw.a.scrollToTopPage(); return false;">
+                    <li onClick="app.ext._store_pandbfashion.a.scrollToTopPage(); return false;">
                         <a href='#top' onClick="return showContent('category',{'navcat':'.acw.300lips'});">Lips</a>
                     </li>
-                    <li onClick="app.ext.store_acw.a.scrollToTopPage(); return false;">
+                    <li onClick="app.ext._store_pandbfashion.a.scrollToTopPage(); return false;">
                         <a href='#top' onClick="return showContent('category',{'navcat':'.acw.400face'});">Face</a>
                     </li>
-                    <li onClick="app.ext.store_acw.a.scrollToTopPage(); return false;">
+                    <li onClick="app.ext._store_pandbfashion.a.scrollToTopPage(); return false;">
                         <a href='#top' onClick="return showContent('category',{'navcat':'.acw.500accessories'});">Accessories</a>
                     </li>
                 </ul>
                 <ul  style="width:35%; margin-top:0px;" class="floatLeft">
-                    <li onClick="app.ext.store_acw.a.scrollToTopPage(); return false;">
+                    <li onClick="app.ext._store_pandbfashion.a.scrollToTopPage(); return false;">
                         <a href='#top' onClick="return showContent('category',{'navcat':'.acw.600skincare'});">Skincare</a>
                     </li>
-                    <li onClick="app.ext.store_acw.a.scrollToTopPage(); return false;">
+                    <li onClick="app.ext._store_pandbfashion.a.scrollToTopPage(); return false;">
                         <a href='#top' onClick="return showContent('category',{'navcat':'.acw.700nails'});">Nails</a>
                     </li>
-                    <li onClick="app.ext.store_acw.a.scrollToTopPage(); return false;">
+                    <li onClick="app.ext._store_pandbfashion.a.scrollToTopPage(); return false;">
                         <a href='#top' onClick="return showContent('category',{'navcat':'.acw.800fragrance'});">Fragrance</a>
                     </li>
-                    <li onClick="app.ext.store_acw.a.scrollToTopPage(); return false;">
+                    <li onClick="app.ext._store_pandbfashion.a.scrollToTopPage(); return false;">
                         <a href='#top' onClick="return showContent('category',{'navcat':'.acw.450hair'});">Hair</a>
                     </li>
-                    <li onClick="app.ext.store_acw.a.scrollToTopPage(); return false;">
+                    <li onClick="app.ext._store_pandbfashion.a.scrollToTopPage(); return false;">
                         <a href='#top' onClick="return showContent('category',{'navcat':'.acw.brands.jewelry'});">Jewelry</a>
                     </li>
-                    <li onClick="app.ext.store_acw.a.scrollToTopPage(); return false;">
+                    <li onClick="app.ext._store_pandbfashion.a.scrollToTopPage(); return false;">
                         <a href='#top' onClick="return showContent('category',{'navcat':'.acw.sale'});">Sale</a>
                     </li>
                     <li>

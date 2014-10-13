@@ -63,14 +63,12 @@ var _store_pandbfashion = function(_app) {
 //these are going the way of the do do, in favor of app events. new extensions should have few (if any) actions.
 		a : {
 			
-			showDropdownBrand : function ($tag) {
-				var $dropdown = $(".dropdown", $tag);
-				var height = 548;
-				$dropdown.stop().animate({"height":height+"px"}, 0);
+			showDropdown : function ($tag) {
+				$(".dropdown", $tag).show();
 			},
 				
 			hideDropdown : function ($tag) {
-				$(".dropdown", $tag).stop().animate({"height":"0px"}, 0);
+				$(".dropdown", $tag).hide();
 			},
 			
 			showReviewsModal : function(){

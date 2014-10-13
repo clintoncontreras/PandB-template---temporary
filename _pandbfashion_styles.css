@@ -168,14 +168,14 @@ span.ui-state-highlight{
 	background-color:rgba(200, 200, 200, .2);
 	border: medium none;
 }
-#searchBarInput{
+.searchBarInput{
 	border: 0 none;
     float: left;
     height: 32px;
     padding: 0;
     width: 200px;
 }
-#searchBarButton{
+.searchBarButton{
 	color:#000000;
 	background-color:#3fb8af;
 	border:none;
@@ -186,6 +186,7 @@ span.ui-state-highlight{
 /*************************************************************************************************************************/
 /**Bottom third**/
 .headerBottomThird{
+	width:100%;
 }
 .navTopCat{
 	height: 100%;
@@ -200,7 +201,11 @@ span.ui-state-highlight{
     width: 100%;
 	left:0 !important;
 }
-.navBarBrands{
+.dropdownOnClick{
+	margin-left: 6px;
+    margin-right: 6px;
+}
+.navBarCat1{
     color: #FFFFFF;
     float: left;
     font-family: 'Special Elite',cursive;
@@ -208,29 +213,33 @@ span.ui-state-highlight{
     font-weight: 200;
     height: 40px;
     line-height: 43px;
-    margin-left: 40px;
     position: relative;
     text-align: center;
     width: 80px;
 	vertical-align:
 }
-.navBarBrands a{
-	width:80px;
-	margin-left:5px;
+.navBarCat1 a{
+	color: white;
+    margin-left: 5px;
+    text-decoration: none;
+    width: 80px;
 }
-.navBarBrands:active{
+.navBarCat1:hover a.navTopCatLink{
+	color:black;
+}
+.navBarCat1:active{
 	color:#000000;
 }
-.navBarBrands:hover{
+.navBarCat1:hover{
 	background-image:url(images/header_nav_bar/brands.png);
 	color:#000000;
 }
-.navBarBrands ul{
+.navBarCat1 ul{
 	left:0px;
 	top:250px;
 	list-style:none;
 }
-.dropdownContainerBrand{
+.dropdownContainerCat1{
 	 background-color: black;
     border: 5px solid #3FB8AF;
     box-shadow: 0 0 20px 15px #000000;
@@ -241,7 +250,7 @@ span.ui-state-highlight{
     width: 685px;
 	overflow:hidden;
 }
-.dropdownContainerBrand img{
+.dropdownContainerCat1 img{
 	bottom: 0;
     position: absolute;
     right: 0;
@@ -252,63 +261,64 @@ span.ui-state-highlight{
     position: relative;
     width: 100%;
 }
-.headerDropdownBrand{
+.headerDropdownCat1{
 	float: left;
-    height: 0px;
+    height: 548px;
     left: -45px;
     top: 25px;
     width: 779px;
     z-index: 3;
+	display:none;
 }
-.dropdownLeftBorderBrandImg{
+.dropdownLeftBorderCat1Img{
 	left: 18px;
     position: absolute;
     top: 180px;
 	z-index:1;
 }
-.dropdownLeftBorderBrandImg2{
+.dropdownLeftBorderCat1Img2{
 	left: 0;
     position: absolute;
     top: 165px;
 	z-index:1;
 }
-.dropdownRightBorderBrandImg{
+.dropdownRightBorderCat1Img{
 	position: absolute;
     right: 17px;
     top: 180px;
 	z-index:1;
 }
-.dropdownRightBorderBrandImg2{
+.dropdownRightBorderCat1Img2{
 	position: absolute;
     right: 0;
     top: 165px;
 	z-index:1;
 }
-.dropdownTopBorderBrandImg{
+.dropdownTopBorderCat1Img{
 	left: 215px;
     position: absolute;
     top: 18px;
 	z-index:1;
 }
-.dropdownTopBorderBrandImg2{
+.dropdownTopBorderCat1Img2{
 	left: 215px;
     position: absolute;
     top: 0;
 	z-index:1;
 }
-.dropdownBottomBorderBrandImg{
+.dropdownBottomBorderCat1Img{
 	bottom: 17px;;
     left: 230px;
     position: absolute;
 	z-index:1;
 }
-.dropdownBottomBorderBrandImg2{
+.dropdownBottomBorderCat1Img2{
 	bottom: 0;
     left: 230px;
     position: absolute;
 	z-index:1;
 }
-.navBarEyes{
+.navBarCat2{
 	width:80px;
 	height:40px;
 	color:#ffffff;
@@ -319,16 +329,16 @@ span.ui-state-highlight{
 	font-size: 18px;
 	font-weight: 200;
 	position:relative;
-	margin-left:0px;
 }
-.headerDropdownEyes{
+.headerDropdownCat2{
 	float: left;
-    height: 0px;
+    height: 313px;
     left: -130px;
     top: 30px;
     width: 439px;
+	display:none;
 }
-.dropdownContainerEyes{
+.dropdownContainerCat2{
 	background-color: black;
     border: 5px solid #3FB8AF;
     box-shadow: 0 0 20px 15px #000000;
@@ -339,7 +349,7 @@ span.ui-state-highlight{
     width: 345px;
 	overflow:hidden;
 }
-.dropdownContainerEyes img{
+.dropdownContainerCat2 img{
 	 bottom: 0;
     position: absolute;
     right: 0;
@@ -393,25 +403,30 @@ span.ui-state-highlight{
     position: absolute;
     z-index: 1;
 }
-.navBarEyes:active{
+.navBarCat2:active{
 	color:#000000;
 }
-.navBarEyes:hover{
+.navBarCat2:hover{
 	background-image:url(images/header_nav_bar/brands.png);
 	color:#000000;
 }
-.navBarEyes a{
-	margin-left:5px;
+.navBarCat2:hover a.navTopCatLink{
+	color:black;
 }
-.navBarEyes ul{
+.navBarCat2 a.navTopCatLink{
+	margin-left:5px;
+	text-decoration:none;
+	color:white;
+}
+.navBarCat2 ul{
 	list-style: none outside none;
     position: relative;
     z-index: 3;
 	padding-left:35px;
 }
-.navBarEyes div{
+.navBarCat2 div{
 }
-.navBarLips{
+.navBarCat3{
 	width:80px;
 	height:40px;
 	color:#ffffff;
@@ -422,16 +437,20 @@ span.ui-state-highlight{
 	font-size: 18px;
 	font-weight: 200;
 	position:relative;
-	margin-left: -5px;
 }
-.headerDropdownLips{
+.navBarCat3 a.navTopCatLink{
+	color:white;
+	text-decoration:none;
+}
+.headerDropdownCat3{
 	float: left;
-    height: 0px;
-    left: -180px;
+    height: 313px;
+    left: -186px;
     top: 30px;
     width: 439px;
+	display:none;
 }
-.dropdownContainerLips{
+.dropdownContainerCat3{
 	background-color: black;
     border: 5px solid #3FB8AF;
     box-shadow: 0 0 20px 15px #000000;
@@ -442,25 +461,28 @@ span.ui-state-highlight{
     width: 345px;
 	overflow:hidden;
 }
-.dropdownContainerLips img{
+.dropdownContainerCat3 img{
 	 bottom: 0;
     position: absolute;
     right: 0;
     z-index: 1;
 }
-.navBarLips ul{
+.navBarCat3 ul{
 	list-style: none outside none;
     position: relative;
     z-index: 3;
 }
-.navBarLips:active{
+.navBarCat3:active{
 	color:#000000;
 }
-.navBarLips:hover{
+.navBarCat3:hover{
 	background-image:url(images/header_nav_bar/brands.png);
 	color:#000000;
 }
-.navBarFace{
+.navBarCat3:hover a.navTopCatLink{
+	color:black;
+}
+.navBarCat4{
 	width:80px;
 	height:40px;
 	color:#ffffff;
@@ -471,23 +493,30 @@ span.ui-state-highlight{
 	font-size: 18px;
 	font-weight: 200;
 	position:relative;
-	margin-left: -10px;
 }
-.navBarFace:active{
+.navBarCat4:active{
 	color:#000000;
 }
-.navBarFace:hover{
+.navBarCat4:hover{
 	background-image:url(images/header_nav_bar/brands.png);
 	color:#000000;
 }
-.headerDropdownFace{
+.navBarCat4 a.navTopCatLink{
+	color:white;
+	text-decoration:none;
+}
+.navBarCat4:hover a.navTopCatLink{
+	color:black;
+}
+.headerDropdownCat4{
 	 float: left;
-    height: 0px;
-    left: -180px;
+    height: 313px;
+    left: -186px;
     top: 30px;
     width: 439px;
+	display:none;
 }
-.dropdownContainerFace{
+.dropdownContainerCat4{
 	background-color: black;
     border: 5px solid #3FB8AF;
     box-shadow: 0 0 20px 15px #000000;
@@ -498,19 +527,19 @@ span.ui-state-highlight{
     width: 345px;
 	overflow:hidden;
 }
-.dropdownContainerFace img{
+.dropdownContainerCat4 img{
 	 bottom: 0;
     position: absolute;
     right: 0;
     z-index: 1;
 }
-.navBarFace ul{
+.navBarCat4 ul{
 	list-style: none outside none;
     position: relative;
     z-index: 3;
 }
-.navBarAccess{
-	width:123px;
+.navBarCat5{
+	width:80px;
 	height:40px;
 	color:#ffffff;
 	text-align:center;
@@ -520,26 +549,33 @@ span.ui-state-highlight{
 	font-size: 18px;
 	font-weight: 200;
 	position:relative;
-	margin-left:0px;
 }
-.navBarAccess a{
+.navBarCat5 a{
 }
-.navBarAccess:active{
+.navBarCat5 a.navTopCatLink{
+	color:white;
+	text-decoration:none;
+}
+.navBarCat5:hover a.navTopCatLink{
+	color:black;
+}
+.navBarCat5:active{
 	color:#000000;
 }
-.navBarAccess:hover{
-	background-image:url(images/header_nav_bar/accessories.png);
+.navBarCat5:hover{
+	background-image:url(images/header_nav_bar/brands.png);
 	color:#000000;
 	font-size: 16px;
 }
-.headerDropdownAccess{
+.headerDropdownCat5{
 	 float: left;
-    height: 0px;
-    left: -158px;
+    height: 313px;
+    left: -186px;
     top: 30px;
     width: 439px;
+	display:none;
 }
-.dropdownContainerAccess{
+.dropdownContainerCat5{
 	background-color: black;
     border: 5px solid #3FB8AF;
     box-shadow: 0 0 20px 15px #000000;
@@ -550,69 +586,19 @@ span.ui-state-highlight{
     width: 345px;
 	overflow:hidden;
 }
-.dropdownContainerAccess img{
+.dropdownContainerCat5 img{
 	 bottom: 0;
     position: absolute;
     right: 0;
     z-index: 1;
 }
-.navBarAccess ul{
+.navBarCat5 ul{
 	list-style: none outside none;
     position: relative;
     z-index: 3;
 }
 
-.navBarSkin{
-	width:95px;
-	height:40px;
-	color:#ffffff;
-	text-align:center;
-	line-height: 43px;
-	float:left;
-	font-family: 'Special Elite', cursive;
-	font-size: 18px;
-	font-weight: 200;
-	margin-left:10px;
-	position:relative;
-}
-.navBarSkin:active{
-	color:#000000;
-}
-.navBarSkin:hover{
-	background-image:url(images/header_nav_bar/skincare.png);
-	color:#000000;
-}
-.headerDropdownSkin{
-	 float: left;
-    height: 0px;
-    left: -173px;
-    top: 30px;
-    width: 439px;
-}
-.dropdownContainerSkin{
-	background-color: black;
-    border: 5px solid #3FB8AF;
-    box-shadow: 0 0 20px 15px #000000;
-    height: 200px;
-    margin-left: 43px;
-    margin-top: 52px;
-    position: absolute;
-    width: 345px;
-	overflow:hidden;
-}
-.dropdownContainerSkin img{
-	 bottom: 0;
-    position: absolute;
-    right: 0;
-    z-index: 1;
-}
-.navBarSkin ul{
-	list-style: none outside none;
-    position: relative;
-    z-index: 3;
-}
-
-.navBarNails{
+.navBarCat6{
 	width:80px;
 	height:40px;
 	color:#ffffff;
@@ -623,26 +609,30 @@ span.ui-state-highlight{
 	font-size: 18px;
 	font-weight: 200;
 	position:relative;
-	margin-left:5px;
 }
-.navBarNails a{
-	margin-left:5px;
-}
-.navBarNails:active{
+.navBarCat6:active{
 	color:#000000;
 }
-.navBarNails:hover{
+.navBarCat6 a.navTopCatLink{
+	color:white;
+	text-decoration:none;
+}
+.navBarCat6:hover a.navTopCatLink{
+	color:black;
+}
+.navBarCat6:hover{
 	background-image:url(images/header_nav_bar/brands.png);
 	color:#000000;
 }
-.headerDropdownNails{
+.headerDropdownCat6{
 	 float: left;
-    height: 0px;
-    left: -180px;
+    height: 313px;
+    left: -186px;
     top: 30px;
     width: 439px;
+	display:none;
 }
-.dropdownContainerNails{
+.dropdownContainerCat6{
 	background-color: black;
     border: 5px solid #3FB8AF;
     box-shadow: 0 0 20px 15px #000000;
@@ -653,43 +643,19 @@ span.ui-state-highlight{
     width: 345px;
 	overflow:hidden;
 }
-.dropdownContainerNails img{
+.dropdownContainerCat6 img{
 	 bottom: 0;
     position: absolute;
     right: 0;
     z-index: 1;
 }
-.navBarNails ul{
+.navBarCat6 ul{
 	list-style: none outside none;
     position: relative;
     z-index: 3;
 }
-.navBarFragrance{
-	width:106px;
-	height:40px;
-	color:#ffffff;
-	text-align:center;
-	line-height: 43px;
-	float:left;
-	font-family: 'Special Elite', cursive;
-	font-size: 18px;
-	font-weight: 200;
-	position:relative;
-	margin-left:5px;
-}
-.navBarFragrance:active{
-	color:#000000;
-}
-.navBarFragrance:hover{
-	background-image:url(images/header_nav_bar/fragrance.png);
-	color:#000000;
-}
-.navBarFragrance ul{
-	list-style: none outside none;
-    position: relative;
-    z-index: 3;
-}
-.navBarHair{
+
+.navBarCat7{
 	width:80px;
 	height:40px;
 	color:#ffffff;
@@ -700,24 +666,146 @@ span.ui-state-highlight{
 	font-size: 18px;
 	font-weight: 200;
 	position:relative;
-	margin-left:0px;
 }
-.navBarHair:active{
+.navBarCat7 a{
+	margin-left:5px;
+}
+.navBarCat7 a.navTopCatLink{
+	color:white;
+	text-decoration:none;
+}
+.navBarCat7:hover a.navTopCatLink{
+	color:black;
+}
+.navBarCat7:active{
 	color:#000000;
 }
-.navBarHair:hover{
+.navBarCat7:hover{
+	background-image:url(images/header_nav_bar/brands.png);
+	color:#000000;
+}
+.headerDropdownCat7{
+	 float: left;
+    height: 313px;
+    left: -186px;
+    top: 30px;
+    width: 439px;
+	display:none;
+}
+.dropdownContainerCat7{
+	background-color: black;
+    border: 5px solid #3FB8AF;
+    box-shadow: 0 0 20px 15px #000000;
+    height: 200px;
+    margin-left: 43px;
+    margin-top: 52px;
+    position: absolute;
+    width: 345px;
+	overflow:hidden;
+}
+.dropdownContainerCat7 img{
+	 bottom: 0;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+.navBarCat7 ul{
+	list-style: none outside none;
+    position: relative;
+    z-index: 3;
+}
+.navBarCat8{
+	width:80px;
+	height:40px;
+	color:#ffffff;
+	text-align:center;
+	line-height: 43px;
+	float:left;
+	font-family: 'Special Elite', cursive;
+	font-size: 18px;
+	font-weight: 200;
+	position:relative;
+}
+.navBarCat8 a.navTopCatLink{
+	color:white;
+	text-decoration:none;
+}
+.navBarCat8:hover a.navTopCatLink{
+	color:black;
+}
+.navBarCat8:active{
+	color:#000000;
+}
+.navBarCat8:hover{
+	background-image:url(images/header_nav_bar/brands.png);
+	color:#000000;
+}
+.headerDropdownCat8{
+	 float: left;
+    height: 313px;
+    left: -186px;
+    top: 30px;
+    width: 439px;
+	display:none;
+}
+.dropdownContainerCat8{
+	background-color: black;
+    border: 5px solid #3FB8AF;
+    box-shadow: 0 0 20px 15px #000000;
+    height: 200px;
+    margin-left: 43px;
+    margin-top: 52px;
+    position: absolute;
+    width: 345px;
+	overflow:hidden;
+}
+.dropdownContainerCat8 img{
+	 bottom: 0;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+.navBarCat8 ul{
+	list-style: none outside none;
+    position: relative;
+    z-index: 3;
+}
+.navBarCat9{
+	width:80px;
+	height:40px;
+	color:#ffffff;
+	text-align:center;
+	line-height: 43px;
+	float:left;
+	font-family: 'Special Elite', cursive;
+	font-size: 18px;
+	font-weight: 200;
+	position:relative;
+}
+.navBarCat9 a.navTopCatLink{
+	color:white;
+	text-decoration:none;
+}
+.navBarCat9:hover a.navTopCatLink{
+	color:black;
+}
+.navBarCat9:active{
+	color:#000000;
+}
+.navBarCat9:hover{
 	background-image:url(images/header_nav_bar/brands.png);
 	color:#000000;
 	
 }
-.headerDropdownHair{
+.headerDropdownCat9{
 	 float: left;
-    height: 0px;
-    left: -195px;
+    height: 313px;
+    left: -186px;
     top: 30px;
     width: 439px;
+	display:none;
 }
-.dropdownContainerHair{
+.dropdownContainerCat9{
 	background-color: black;
     border: 5px solid #3FB8AF;
     box-shadow: 0 0 20px 15px #000000;
@@ -728,18 +816,18 @@ span.ui-state-highlight{
     width: 345px;
 	overflow:hidden;
 }
-.dropdownContainerHair img{
+.dropdownContainerCat9 img{
 	 bottom: 0;
     position: absolute;
     right: 0;
     z-index: 1;
 }
-.navBarHair ul{
+.navBarCat9 ul{
 	list-style: none outside none;
     position: relative;
     z-index: 3;
 }
-.navBarJewel{
+.navBarCat10{
 	width:80px;
 	height:40px;
 	color:#ffffff;
@@ -751,26 +839,34 @@ span.ui-state-highlight{
 	font-weight: 200;
 	position:relative;
 }
-.navBarJewel:active{
+.navBarCat10 a.navTopCatLink{
+	color:white;
+	text-decoration:none;
+}
+.navBarCat10:hover a.navTopCatLink{
+	color:black;
+}
+.navBarCat10:active{
 	color:#000000;
 }
-.navBarJewel:hover{
+.navBarCat10:hover{
 	background-image:url(images/header_nav_bar/brands.png);
 	color:#000000;
 }
-.navBarJewel ul{
+.navBarCat10 ul{
 	list-style: none outside none;
     position: relative;
     z-index: 3;
 }
-.headerDropdownJewel{
+.headerDropdownCat10{
 	 float: left;
-    height: 0px;
+    height: 313px;
     left: -260px;
     top: 30px;
     width: 439px;
+	display:none;
 }
-.dropdownContainerJewel{
+.dropdownContainerCat10{
 	background-color: black;
     border: 5px solid #3FB8AF;
     box-shadow: 0 0 20px 15px #000000;
@@ -781,13 +877,13 @@ span.ui-state-highlight{
     width: 345px;
 	overflow:hidden;
 }
-.dropdownContainerJewel img{
+.dropdownContainerCat10 img{
 	 bottom: 0;
     position: absolute;
     right: 0;
     z-index: 1;
 }
-.navBarSale{
+.navBarCat11{
 	width:80px;
 	height:40px;
 	color:#ffffff;
@@ -798,26 +894,33 @@ span.ui-state-highlight{
 	font-size: 18px;
 	font-weight: 200;
 	position:relative;
-	margin-left:-5px;
 }
-.navBarSale a{
+.navBarCat11 a{
 	margin-left:5px;
 }
-.navBarSale:active{
+.navBarCat11 a.navTopCatLink{
+	color:white;
+	text-decoration:none;
+}
+.navBarCat11:hover a.navTopCatLink{
+	color:black;
+}
+.navBarCat11:active{
 	color:#000000;
 }
-.navBarSale:hover{
+.navBarCat11:hover{
 	background-image:url(images/header_nav_bar/brands.png);
 	color:#000000;
 }
-.headerDropdownSale{
+.headerDropdownCat11{
 	 float: left;
-    height: 0px;
-    left: -325px;
+    height: 313px;
+    left: -355px;
     top: 30px;
     width: 439px;
+	display:none;
 }
-.dropdownContainerSale{
+.dropdownContainerCat11{
 	background-color: black;
     border: 5px solid #3FB8AF;
     box-shadow: 0 0 20px 15px #000000;
@@ -828,13 +931,13 @@ span.ui-state-highlight{
     width: 345px;
 	overflow:hidden;
 }
-.dropdownContainerSale img{
+.dropdownContainerCat11 img{
 	 bottom: 0;
     position: absolute;
     right: 0;
     z-index: 1;
 }
-.navBarSale ul{
+.navBarCat11 ul{
 	list-style: none outside none;
     position: relative;
     z-index: 3;
@@ -893,7 +996,7 @@ span.ui-state-highlight{
 	width:100%;
 	height:50px;
 }
-.dropdownSpacerEyes{
+.dropdownSpacerCat2{
 	width:100%;
 	height:30px;
 }
