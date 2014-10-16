@@ -1111,8 +1111,8 @@ span.ui-state-highlight{
 }
 #subscribeFrm{
 	height:52px;
-	width: 635px;
-	float:right;
+	width: 150px;
+	float:left;
 }
 .userInfo{
 	height:80px;

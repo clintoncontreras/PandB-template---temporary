@@ -216,7 +216,7 @@ var _robots = {
         <div class="centeringContainer">
             <a href="#!home" class='pointer' title='Home'><p>Your logo goes here</p><img class="floatLeft homepageLink" src="" /></a>
             
-            <form id="headerSearchFrm" name="headerSearchFrm" action="#" class="productSearchForm marginTop" method="get" data-app-submit='quickstart|searchFormSubmit'>
+            <form id="headerSearchFrm" name="headerSearchFrm" class="productSearchForm marginTop">
             	<fieldset class="searchArea">
                     <input type='search' name='KEYWORDS' class="productSearchKeyword handleDefault secondary searchBarInput" placeholder="Find it here..." id="searchBar"/>
                     <input class="search pointer searchBarButton" type="submit" value="Search" id="searchButton" />
@@ -628,31 +628,27 @@ var _robots = {
 <div class="footer">
 	<div class="centeringContainerFooter">
         <div id='recentlyViewedItemsContainer'>
-        	<h2>Previously Viewed Items</h2>
-            <div class="displayNone" data-bind='var: session(recentlyViewedItems); format:showIfSet;'>
-            	<ul data-bind="var: session(recentlyViewedItems); format: productList; extension: store_prodlist; loadsTemplate: productListTemplate; hide_summary:1; hide_pagination:1; withReviews:1;" class='listStyleNone fluidList clearfix noPadOrMargin productList'></ul>
+        	<div data-tlc="bind $var '.recentlyViewedItems'; if(is $var --notblank;) {{ apply --show; }}; " class="displayNone">
+                <h2>Previously Viewed Items</h2>
+            	<ul data-tlc="bind $var '.recentlyViewedItems'; store_prodlist#productlist  --hidesummary='1' --hidepagination='1' --withreviews='1' --templateid='productListTemplate'  --legacy;" class="listStyleNone fluidList clearfix noPadOrMargin productList"></ul>
 			</div>
-            <h4>Start browsing products to add to this list!</h4>
         </div>
     </div>
 	<div class="footerTopThird">
     	<div class="centeringContainer">  	
-            <a class="pointer" href="https://twitter.com/@ACWcosmetics" target="_blank"><img class="footerTwit" src="images/footer/twitter.png" /></a>
-            <a class="pointer" href="https://www.facebook.com/pages/ACW-Cosmetics/148431235211409" target="_blank"><img class="footerFb" src="images/footer/facebook.png" /></a>
-			<a class="pointer" href="http://instagram.com/acwcosmetics#" target="_blank"><img class="footerInsta" src="images/homepage/Instagram_Icon_Small.png" /></a>
+            <a class="pointer" href="https://twitter.com" target="_blank"><img class="footerTwit" src="images/footer/twitter.png" /></a>
+            <a class="pointer" href="https://www.facebook.com" target="_blank"><img class="footerFb" src="images/footer/facebook.png" /></a>
+			<a class="pointer" href="http://instagram.com#" target="_blank"><img class="footerInsta" src="images/homepage/Instagram_Icon_Small.png" /></a>
 			<div class="floatLeft footerNewsLabel">
                 <h5>STAY UPDATED</h5>
                 <div class="clearRight"></div> 
-                <h6>WITH OUR NEWSLETTER</h6>
+                <h6>Sign up for an account today</h6>
              </div>
-             <form action='#' id='subscribeFrm' name='subscribeFrm' onSubmit="app.ext.store_crm.u.handleSubscribe('subscribeFrm'); return false">
-                                <fieldset class='userInfo'>
-                                    <input type="text" name='fullname' value='' placeholder="   Name" class="subName" id='subscribeFullname' />
-                                    <input type="email" name='login' value='' placeholder="   E-mail Address" class="subEmail" id='subscribeLogin' />
-                                    <fieldset data-bind="var:newsletters(@lists); format:subscribeCheckboxes; extension:store_crm;" class='borderNone subscriberLists'></fieldset>
-                                    <input class="subButton pointer" type="submit" value="Sign Up!" id="" />
-                                </fieldset>
-                            </form>
+             <form action='#' id='subscribeFrm' name='subscribeFrm'>
+                <fieldset class='userInfo'>
+                    <a href="#!customer/myaccount"><input class="subButton pointer" type="submit" value="Sign Up!" /></a>
+                </fieldset>
+            </form>
         </div>
     </div>
     <div class="footerMidThird">
@@ -662,51 +658,51 @@ var _robots = {
                 <div class="clearLeft"></div>
                 <ul style="width:41%; margin-top:0px;" class="floatLeft">
                     <li onClick="app.ext._store_pandbfashion.a.scrollToTopPage(); return false;">
-                        <a href='#top' onClick="return showContent('category',{'navcat':'.acw'});">Browse All Categories</a>
-                    </li>
-                    <li onClick="app.ext._store_pandbfashion.a.scrollToTopPage(750); return false;">
-                        <a class="pointer" onClick="return showContent('homepage',{});">What's Hot!</a>
-                    </li>
-                    <li onClick="app.ext._store_pandbfashion.a.scrollToTopPage(750); return false;">
-                        <a class="pointer" onClick="return showContent('homepage',{});">What's The Deal</a>
+                        <a href='#!category/.' >Cat 1</a>
                     </li>
                     <li onClick="app.ext._store_pandbfashion.a.scrollToTopPage(); return false;">
-                        <a href='#top' onClick="return showContent('category',{'navcat':'.acw.brands'});">Brands</a>
+                        <a href='#!category/.' >Cat 2</a>
                     </li>
                     <li onClick="app.ext._store_pandbfashion.a.scrollToTopPage(); return false;">
-                        <a href='#top' onClick="return showContent('category',{'navcat':'.acw.200eyes'});">Eyes</a>
+                        <a href='#!category/.' >Cat 3</a>
                     </li>
                     <li onClick="app.ext._store_pandbfashion.a.scrollToTopPage(); return false;">
-                        <a href='#top' onClick="return showContent('category',{'navcat':'.acw.300lips'});">Lips</a>
+                        <a href='#!category/.' >Cat 4</a>
                     </li>
                     <li onClick="app.ext._store_pandbfashion.a.scrollToTopPage(); return false;">
-                        <a href='#top' onClick="return showContent('category',{'navcat':'.acw.400face'});">Face</a>
+                        <a href='#!category/.' >Cat 5</a>
                     </li>
                     <li onClick="app.ext._store_pandbfashion.a.scrollToTopPage(); return false;">
-                        <a href='#top' onClick="return showContent('category',{'navcat':'.acw.500accessories'});">Accessories</a>
+                        <a href='#!category/.' >Cat 6</a>
+                    </li>
+                    <li onClick="app.ext._store_pandbfashion.a.scrollToTopPage(); return false;">
+                        <a href='#!category/.' >Cat 7</a>
+                    </li>
+                    <li onClick="app.ext._store_pandbfashion.a.scrollToTopPage(); return false;">
+                        <a href='#!category/.' >Cat 8</a>
                     </li>
                 </ul>
                 <ul  style="width:35%; margin-top:0px;" class="floatLeft">
                     <li onClick="app.ext._store_pandbfashion.a.scrollToTopPage(); return false;">
-                        <a href='#top' onClick="return showContent('category',{'navcat':'.acw.600skincare'});">Skincare</a>
+                        <a href='#!category/.' >Cat 9</a>
                     </li>
                     <li onClick="app.ext._store_pandbfashion.a.scrollToTopPage(); return false;">
-                        <a href='#top' onClick="return showContent('category',{'navcat':'.acw.700nails'});">Nails</a>
+                        <a href='#!category/.' >Cat 10</a>
                     </li>
                     <li onClick="app.ext._store_pandbfashion.a.scrollToTopPage(); return false;">
-                        <a href='#top' onClick="return showContent('category',{'navcat':'.acw.800fragrance'});">Fragrance</a>
+                        <a href='#!category/.' >Cat 11</a>
                     </li>
                     <li onClick="app.ext._store_pandbfashion.a.scrollToTopPage(); return false;">
-                        <a href='#top' onClick="return showContent('category',{'navcat':'.acw.450hair'});">Hair</a>
+                        <a href='#!category/.' >Special Subcat 1</a>
                     </li>
                     <li onClick="app.ext._store_pandbfashion.a.scrollToTopPage(); return false;">
-                        <a href='#top' onClick="return showContent('category',{'navcat':'.acw.brands.jewelry'});">Jewelry</a>
+                        <a href='#!category/.' >Special Subcat 2</a>
                     </li>
                     <li onClick="app.ext._store_pandbfashion.a.scrollToTopPage(); return false;">
-                        <a href='#top' onClick="return showContent('category',{'navcat':'.acw.sale'});">Sale</a>
+                        <a href='#!category/.' >Special Subcat 3</a>
                     </li>
                     <li>
-                    	<a href="#" onClick="app.ext.myRIA.a.linkToStore('http://www.suite7beauty.com/','vstore'); return false;" title="Suite 7 beauty" target="_blank">Shop Suite7Beauty</a>
+                    	<a href='#!category/.' >Special Subcat 5</a>
                     </li>
                 </ul>
             </div>
@@ -715,28 +711,25 @@ var _robots = {
                 <div class="clearLeft"></div>
                 <ul style="margin-top:0px;" class="floatLeft">
                     <li>
-                        <a href='#top' onClick="return showContent('company',{'show':'about'});">About Us</a>
+                        <a href="#!company/about">About Us</a>
                     </li>
                     <li>
-                        <a href='#top' onClick="return showContent('company',{'show':'contact'});">Contact Us</a>
+                        <a href="#!company/contact">Contact Us</a>
                     </li>
                     <li>
-                        <a  href='#top' onClick="return showContent('company',{'show':'faq'});">FAQs</a>
+                        <a  href="#!company/faq">FAQs</a>
                     </li>
                     <li>
-                        <a  href='#top' onClick="return showContent('company',{'show':'shipping'});">Shipping Policy</a>
+                        <a  href="#!company/shipping">Shipping Policy</a>
                     </li>
                     <li>
-                        <a  href='#top' onClick="return showContent('company',{'show':'return'});">Return Policy</a>	
+                        <a  href="#!company/return">Return Policy</a>	
                     </li>
                     <li>
-                        <a  href='#top' onClick="return showContent('company',{'show':'payment'});">Payment Policy</a>
+                        <a  href="#!company/payment">Payment Policy</a>
                     </li>
                     <li>
-                        <a  href='#top' onClick="return showContent('company',{'show':'privacy'});">Privacy Policy</a>
-                    </li>
-                    <li>
-                    	<a href="#" onClick="app.ext.myRIA.a.linkToStore('http://www.suite7beauty.com/','vstore'); return false;" title="Suite 7 beauty" target="_blank">Shop Suite7Beauty</a>
+                        <a  href="#!company/privacy">Privacy Policy</a>
                     </li>
                 </ul>
             </div>
@@ -745,25 +738,25 @@ var _robots = {
                 <div class="clearLeft"></div>
                 <ul style="margin-top:0px;" class="floatLeft">
                     <li>
-                        <a href='#top' onClick="return showContent('customer',{'show':'newsletter'});">Create An Account</a>
+                        <a class="pointer" href="#!customer/myaccount">Create An Account</a>
                     </li>
                     <li>
-                        <a href='#top' onClick="return showContent('customer',{'show':'myaccount'});">Log-in</a>
+                        <a class="pointer" href="#!customer/myaccount">Log-in</a>
                     </li>
                     <li>
-                        <a href='#top' onClick="return showContent('customer',{'show':'myaccount'});">Change Password</a>
+                        <a class="pointer" href="#!customer/myaccount">Change Password</a>
                     </li>
                     <li>
-                        <a href='#top' onClick="return showContent('customer',{'show':'myaccount'});">Update Preferences</a>
+                        <a class="pointer" href="#!customer/myaccount">Update Preferences</a>
                     </li>
                     <li>
-                        <a href='#top' onClick="return showContent('customer',{'show':'lists'});">Wishlist Items</a>
+                        <a class="pointer" href="#!customer/myaccount">Wishlist Items</a>
                     </li>
                     <li>
-                        <a href="#customer?show=orders">Order tracking</a>
+                        <a class="pointer" href="#!customer/myaccount">Order tracking</a>
                     </li>
                     <li>
-                        <a href="#top" onclick="app.ext.myRIA.u.handleLogoutActions(); return false;">Sign Out</a>
+                        <a class="pointer"  href="#!customer/logout">Sign Out</a>
                     </li>
                 </ul>
             </div>
@@ -772,19 +765,19 @@ var _robots = {
                 <div class="clearLeft"></div>
                 <ul style="margin-top:0px;" class="floatLeft">
                     <li>
-                        <a class="pointer" href="https://www.facebook.com/pages/ACW-Cosmetics/148431235211409" target="_blank">Tutorials</a>
+                        <a class="pointer" href="" target="_blank">Tutorials</a>
                     </li>
                     <li>
-                        <a class="pointer" href="https://www.facebook.com/pages/ACW-Cosmetics/148431235211409" target="_blank">Tips and Tricks</a>
+                        <a class="pointer" href="" target="_blank">Tips and Tricks</a>
                     </li>
                     <li>
-                        <a class="pointer" href="https://www.facebook.com/pages/ACW-Cosmetics/148431235211409" target="_blank">Facebook</a>
+                        <a class="pointer" href="" target="_blank">Facebook</a>
                     </li>
                     <li>
-                        <a class="pointer" href="https://twitter.com/@ACWcosmetics" target="_blank">Twitter</a>
+                        <a class="pointer" href="https://twitter.com" target="_blank">Twitter</a>
                     </li>
 					<li>
-						<a class="pointer" href="http://instagram.com/acwcosmetics#" target="_blank">Instagram</a>	
+						<a class="pointer" href="http://instagram.com" target="_blank">Instagram</a>	
 					</li>
                 </ul>
             </div>
@@ -792,12 +785,12 @@ var _robots = {
     </div>
     <div class="footerBottomThird">
         <div class="centeringContainer">
-            <h1>All Cosmetics Wholesale</h1>
-            <p>All Cosmetics Wholesale specializes in providing discount, quality makeup brands at wholesale and below wholesale pricing. At All Cosmetics Wholesale you'll also find rare and hard to find items. The products we provide are new and <span style="color:#3fb8af;">AUTHENTIC</span>.</p>
+            <h1>Company Name Here</h1>
+            <p>Our company has the greatest selection of awesomeness. Yes, you won't find a great variety of awesome things than right here. From doodads to doohickeys, we have them all at the lowest prices.</p>
             <br />
-            <p>ACW was founded in 2002 as a discount beauty products retailer. As a discount retailer, we have and will continue to bring you both prestige and mass products at reduced pricing. We have now created a new experience at our sister site Suite7beauty.com. Suite7beauty.com brings you amazing full retail lines of prestige and mass beauty brands. Added together with ACW discount lines, you can now purchase both discount and retail lines in one convenient checkout with one low shipping fee. Please visit us at Suite7beauty.com by clicking the link at the top of any ACW page.</p>
+            <p> (Your Store Here) was founded in 1200 by the ancient Aztecs when the martian space monkeys came down to earth and offered each Aztec 2 doohickeys and a banana. From that point forward, the Aztecs felt they needed to share these gifts with the world, and thus, (Your Company Here) was formed.</p>
             <br />
-            <p>Our products change daily so please check back often for the newest selection! We hope you enjoy your shopping!</p>
+            <p>Our products change daily so please check back often for the newest selection! We hope you enjoy your shopping as much as we did acquiring them!</p>
             <br />
             <p></p>
         </div>
@@ -806,7 +799,7 @@ var _robots = {
         <div class="centeringContainer">
         	<img class="footerImg" src="images/footer/splatter.png" />
         	<div class="centeringContainerH4">
-                <h4 style="color:#ffffff;">All Cosmetics Wholesale</h4><h4>2013 All Rights reserved</h4><h4>eCommerce by <span style="color:#ffffff;">Zoovy</span></h4>
+                <h4 style="color:#ffffff;">Company Name Here</h4><h4>2013 All Rights reserved</h4><h4>eCommerce by <span style="color:#ffffff;">Zoovy</span></h4>
         	</div>
         </div>
     </div>
