@@ -1703,6 +1703,13 @@ div .catListingCat:hover{
 	height: 170px;
 	margin-bottom:10px;
 }
+li.productListTemplate{
+	float: left;
+    height: 300px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 222px;
+}
 
 .prodListDetails h5{
 	color:#b4b5b4;
