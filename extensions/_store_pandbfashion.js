@@ -38,6 +38,96 @@ var _store_pandbfashion = function(_app) {
 			startExtension : {
 				onSuccess : function (){
 					_app.u.dump('BEGIN _app.ext.ext_store_pandbfashion.callbacks.startExtension.onSuccess')
+					
+					_app.templates.homepageTemplate.on('complete.pandb',function(event,$context,infoObj){
+						//Carousel horizontal sliders - homepage banner
+						var carouselHPBanner;
+						function foo1(){ $(".carouselHPBannerList").carouFredSel
+						({
+							width   : 710,
+							height	: 390,
+							items   : 1,
+							scroll: 1,
+							auto : {
+								duration    : 500,
+								timeoutDuration: 5000,
+								pauseOnHover: true
+							},
+							pagination  : "#paginCaro",
+							prev : ".prevHPCaro",
+							next : ".nextHPCaro"
+						});
+						}
+						carouselHPBanner = foo1;
+						setTimeout(carouselHPBanner, 1000);
+						
+						
+						//Carousel horizontal sliders - homepage search lists
+						var carouselHPSearch;
+						function foo2(){ $(".carouselHPSearchList").carouFredSel
+						({
+							width   : 1000,
+							items   : 1,
+							scroll: 1,
+							auto : false
+						});
+						}
+						carouselHPSearch = foo2;
+						setTimeout(carouselHPSearch, 1000);	
+						
+						
+						var carouselHPSearchPaginationTitle;
+						function foo3(){ $(".carouselSearchPaginTitle").carouFredSel
+						({
+							width   : 1000,
+							height	: 50,
+							align: "left",
+							items   : 3,
+							scroll: 1,
+							auto : false,
+							items: {minimum: 1}
+						});
+						}
+						carouselHPSearchPaginationTitle = foo3;
+						setTimeout(carouselHPSearchPaginationTitle, 1000);	
+						
+						
+						var carouselHPSearchPaginationTitleBottom;
+						function foo4(){ $(".carouselSearchPaginTitleBottom").carouFredSel
+						({
+							width   : 1000,
+							height	: 50,
+							align: "left",
+							items   : 3,
+							scroll: 1,
+							auto : false,
+							overflow: "hidden",
+							items: {minimum: 1}
+						});
+						$("#nextHPSearchCaro").click(function() {
+							$(".carouselSearchPaginTitle").trigger("next", 1);
+							$(".carouselHPSearchList").trigger("next", 1);
+							$(".carouselSearchPaginTitleBottom").trigger("next", 1);
+						});
+						$("#nextHPSearchCaro2").click(function() {
+							$(".carouselSearchPaginTitle").trigger("next", 1);
+							$(".carouselHPSearchList").trigger("next", 1);
+							$(".carouselSearchPaginTitleBottom").trigger("next", 1);
+						});
+						$("#prevHPSearchCaro").click(function() {
+							$(".carouselSearchPaginTitle").trigger("prev", 1);
+							$(".carouselHPSearchList").trigger("prev", 1);
+							$(".carouselSearchPaginTitleBottom").trigger("prev", 1);
+						});
+						$("#prevHPSearchCaro2").click(function() {
+							$(".carouselSearchPaginTitle").trigger("prev", 1);
+							$(".carouselHPSearchList").trigger("prev", 1);
+							$(".carouselSearchPaginTitleBottom").trigger("prev", 1);
+						});	
+						}
+						carouselHPSearchPaginationTitleBottom = foo4;
+						setTimeout(carouselHPSearchPaginationTitleBottom, 1000);
+					});
 				},
 				onError : function (){
 					_app.u.dump('BEGIN _app.ext_store_pandbfashion.callbacks.startExtension.onError');

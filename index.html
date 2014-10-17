@@ -111,7 +111,7 @@ $(document).ready(function(){
 			"_clientid":"zmvc", //zmvc for store app, 1pc for one page checkout.
 			"baseURL":baseURL, //used in non-local mode.
 			"checkoutAuthMode" : "active",//can be passive, active or required
-			"testURL":"http://www.thechessstore.com/", //used ONLY if protocol is file: (for testing)
+			"testURL":"http://www.onlineformals.com/", //used ONLY if protocol is file: (for testing)
 			"addjQueryPointer" : true,
 			"analyticsPointer" : "ga",
 			"initComplete" : function(){
@@ -214,7 +214,7 @@ var _robots = {
     </div>
     <div class="headerMidThird">
         <div class="centeringContainer">
-            <a href="#!home" class='pointer' title='Home'><p>Your logo goes here</p><img class="floatLeft homepageLink" src="" /></a>
+            <a href="#!home" class='pointer' title='Home'><p>Your logo goes here</p></a>
             
             <form id="headerSearchFrm" name="headerSearchFrm" class="productSearchForm marginTop">
             	<fieldset class="searchArea">
@@ -899,7 +899,116 @@ the homepageTemplate template is loaded into mainContentArea by default when the
 -->
 <div id="homepageTemplate" class="homeTemplate">
 	
-	<ul data-tlc="bind $var '.@subcategoryDetail'; store_navcats#categorylist  --detail='max' --templateid='categoryListTemplate'  --legacy;" class="listStyleNone fluidList clearfix noPadOrMargin categoryList"></ul>
+	
+    <!--<ul id="wideSlideshow" class="pics slideshow">
+		<img src='images/blank.gif' width='712' height='400' data-bind="var: category(%page.banner_slideshow1); format: banner; extension:myRIA; editor:banner; wrap:<li>;" />
+	</ul>-->
+    
+    <div class="homepageTopSec">
+    <div class="elasticlist"></div>
+    
+    	<div class="carouselHPBannerCont">
+        	<a class="prevHPCaro"><img class="carouselHPButton pointer" style="left:0px; top:0px;" src="images/homepage/arrow_bar_left.png" /></a>
+            <a class="nextHPCaro"><img class="carouselHPButton pointer" style="right:0px; top:0px;" src="images/homepage/arrow_bar_right.png" /></a>
+            <div id="paginCaro">
+            </div>
+         
+            
+<!--***********************************************************************************************************************
+****SHERI, HERE IS THE CODE FOR THE HOMEPAGE SLIDESHOW BANNER IN THE HEADER. CHANGE THIS CODE TO CHANGE THESE BANNERS!**--> 
+        	<ul class="carouselHPBannerList">
+            	<li class="pointer">
+                	<a href="#!category/.">
+                		<img src="images/homepage/banner/placeholder1.png" />
+                    </a>
+                </li>
+                <li class="pointer">
+                	<a href="#!category/.">
+                		<img src="images/homepage/banner/placeholder2.png" />
+                    </a>
+                </li>
+                <li class="pointer">
+                	<a href="#!category/.">
+                		<img src="images/homepage/banner/placeholder3.png" />
+                    </a>
+                </li>
+            </ul>
+<!--***********************************************************************************************************************
+*******************************************END HOMEPAGE SLIDESHOW BANNER CODE!******************************************--> 
+            
+            
+            <div class="pagination" id="carouselHPBannerPag">
+            </div>
+        </div>
+        <div class="homepageSignUp">
+        	<div>
+            	<h2>GET IN ON</h2>
+                <h1>THE LATEST</h1>
+            </div>
+            <div class="clear">
+            	<form action='#' id='subscribeFrm' class="floatRight" name='subscribeFrm'>
+                    <fieldset class='userInfo2'>
+                    <!--
+                    <label>Full Name</label>
+                        <input type="text" name='fullname' value='' placeholder="   FULL NAME" class="floatRight homepageSubInput" id='subscribeFullname' />
+                        <label>Email Address</label>
+                        <input type="email" name='login' value='' placeholder="   E-MAIL ADDRESS" class="floatRight homepageSubInput" id='subscribeLogin' />
+                        <fieldset class='borderNone subscriberLists clear'></fieldset>
+                        -->
+                        <label>Sign up now to stay up to date on our deals and special offerings!</label>
+                       <a href="#!customer/myaccount"><input class="homepageSubButton ui-button-text ui-button ui-state-default ui-corner-all floatRight" type="submit" value="SIGN UP!" /></a>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="floatRight clear">
+            	<hr style="margin-left: 10px;"><h3>FOLLOW US</h3><hr style="margin-right: 5px;">
+            </div>
+            <div class="socMed">
+            	<div style="width:0px; height:100%; float:left;"></div>
+                <a class="pointer" href="https://www.facebook.com" target="_blank"><img class="floatLeft pointer" src="images/homepage/facebook.png" /></a>
+                <a class="pointer" href="https://twitter.com" target="_blank"><img class="floatLeft pointer" src="images/homepage/twitter.png" /></a>
+				<a class="pointer" href="http://instagram.com" target="_blank"><img class="floatLeft pointer" src="images/homepage/Instagram_Icon_Small.png" /></a>
+            </div>
+            <div class="homepageSignUpBottom"></div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="homepageBottomSec">
+    	
+    	<div class="carouselHPSearchCont">
+        <div class="clear"></div>
+        	<div class="carouselHPSearchPagination">
+                <a id="prevHPSearchCaro" class="prevHPSearchCaro pointer"><img class="pointer" src="images/homepage/carousel_arrow_left.png" /></a>
+                <a id="nextHPSearchCaro" class="nextHPSearchCaro pointer"><img class="pointer" src="images/homepage/carousel_arrow_right.png" /></a>
+            	<ul class="carouselSearchPaginTitle">
+                   <li><h2>Bestsellers</h2></li>
+                   <li><h2>On Sale This Week</h2></li>
+                   <li><h2>New Arrivals</h2></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        	<div class="carouselHPSearchList">
+                    <ul id='homeProdSearchBestSellers' data-tlc="bind $var '.$app_best_sellers.@products'; prodlist_infinite#infiniteproductlist  --withReviews='1' --withInventory='1' --withVariations='1' --templateid='productListTemplate' --legacy;" class='listStyleNone clearfix noPadOrMargin'></ul>
+            		<ul id='homeProdSearchSale' data-tlc="bind $var '.$app_new_to_sale.@products'; prodlist_infinite#infiniteproductlist  --withReviews='1' --withInventory='1' --withVariations='1' --templateid='productListTemplate' --legacy;" class='listStyleNone clearfix noPadOrMargin'></ul>
+                    <ul id='homeProdSearchDiscontinued' data-tlc="bind $var '.$app_-_new_arrivals.@products'; prodlist_infinite#infiniteproductlist  --withReviews='1' --withInventory='1' --withVariations='1' --templateid='productListTemplate' --legacy;" class='listStyleNone clearfix noPadOrMargin'></ul>
+            </div>
+            <div class="clear"></div>
+            <div class="carouselHPSearchPagination">
+                <a id="prevHPSearchCaro2" class="prevHPSearchCaro2 pointer"><img class="pointer" src="images/homepage/carousel_arrow_left.png" /></a>
+                <a id="nextHPSearchCaro2" class="nextHPSearchCaro2 pointer"><img class="pointer" src="images/homepage/carousel_arrow_right.png" /></a>
+            	<ul class="carouselSearchPaginTitleBottom">
+                   <li><h2>Bestsellers</h2></li>
+                   <li><h2>On Sale This Week</h2></li>
+                   <li><h2>New Arrivals</h2></li>
+                </ul>
+            </div>
+            <!--<div class="pagination" id="carouselHPSearchPag"></div>-->
+        </div>
+    </div>
+    
+    
+    <!--
+    <ul data-tlc="bind $var '.@subcategoryDetail'; store_navcats#categorylist  --detail='max' --templateid='categoryListTemplate'  --legacy;" class="listStyleNone fluidList clearfix noPadOrMargin categoryList"></ul>
 
 	<ul data-tlc="bind $var '.@products'; store_prodlist#productlist  --hideSummary='1' --withReviews='1' --withVariations='1' --withInventory='1' --templateid='productListTemplate'  --legacy;" class="listStyleNone fluidList clearfix noPadOrMargin productList"></ul>
 
