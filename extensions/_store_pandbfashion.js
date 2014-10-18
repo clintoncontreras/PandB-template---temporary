@@ -66,10 +66,11 @@ var _store_pandbfashion = function(_app) {
 						var carouselHPSearch;
 						function foo2(){ $(".carouselHPSearchList").carouFredSel
 						({
-							width   : 1000,
-							items   : 1,
+							align: "left",
+							items   : 3,
 							scroll: 1,
-							auto : false
+							auto : false,
+							items: {minimum: 1}
 						});
 						}
 						carouselHPSearch = foo2;
@@ -105,23 +106,23 @@ var _store_pandbfashion = function(_app) {
 							items: {minimum: 1}
 						});
 						$("#nextHPSearchCaro").click(function() {
-							$(".carouselSearchPaginTitle").trigger("next", 1);
 							$(".carouselHPSearchList").trigger("next", 1);
+							$(".carouselSearchPaginTitle").trigger("next", 1);
 							$(".carouselSearchPaginTitleBottom").trigger("next", 1);
 						});
 						$("#nextHPSearchCaro2").click(function() {
-							$(".carouselSearchPaginTitle").trigger("next", 1);
 							$(".carouselHPSearchList").trigger("next", 1);
+							$(".carouselSearchPaginTitle").trigger("next", 1);
 							$(".carouselSearchPaginTitleBottom").trigger("next", 1);
 						});
 						$("#prevHPSearchCaro").click(function() {
-							$(".carouselSearchPaginTitle").trigger("prev", 1);
 							$(".carouselHPSearchList").trigger("prev", 1);
+							$(".carouselSearchPaginTitle").trigger("prev", 1);
 							$(".carouselSearchPaginTitleBottom").trigger("prev", 1);
 						});
 						$("#prevHPSearchCaro2").click(function() {
-							$(".carouselSearchPaginTitle").trigger("prev", 1);
 							$(".carouselHPSearchList").trigger("prev", 1);
+							$(".carouselSearchPaginTitle").trigger("prev", 1);
 							$(".carouselSearchPaginTitleBottom").trigger("prev", 1);
 						});	
 						}

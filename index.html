@@ -987,11 +987,11 @@ the homepageTemplate template is loaded into mainContentArea by default when the
                 </ul>
             </div>
             <div class="clear"></div>
-        	<div class="carouselHPSearchList">
-                    <ul id='homeProdSearchBestSellers' data-tlc="bind $var '.$app_best_sellers.@products'; prodlist_infinite#infiniteproductlist  --withReviews='1' --withInventory='1' --withVariations='1' --templateid='productListTemplate' --legacy;" class='listStyleNone clearfix noPadOrMargin'></ul>
-            		<ul id='homeProdSearchSale' data-tlc="bind $var '.$app_new_to_sale.@products'; prodlist_infinite#infiniteproductlist  --withReviews='1' --withInventory='1' --withVariations='1' --templateid='productListTemplate' --legacy;" class='listStyleNone clearfix noPadOrMargin'></ul>
-                    <ul id='homeProdSearchDiscontinued' data-tlc="bind $var '.$app_-_new_arrivals.@products'; prodlist_infinite#infiniteproductlist  --withReviews='1' --withInventory='1' --withVariations='1' --templateid='productListTemplate' --legacy;" class='listStyleNone clearfix noPadOrMargin'></ul>
-            </div>
+        	<ul class="carouselHPSearchList">
+                   </li><ul id='homeProdSearchBestSellers' data-tlc="bind $var '.$app_best_sellers.@products'; prodlist_infinite#infiniteproductlist  --withReviews='1' --withInventory='1' --withVariations='1' --templateid='productListTemplate' --legacy;" class='listStyleNone clearfix noPadOrMargin'></ul></li>
+            		</li><ul id='homeProdSearchSale' data-tlc="bind $var '.$app_new_to_sale.@products'; prodlist_infinite#infiniteproductlist  --withReviews='1' --withInventory='1' --withVariations='1' --templateid='productListTemplate' --legacy;" class='listStyleNone clearfix noPadOrMargin'></ul></li>
+                   </li><ul id='homeProdSearchDiscontinued' data-tlc="bind $var '.$app_-_new_arrivals.@products'; prodlist_infinite#infiniteproductlist  --withReviews='1' --withInventory='1' --withVariations='1' --templateid='productListTemplate' --legacy;" class='listStyleNone clearfix noPadOrMargin'></ul></li>
+            </ul>
             <div class="clear"></div>
             <div class="carouselHPSearchPagination">
                 <a id="prevHPSearchCaro2" class="prevHPSearchCaro2 pointer"><img class="pointer" src="images/homepage/carousel_arrow_left.png" /></a>
