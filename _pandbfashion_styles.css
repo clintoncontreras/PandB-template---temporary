@@ -1489,7 +1489,25 @@ margin-left:20px;
 	color:white;
 }
 .catName{
-	color:black;
+	background-color: rgba(63, 184, 175, 0.4);
+    bottom: 0;
+    color: black;
+    height: 60px;
+    position: absolute;
+    width: 100%;
+}
+.categoryList > li:hover div.catName{
+	background-color: rgba(238, 58, 114, 0.4);
+}
+.catName p{
+	bottom: -30px;
+    color: black;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+}
+.categoryList > li:hover p{
+	color:white;
 }
 .catListingCont{
 	width:100%;
@@ -1864,13 +1882,14 @@ margin-bottom:0;
 	margin-left:10px;
 }
 .categoryList > li{
-	height: 30px;
-	margin-bottom:0px;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 18px;
-	width: 23%;
-	text-align: center;
-	line-height: 115px;
+	font-family: "Montserrat",sans-serif;
+    font-size: 18px;
+    height: 220px;
+    line-height: 115px;
+    margin: 15px;
+    text-align: center;
+    width: 220px;
+	position: relative;
 }
 
 
