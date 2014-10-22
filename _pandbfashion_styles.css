@@ -1698,9 +1698,24 @@ div .catListingCat:hover{
 
 /*************************************************************************************************************************/
 /**productListTemplate**/
+.quickView{
+	background-color: #3fb8af;
+    border: medium none;
+    border-radius: 4px;
+    font-family: "Montserrat",sans-serif;
+    padding: 1px;
+    right: 8px;
+    top: 8px;
+}
+button.quickView:hover{
+	background-color:#ff3d7f;
+}
 .productList{
 	padding-left:5px;
 	padding-right: 20px;
+}
+.catProductList li.productListTemplate:hover div.prodThumbContainer{
+	background-color: #3fb8af;
 }
 .productList2{
 	padding-left:55px;
@@ -1732,7 +1747,10 @@ li.productListTemplate{
     margin-right: 5px;
     width: 222px;
 }
-
+.catProductList li.productListTemplate{
+	margin-left: 13px;
+    margin-right: 13px;
+}
 .prodListDetails h5{
 	color:#b4b5b4;
 	font-family: 'Montserrat', sans-serif;
@@ -1804,8 +1822,16 @@ div .moreDetailsButton span{
 .prodListPriceBuyCont span{
 	font-size:8px;
 }
+.prodViewerAddToCartForm button{
+	border: medium none;
+    font-family: "Montserrat",sans-serif;
+    font-size: 13px;
+    padding: 5px;
+    width: 120px;
+}
 .prodViewerAddToCartForm button span{
-	font-size: 20px;
+	font-size: 13px;
+	padding: 0 !important;
 }
 .price span{
 	font-size: 14px;
@@ -1860,9 +1886,6 @@ ul .mpControlJumpToPage{
 .ddUlMenu li ul{
 	height:auto;
 }
-.prodViewerAddToCartForm button span{
-	padding-top:10px !important;
-}
 form.ProductListForm button.addToCartButtonProdItem{
 	height: 40px;
     padding-top: 3px;
@@ -1876,6 +1899,16 @@ form.ProductListForm button.addToCartButtonProdItem{
 }
 form.ProductListForm fieldset{
 margin-bottom:0;
+}
+
+.productList h5, .categoryList h5{
+	font-size: 1.2em;
+}
+.productList h6, .categoryList h6{
+	font-size: 1.2em;
+}
+.productList h6 span{
+	color:#ff3d7f;
 }
 
 
@@ -1894,40 +1927,6 @@ margin-bottom:0;
     text-align: center;
     width: 220px;
 	position: relative;
-}
-
-
-/*************************************************************************************************************************/
-/*************************************************************************************************************************/
-/**categoryProductListTemplate**/
-.productListTemplate{
-	width:1020px;
-}
-
-.productListTemplate h2{
-	color:#3fb8af;
-	float: left;
-	font-family: 'Special Elite', cursive;
-	font-weight: 200;
-    margin-left:60px;
-	margin-bottom:20px;
-    padding-top: 15px;
-	clear:both;
-	text-align: center;
-    width: 90%;
-}
-.productListTemplate h3{
-	color:#ff3d7f;
-	font-size:24px;
-	float: left;
-	font-family: 'Special Elite', cursive;
-	font-weight: 200;
-    margin-left:60px;
-	margin-bottom:20px;
-    padding-top: 15px;
-	clear:both;
-	text-align: center;
-    width: 90%;
 }
 
 /*************************************************************************************************************************/
