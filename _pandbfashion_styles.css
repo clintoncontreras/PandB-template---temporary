@@ -1938,6 +1938,9 @@ margin-bottom:0;
 .quickviewImageContainer div{
 	 width: 240px !important;
 }
+.quickviewImage{
+	border:solid 10px rgba(200, 200, 200, .2);
+}
 .priceContainer{
 	float:right;
 }
@@ -1959,13 +1962,15 @@ margin-bottom:0;
     vertical-align: super;
 }
 .priceContainer h4{
-	color: #FF3D7F;
-    font-size: 40px;
-    text-align: center;
+    font-size: 20px;
+    text-align: left;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 600;
 	margin-left: 0px;
 	clear:right;
+}
+.priceContainer h4 span{
+	color:#ff3d7f;
 }
 .priceContainer h4 span.cents{
 	font-size: 16px;
@@ -2035,12 +2040,12 @@ margin-bottom:0;
 /*************************************************************************************************************************/
 /**Product Image section**/
 .imageContainer{
-	 float: left;
+	float: left;
     height: auto;
     margin-left: 0;
-    margin-right: 0;
+    margin-right: 30px;
     padding-right: 0;
-    width: 252px;
+    width: 340px;
 }
 .imageContainer2{
 	padding-right:0px;
@@ -2071,11 +2076,6 @@ margin-bottom:0;
 div .tagsContainer{
 	border:none;
 }
-.imageContainer div{
-	border:solid 6px rgba(200, 200, 200, .2);
-	width: 290px;
-	float:left;
-}
 .prodViewerContainer .prodThumbs div{
 	width: 100px;
 }
@@ -2105,7 +2105,7 @@ div .socialLinks{
 
 .prodSummaryContainer{
 	float:left;
-	width: 200px;
+	width: 75%;
 	height:auto;
 	margin-right:0px;
 }
@@ -2192,9 +2192,6 @@ div .socialLinks{
 
 .priceContainer{
 	width:100%;
-}
-.priceContainer h4{
-	font-family: 'Montserrat', sans-serif;
 }
 .priceContainer h1{
 	color:#ff3d7f;

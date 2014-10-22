@@ -1399,7 +1399,7 @@ this will likely become more flexible in the future. ###
 <div>
 
 	<div data-tlc="bind $var '.%attribs.zoovy:prod_is_tags'; quickstart#tags --legacy; if (is $var --notblank;) {{apply --append;}};" class="tagsContainer"></div>
-	<div data-tlc="bind $var '.pid'; quickstart#addpicslider  --legacy; apply --append;"><img data-tlc="bind $var '.%attribs.zoovy:prod_image1'; apply --img --media=$var --width=240 --height=240 --bgcolor='#ffffff' --replace;" src="blank.gif" class="prodBigImage" alt="" height="240" width="240"></div>
+	<div class="quickviewImage" data-tlc="bind $var '.pid'; quickstart#addpicslider  --legacy; apply --append;"><img data-tlc="bind $var '.%attribs.zoovy:prod_image1'; apply --img --media=$var --width=340 --height=340 --bgcolor='#ffffff' --replace;" src="blank.gif" class="prodBigImage" alt="" height="340" width="340"></div>
 
 </div>
 
@@ -1411,7 +1411,7 @@ this will likely become more flexible in the future. ###
 
 
 	<div class="priceContainer">
-		<h4 data-tlc="bind $var '.%attribs.zoovy:base_price';  if (is $var --notblank;) {{format --currency='USD'; format --prepend='Our Price: ';  apply --append;}};" class="basePrice"></h4>
+		<h4>Our Price: <span data-tlc="bind $var '.%attribs.zoovy:base_price';  if (is $var --notblank;) {{format --currency='USD'; apply --append;}};" class="basePrice"></span></h4>
 		<h5 data-tlc="bind $var '.%attribs.zoovy:prod_msrp';  if (is $var --notblank;) {{format --currency='USD'; format --prepend='MSRP: ';  apply --append;}};" class="prodMSRP"></h5>
 		<span class="savings">
 			<span data-tlc="bind $var '.pid'; format --prepend='You save: '; quickstart#priceretailsavingsdifference  --legacy; apply --append;" class="savingsDifference"></span>
