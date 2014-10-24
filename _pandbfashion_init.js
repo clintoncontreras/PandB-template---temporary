@@ -42,6 +42,8 @@ myApp.rq.push(['extension',0,'quickstart','','startMyProgram']);
 //myApp.rq.push(['extension',1,'powerReviews_reviews','extensions/partner_powerreviews_reviews.js','startExtension']);
 //myApp.rq.push(['extension',0,'magicToolBox_mzp','extensions/partner_magictoolbox_mzp.js','startExtension']); // (not working yet - ticket in to MTB)
 
+//CUSTOM SCRIPTS + EXTENSIONS
+myApp.rq.push(['script',0,myApp.vars.baseURL+'zoom-master/jquery.zoom.js']);
 
 //once peg is loaded, need to retrieve the grammar file. Order is important there. This will validate the file too.
 myApp.u.loadScript(myApp.vars.baseURL+'resources/peg-0.8.0.js',function(){
