@@ -1782,6 +1782,9 @@ li.productListTemplate{
 	width:50%;
 	height:50px;
 }
+.searchResultsPage a.moreDetails{
+	color:#3FB8AF;
+}
 .moreDetailsButton{
 	float:right;
 	width:50%;
@@ -2000,7 +2003,6 @@ margin-bottom:0;
 	border:none;
 }
 .prodSummaryContainer h6{
-	color:#ff9e9d;
 	margin-top: 10px;
 	margin-left: 0px;
 	font-size: 14px;
@@ -2032,6 +2034,9 @@ margin-bottom:0;
     width: 170px;
 	margin-left:40px;
 	font-family: 'Special Elite', cursive;
+}
+.searchResultsPage div.previewProductDetail a{
+	color:#3fb8af;
 }
 
 /*************************************************************************************************************************/
@@ -2254,6 +2259,9 @@ div .socialLinks{
 }
 .prodMSRP span.cents{
 	 text-decoration: line-through;
+}
+.stid span{
+	color:#ff9e9d;
 }
 
 /*************************************************************************************************************************/
@@ -3636,8 +3644,16 @@ div.buttonList .removeButtonWishlist:hover{
     width: 222px;
 	position:relative;
 }
+.searchResultsProduct h6{
+}
+.searchResultsProduct:hover div.prodThumbContainer{
+	border: 6px solid #3fb8af;
+}
+.searchResultsPage td.imageContainer{
+	width: 360px;
+}
 #resultsProductListContainer{
-	 padding-left:40px;
+	padding-left:40px;
 }
 .minimalMode .searchResultsProduct{
 	height: 183px;
