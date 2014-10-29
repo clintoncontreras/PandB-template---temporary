@@ -227,7 +227,7 @@ span.ui-state-highlight{
 	vertical-align:
 }
 .navBarCat1 a{
-	color: white;
+	color: #3fb8af;
     margin-left: 5px;
     text-decoration: none;
     width: 80px;
@@ -424,7 +424,7 @@ span.ui-state-highlight{
 .navBarCat2 a.navTopCatLink{
 	margin-left:5px;
 	text-decoration:none;
-	color:white;
+	color:#3fb8af;
 }
 .navBarCat2 ul{
 	list-style: none outside none;
@@ -447,7 +447,7 @@ span.ui-state-highlight{
 	position:relative;
 }
 .navBarCat3 a.navTopCatLink{
-	color:white;
+	color:#3fb8af;
 	text-decoration:none;
 }
 .headerDropdownCat3{
@@ -510,7 +510,7 @@ span.ui-state-highlight{
 	color:#000000;
 }
 .navBarCat4 a.navTopCatLink{
-	color:white;
+	color:#3fb8af;
 	text-decoration:none;
 }
 .navBarCat4:hover a.navTopCatLink{
@@ -561,7 +561,7 @@ span.ui-state-highlight{
 .navBarCat5 a{
 }
 .navBarCat5 a.navTopCatLink{
-	color:white;
+	color:#3fb8af;
 	text-decoration:none;
 }
 .navBarCat5:hover a.navTopCatLink{
@@ -622,7 +622,7 @@ span.ui-state-highlight{
 	color:#000000;
 }
 .navBarCat6 a.navTopCatLink{
-	color:white;
+	color:#3fb8af;
 	text-decoration:none;
 }
 .navBarCat6:hover a.navTopCatLink{
@@ -679,7 +679,7 @@ span.ui-state-highlight{
 	margin-left:5px;
 }
 .navBarCat7 a.navTopCatLink{
-	color:white;
+	color:#3fb8af;
 	text-decoration:none;
 }
 .navBarCat7:hover a.navTopCatLink{
@@ -735,7 +735,7 @@ span.ui-state-highlight{
 	position:relative;
 }
 .navBarCat8 a.navTopCatLink{
-	color:white;
+	color:#3fb8af;
 	text-decoration:none;
 }
 .navBarCat8:hover a.navTopCatLink{
@@ -791,7 +791,7 @@ span.ui-state-highlight{
 	position:relative;
 }
 .navBarCat9 a.navTopCatLink{
-	color:white;
+	color:#3fb8af;
 	text-decoration:none;
 }
 .navBarCat9:hover a.navTopCatLink{
@@ -848,7 +848,7 @@ span.ui-state-highlight{
 	position:relative;
 }
 .navBarCat10 a.navTopCatLink{
-	color:white;
+	color:#3fb8af;
 	text-decoration:none;
 }
 .navBarCat10:hover a.navTopCatLink{
@@ -907,7 +907,7 @@ span.ui-state-highlight{
 	margin-left:5px;
 }
 .navBarCat11 a.navTopCatLink{
-	color:white;
+	color:#3fb8af;
 	text-decoration:none;
 }
 .navBarCat11:hover a.navTopCatLink{
@@ -2549,6 +2549,91 @@ div.priceContainer h4.displayInvAmount{
 }
 
 
+
+
+/*************************************************************************************************************************/
+/*************************************************************************************************************************/
+/**LOGIN/ACCOUNT SIGN-UP MODAL**/
+#loginFormContainer legend{
+	color: #3fb8af;
+}
+#loginFormContainer a{
+	color: #3fb8af;
+}
+
+
+
+/*************************************************************************************************************************/
+/*************************************************************************************************************************/
+/**ACCOUNT CREATION PAGE**/
+.creatAccount h1{
+	color: white;
+    float: left;
+    width: 100%;
+}
+#modalLoginForm1{
+	float:left;
+	width:100%;
+}
+#modalLoginForm1 fieldset{
+	border: medium double #3fb8af;
+	padding-top: 12px;
+	width: 100%;
+}
+#modalLoginForm1 input.ui-button{
+	background-color: #3fb8af;
+    border: medium none;
+    margin-left: 20px;
+    margin-top: -3px;
+    padding: 4px 25px;
+}
+#modalLoginForm1 input.ui-button:hover{
+	color:#ff3d7f;
+}
+#modalLoginForm1 input.zform_textbox{
+	height: 17px;
+}
+.primaryCTH{
+	color: #3fb8af;
+    float: left;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+.primaryCTH:hover{
+	color:#ff3d7f;
+}
+.creatAccount div.Account{
+	border: medium double #3fb8af;
+    float: left;
+    width: 100%;
+	padding: 10px;
+}
+.creatAccount div.Account span{
+	color:#ff3d7f;
+}
+.creatAccount div.Account b{
+	color:#ff3d7f;
+}
+.creatAccount div.Account input.textfphone{
+	width:150px;
+}
+.creatAccount div.Account input.createButton{
+	background-color: #3fb8af;
+    border: medium none;
+    border-radius: 5px;
+    font-family: "Special Elite",cursive;
+    font-size: 18px;
+    padding: 10px 10px 7px;
+	cursor: pointer;
+}
+.creatAccount div.Account input.createButton:hover{
+	color:#ff3d7f;
+}
+
+
+
+
+
 /*************************************************************************************************************************/
 /*************************************************************************************************************************/
 /**Shopping Cart**/
@@ -3380,12 +3465,12 @@ div div.mainColumn div#privacyArticle h4, h3{
 	color:black;
 }
 #customerNav a{
-	color: white;
+	color: #3fb8af;
     font-family: 'Montserrat',sans-serif;
     font-weight: 600;
 }
 #customerNav a:hover{
-	color:#3FB8AF;
+	color:#ff3d7f;
 }
 
 /*************************************************************************************************************************/

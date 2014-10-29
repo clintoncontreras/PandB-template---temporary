@@ -342,6 +342,26 @@ var _store_pandbfashion = function(_app) {
 			
 		},
 		
+		e : {
+			//add this as a data-app-submit to the login form.
+			accountLoginSubmit : function($ele,p)	{
+				p.preventDefault();
+				if(_app.u.validateForm($ele))	{
+					var sfo = $ele.serializeJSON();
+					_app.ext.cco.calls.cartSet.init({"bill/email":sfo.login,"_cartid":_app.model.fetchCartID()}) //whether the login succeeds or not, set bill/email in the cart.
+					sfo._cmd = "appBuyerLogin";
+					sfo.method = 'unsecure';
+					sfo._tag = {"datapointer":"appBuyerLogin",'callback':'authenticateBuyer','extension':'quickstart'}
+					_app.model.addDispatchToQ(sfo,"immutable");
+					_app.calls.refreshCart.init({},'immutable'); //cart needs to be updated as part of authentication process.
+					_app.model.dispatchThis('immutable');
+					showContent('customer',{'show':'myaccount'});
+					}
+				else	{} //validateForm will handle the error display.
+				return false;
+				},
+		},
+		
 		renderFormats : {
 			//Identical to the showIFSet render format but sets to inline instead of block.
 			showIfSetInline : function($tag,data)	{
